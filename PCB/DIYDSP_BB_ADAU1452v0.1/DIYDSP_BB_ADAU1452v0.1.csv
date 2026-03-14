@@ -1,0 +1,17 @@
+"Id";"Designator";"Footprint";"Quantity";"Designation";"Supplier and ref";
+1;"J9,J8,J7,J6,J5,J4,J3,J2";"PinHeader_1x07_P2.54mm_Vertical";8;"Conn_01x07";;;
+2;"J1";"PinHeader_1x09_P2.54mm_Vertical";1;"Conn_01x09";;;
+3;"R4,R2,R3";"R_0805_2012Metric";3;"100";;;
+4;"C12,C14,C20,C16";"C_0805_2012Metric";4;"10n";;;
+5;"C23,C22,C19,C15";"C_0805_2012Metric";4;"1u";;;
+6;"C13,C21,C18,C9,C17,C5,C7,C30,C11,C10,C1,C32";"C_0805_2012Metric";12;"100n";;;
+7;"J13,J19,J17,J15,J20,J24,J22,J12,J18,J16,J23,J10,J21,J14,J11";"PinHeader_1x03_P2.54mm_Vertical";15;"Conn_01x03";;;
+8;"C6,C2,C8,C33,C31";"C_0805_2012Metric";5;"10u";;;
+9;"U1";"ADAU1452WBCPZ-RL";1;"ADAU1452";;;
+10;"C3";"C_0805_2012Metric";1;"5.6n";;;
+11;"D1";"LED_0805_2012Metric";1;"LED";;;
+12;"C24,C25";"C_0805_2012Metric";2;"22p";;;
+13;"C4";"C_0805_2012Metric";1;"150p";;;
+14;"R1";"R_0805_2012Metric";1;"4.3k";;;
+15;"Y1";"Crystal_SMD_5032-2Pin_5.0x3.2mm";1;"12.288M";;;
+16;"U2";"AMS1117-1.2";1;"AMS1117-1.2";;;
