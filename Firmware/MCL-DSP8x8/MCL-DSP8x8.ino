@@ -133,6 +133,7 @@ uint8_t read_AK4619VN(uint8_t device_address, byte register_address, uint8_t * r
 // NOTE: many settings maintain their default values, but having them here already makes changes easier
 void init_AK4619VN() {
     Wire.begin(I2C_SDA, I2C_SCL); // SDA, SCL
+    Wire.setClock(400000); // 400 kHz (Fast Mode)
     byte temp_data = 0x00;
     byte temp_address = 0x00;
 
