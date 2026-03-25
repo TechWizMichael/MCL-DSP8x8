@@ -1,0 +1,49 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<!-- *
+ * This software is distributed in the hope that it will be useful,
+ * but is distributed on an "AS IS" BASIS, WITHOUT WARRANTIES OR
+ * CONDITIONS OF ANY KIND, without even the implied warranty of
+ * MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.
+ *
+ * This software may only be used to program products purchased from
+ * Analog Devices for incorporation by you into audio products that
+ * are intended for resale to audio product end users. This software
+ * may not be distributed whole or in any part to third parties.
+ *
+ * Copyright © 2026 Analog Devices, Inc. All rights reserved.
+ */
+-->
+<!--NetList XML file-->
+<NetList>
+    <IC name=" IC 1 " type="ADAU1452">
+        <Schematic>
+            <Algorithm name="PulseS300Alg1" friendlyname="Pulse Generator " cell="LED Heartbeat.Pulse1 " location="{X=66, Y=128} " Growth="0 " GrowthB="0 " FS="48000">
+                <Link pin="O_C21_A0_P1_out" dir="out" link="Link0" />
+            </Algorithm>
+            <Algorithm name="SinePhaseGainAlgS3001" friendlyname="Sin Tone with Initial Phase " cell="Tone1 " location="{X=-119, Y=286} " Growth="2 " GrowthB="0 " FS="48000">
+                <Link pin="O_C93_A0_P1_out" dir="out" link="Link1" />
+            </Algorithm>
+            <Algorithm name="GPOAlg3001" friendlyname="General Purpose Output " cell="LED Heartbeat.GPO1 " location="{X=216, Y=125} " Growth="0 " GrowthB="0">
+                <Link pin="I_C70_A0_P1_in" dir="in" link="Link0" />
+            </Algorithm>
+            <Algorithm name="ICOutADAU145X1" friendlyname="Output " cell="Output1 " location="{X=189, Y=188} " Growth="16 " GrowthB="0">
+                <Link pin="I_C76_A0_P1_in" dir="in" link="Link1" />
+                <Link pin="I_C76_A0_P2_in" dir="in" link="Link1" />
+                <Link pin="I_C76_A0_P3_in" dir="in" link="Link1" />
+                <Link pin="I_C76_A0_P4_in" dir="in" link="Link1" />
+                <Link pin="I_C76_A0_P5_in" dir="in" link="Link1" />
+                <Link pin="I_C76_A0_P6_in" dir="in" link="Link1" />
+                <Link pin="I_C76_A0_P7_in" dir="in" link="Link1" />
+                <Link pin="I_C76_A0_P8_in" dir="in" link="Link1" />
+                <Link pin="I_C76_A0_P9_in" dir="in" link="Link1" />
+                <Link pin="I_C76_A0_P10_in" dir="in" link="Link1" />
+                <Link pin="I_C76_A0_P11_in" dir="in" link="Link1" />
+                <Link pin="I_C76_A0_P12_in" dir="in" link="Link1" />
+                <Link pin="I_C76_A0_P13_in" dir="in" link="Link1" />
+                <Link pin="I_C76_A0_P14_in" dir="in" link="Link1" />
+                <Link pin="I_C76_A0_P15_in" dir="in" link="Link1" />
+                <Link pin="I_C76_A0_P16_in" dir="in" link="Link1" />
+            </Algorithm>
+        </Schematic>
+    </IC>
+</NetList>
