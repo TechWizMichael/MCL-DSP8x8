@@ -37,6 +37,8 @@ int heartbeatTime = 0;
 
 void setup() {
     Serial.begin(115200);
+    // while(!Serial);
+    Serial.println("Serial begin success");
     // Initialize Heartbeat LED
     pinMode(HEARTBEAT_LED, OUTPUT);
     heartbeatTime = millis();
@@ -50,7 +52,7 @@ void loop() {
         heartbeatTime = millis();
         digitalWrite(HEARTBEAT_LED, heartbeatState);
         heartbeatState = !heartbeatState;
-        // init_AK4619VN();
+        init_AK4619VN();
     }
 }
 
@@ -63,8 +65,6 @@ void loop() {
 //      IO12 -> SCLK
 //      IO13 -> MISO
 void init_ADAU1452() {
-    delay(1000);
-    Serial.begin(115200);
     digitalWrite(DSP_SS_PIN, HIGH);
     pinMode(DSP_SS_PIN, OUTPUT);
     SPI.begin();

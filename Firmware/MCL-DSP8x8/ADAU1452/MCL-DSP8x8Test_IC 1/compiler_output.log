@@ -1,19 +1,19 @@
 ADAU145X Assembler, Analog Devices Inc.
 Version: 4.7.0,1827  (built 4/5/2022)
 
-##### Compile Started: Wednesday, March 25, 2026 4:21:07 AM #####
+##### Compile Started: Saturday, March 28, 2026 3:04:38 AM #####
 ADAU145X Assembler, Analog Devices Inc.
 Version: 4.7.0,1827  (built 4/5/2022)
 
-##### Compile Started: Wednesday, March 25, 2026 4:21:07 AM #####
+##### Compile Started: Saturday, March 28, 2026 3:04:38 AM #####
 ##### Compile succeeded:  0 errors, 0 warnings #####
 
 ##### Summary #####
 DM0 RAM used:       00038    (of 20480)
 DM1 RAM used:       00014    (of 20480)
 PM  RAM used(Data): 00000    (of 8192)
-PM  RAM used(Inst): 00132    (of 8192) 122 instructions (32bit: 112  64bit: 10)
-Total PM used:      00132    (of 8192)
+PM  RAM used(Inst): 00172    (of 8192) 162 instructions (32bit: 152  64bit: 10)
+Total PM used:      00172    (of 8192)
 
 --------------------------------------------------------------------------------------
 STREAM                        Inst      Inst      DM0     DM1     PM
@@ -22,11 +22,13 @@ Instance                      (cycles)  (size)
 STACK                          -         -        16      0       0       
 FRAMEWORK                     52        33        4       7       0
 Output1                       20        20        0       0       0
+Output1_2                     20        20        0       0       0
+Output1_3                     20        20        0       0       0
 Tone1                         18        18        10      1       0
 Pulse1                        17        17        4       2       0
 GPO1                          2         2         0       0       0
 --------------------------------------------------------------------------------------
-Total                         109       90        34      10      0
+Total                         149       130       34      10      0
 --------------------------------------------------------------------------------------
-(% Fs=48.0kHz)                2%        2%        1%      1%      0%
+(% Fs=48.0kHz)                3%        2%        1%      1%      0%
 
