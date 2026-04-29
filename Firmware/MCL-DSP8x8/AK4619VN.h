@@ -1,3 +1,7 @@
+#ifndef AK4619VN
+#define AK4619VN
+#endif
+
 // Device Addresses
 #define AK4619VN_1_ADDRESS 0x10
 #define AK4619VN_2_ADDRESS 0x11
@@ -23,52 +27,3 @@
 #define DACDIN 0x12     // {0, 0, 0, 0,  DAC2SEL[1], DAC2SEL[0], DAC1SEL[1], DAC1SEL[0]}
 #define DACDEEM 0x13    // {0, 0, 0, 0, DEM2[1], DEM2[0], DEM1[1], DEM1[0]}
 #define DACMUTFLT 0x14  // {ATSPDA, 0, DA2MUTE, DA1MUTE, DA2SD, DA2SL, DA1SD, DA1SL}
-
-// Word lengths
-#define AK_24BIT 0x00
-#define AK_20BIT 0x01
-#define AK_16BIT 0x02
-#define AK_32BIT 0x03
-
-// System Clock Speed
-#define AK_256FS_8KS_48KS 0x00
-#define AK_256FS_96KS 0x01
-#define AK_384FS_8KS_48KS 0x02
-#define AK_512FS_8KS_48KS 0x03
-#define AK_128FS_192KS 0x04
-
-// Input Gain
-#define AK_INGAIN_N6DB 0x00
-#define AK_INGAIN_N3DB 0x01
-#define AK_INGAIN_0DB 0x02
-#define AK_INGAIN_3DB 0x03
-#define AK_INGAIN_6DB 0x04
-#define AK_INGAIN_9DB 0x05
-#define AK_INGAIN_12DB 0x06
-#define AK_INGAIN_15DB 0x07
-#define AK_INGAIN_18DB 0x08
-#define AK_INGAIN_21DB 0x09
-#define AK_INGAIN_24DB 0x0A
-#define AK_INGAIN_27DB 0x0B
-
-// Output Gain
-#define AK_DAC1B 0x00
-#define AK_DAC2B 0x01
-#define AK_DAC1L 0x02
-#define AK_DAC1R 0x03
-#define AK_DAC2L 0x04
-#define AK_DAC2R 0x05
-#define AK_OUTGAIN_0DB 0x30
-#define AK_OUT_GAIN_MUTE 0xFF
-
-// Input Configuration
-#define AK_IN_DIFF 0x00
-#define AK_IN_SE1 0x01
-#define AK_IN_SE2 0x02
-#define AK_IN_PSDIFF 0x02
-
-// Output Configuration
-#define AK_OUT_SDIN1 0x00
-#define AK_OUT_SDIN2 0x01
-#define AK_OUT_SDOUT1 0x02
-#define AK_OUT_SDOUT2 0x03
