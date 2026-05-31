@@ -1,0 +1,108 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<!-- *
+ * This software is distributed in the hope that it will be useful,
+ * but is distributed on an "AS IS" BASIS, WITHOUT WARRANTIES OR
+ * CONDITIONS OF ANY KIND, without even the implied warranty of
+ * MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.
+ *
+ * This software may only be used to program products purchased from
+ * Analog Devices for incorporation by you into audio products that
+ * are intended for resale to audio product end users. This software
+ * may not be distributed whole or in any part to third parties.
+ *
+ * Copyright © 2026 Analog Devices, Inc. All rights reserved.
+ */
+-->
+<!--NetList XML file-->
+<NetList>
+    <IC name=" IC 1 " type="ADAU1452">
+        <Schematic>
+            <Algorithm name="ICInput2ADAU145X1" friendlyname="ADAU145x Inputs 16-31 " cell="Input.Input2 " location="{X=-171, Y=324} " Growth="16 " GrowthB="0 " FS="48000">
+                <Link pin="O_C403_A0_P1_out" dir="out" link="Link5" />
+                <Link pin="O_C403_A0_P2_out" dir="out" link="Link6" />
+                <Link pin="O_C403_A0_P3_out" dir="out" link="Link7" />
+                <Link pin="O_C403_A0_P4_out" dir="out" link="Link8" />
+            </Algorithm>
+            <Algorithm name="ICInputADAU145X1" friendlyname="ADAU145x Inputs 0-15 " cell="Input.Input1 " location="{X=-171, Y=55} " Growth="16 " GrowthB="0 " FS="48000">
+                <Link pin="O_C420_A0_P1_out" dir="out" link="Link1" />
+                <Link pin="O_C420_A0_P2_out" dir="out" link="Link2" />
+                <Link pin="O_C420_A0_P3_out" dir="out" link="Link3" />
+                <Link pin="O_C420_A0_P4_out" dir="out" link="Link4" />
+            </Algorithm>
+            <Algorithm name="PulseS300Alg1" friendlyname="Pulse Generator " cell="LED Heartbeat.Pulse1 " location="{X=-120, Y=296} " Growth="0 " GrowthB="0 " FS="48000">
+                <Link pin="O_C21_A0_P1_out" dir="out" link="Link12" />
+            </Algorithm>
+            <Algorithm name="DCInpAlg145X1" friendlyname="DC-Input " cell="LED Heartbeat.DC1_2 " location="{X=-116, Y=194} " Growth="0 " GrowthB="0 " FS="48000">
+                <Link pin="O_C822_A0_P1_out" dir="out" link="Link11" />
+            </Algorithm>
+            <Algorithm name="DCInpAlg145X2" friendlyname="DC-Input " cell="LED Heartbeat.DC1 " location="{X=-114, Y=102} " Growth="0 " GrowthB="0 " FS="48000">
+                <Link pin="O_C824_A0_P1_out" dir="out" link="Link9" />
+            </Algorithm>
+            <Algorithm name="DCBlockAlgDblPrecS3001" friendlyname="DC Blocking " cell="Input.DCB1 " location="{X=-45, Y=49} " Growth="0 " GrowthB="0">
+                <Link pin="I_C484_A0_P1_in" dir="in" link="Link1" />
+                <Link pin="O_C484_A0_P2_out" dir="out" link="Link14" />
+            </Algorithm>
+            <Algorithm name="DCBlockAlgDblPrecS3002" friendlyname="DC Blocking " cell="Input.DCB1_2 " location="{X=-45, Y=102} " Growth="0 " GrowthB="0">
+                <Link pin="I_C487_A0_P1_in" dir="in" link="Link2" />
+                <Link pin="O_C487_A0_P2_out" dir="out" link="Link15" />
+            </Algorithm>
+            <Algorithm name="DCBlockAlgDblPrecS3003" friendlyname="DC Blocking " cell="Input.DCB1_3 " location="{X=-45, Y=154} " Growth="0 " GrowthB="0">
+                <Link pin="I_C490_A0_P1_in" dir="in" link="Link3" />
+                <Link pin="O_C490_A0_P2_out" dir="out" link="Link16" />
+            </Algorithm>
+            <Algorithm name="DCBlockAlgDblPrecS3004" friendlyname="DC Blocking " cell="Input.DCB1_4 " location="{X=-45, Y=207} " Growth="0 " GrowthB="0">
+                <Link pin="I_C493_A0_P1_in" dir="in" link="Link4" />
+                <Link pin="O_C493_A0_P2_out" dir="out" link="Link17" />
+            </Algorithm>
+            <Algorithm name="DCBlockAlgDblPrecS3005" friendlyname="DC Blocking " cell="Input.DCB1_5 " location="{X=-45, Y=255} " Growth="0 " GrowthB="0">
+                <Link pin="I_C496_A0_P1_in" dir="in" link="Link5" />
+                <Link pin="O_C496_A0_P2_out" dir="out" link="Link18" />
+            </Algorithm>
+            <Algorithm name="DCBlockAlgDblPrecS3006" friendlyname="DC Blocking " cell="Input.DCB1_6 " location="{X=-45, Y=308} " Growth="0 " GrowthB="0">
+                <Link pin="I_C499_A0_P1_in" dir="in" link="Link6" />
+                <Link pin="O_C499_A0_P2_out" dir="out" link="Link19" />
+            </Algorithm>
+            <Algorithm name="DCBlockAlgDblPrecS3007" friendlyname="DC Blocking " cell="Input.DCB1_7 " location="{X=-45, Y=360} " Growth="0 " GrowthB="0">
+                <Link pin="I_C502_A0_P1_in" dir="in" link="Link7" />
+                <Link pin="O_C502_A0_P2_out" dir="out" link="Link20" />
+            </Algorithm>
+            <Algorithm name="DCBlockAlgDblPrecS3008" friendlyname="DC Blocking " cell="Input.DCB1_8 " location="{X=-45, Y=413} " Growth="0 " GrowthB="0">
+                <Link pin="I_C505_A0_P1_in" dir="in" link="Link8" />
+                <Link pin="O_C505_A0_P2_out" dir="out" link="Link21" />
+            </Algorithm>
+            <Algorithm name="AdderAlg145X1" friendlyname="Addition " cell="Add1 " location="{X=-79, Y=208} " Growth="8 " GrowthB="0">
+                <Link pin="I_C672_A0_P2_in" dir="in" link="Link14" />
+                <Link pin="I_C672_A0_P3_in" dir="in" link="Link15" />
+                <Link pin="I_C672_A0_P4_in" dir="in" link="Link16" />
+                <Link pin="I_C672_A0_P5_in" dir="in" link="Link17" />
+                <Link pin="I_C672_A0_P6_in" dir="in" link="Link18" />
+                <Link pin="I_C672_A0_P7_in" dir="in" link="Link19" />
+                <Link pin="I_C672_A0_P8_in" dir="in" link="Link20" />
+                <Link pin="I_C672_A0_P9_in" dir="in" link="Link21" />
+                <Link pin="O_C672_A0_P1_out" dir="out" link="Link13" />
+            </Algorithm>
+            <Algorithm name="MultiChanPeakExtNoPostGainS300_FullRangeExpGain1" friendlyname="N-Channel Peak Compressor with  Ext. Detect and Gain Output " cell="Compressor1 " location="{X=-124, Y=-3} " Growth="1 " GrowthB="0">
+                <Link pin="I_C797_A0_P1_in" dir="in" link="Link13" />
+                <Link pin="I_C797_A0_P2_in" dir="in" link="Link13" />
+                <Link pin="O_C797_A0_P3_out" dir="out" link="Link22" />
+            </Algorithm>
+            <Algorithm name="MuteHWSlewAlgADAU145X1" friendlyname="Mute (HW slew) " cell="Output.Mute1 " location="{X=-126, Y=138} " Growth="1 " GrowthB="0">
+                <Link pin="I_C900_A0_P1_in" dir="in" link="Link13" />
+                <Link pin="O_C900_A0_P2_out" dir="out" link="Link0" />
+            </Algorithm>
+            <Algorithm name="SigmaADAU145xCondAlg21" friendlyname="Condition " cell="LED Heartbeat.ABCD 1 " location="{X=58, Y=119} " Growth="0 " GrowthB="0">
+                <Link pin="I_C829_A0_P1_in" dir="in" link="Link22" />
+                <Link pin="I_C829_A0_P2_in" dir="in" link="Link9" />
+                <Link pin="I_C829_A0_P3_in" dir="in" link="Link11" />
+                <Link pin="I_C829_A0_P4_in" dir="in" link="Link12" />
+                <Link pin="O_C829_A0_P5_out" dir="out" link="Link10" />
+            </Algorithm>
+            <Algorithm name="ICOutADAU145X1" friendlyname="Output " cell="Output.Output1 " location="{X=-27, Y=132} " Growth="1 " GrowthB="0">
+                <Link pin="I_C560_A0_P1_in" dir="in" link="Link0" />
+            </Algorithm>
+            <Algorithm name="GPOAlg3001" friendlyname="General Purpose Output " cell="LED Heartbeat.GPO1 " location="{X=216, Y=125} " Growth="0 " GrowthB="0">
+                <Link pin="I_C70_A0_P1_in" dir="in" link="Link10" />
+            </Algorithm>
+        </Schematic>
+    </IC>
+</NetList>

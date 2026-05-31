@@ -27,7 +27,11 @@ void setup() {
     heartbeatTime = millis();
 
     init_AK4619VN();
+
+    // mute during programming to prevent pop on output
+    mute_AK4619VN();
     init_ADAU1452();
+    unmute_AK4619VN();
 }
 
 void loop() {
@@ -35,6 +39,6 @@ void loop() {
         heartbeatTime = millis();
         digitalWrite(HEARTBEAT_LED, heartbeatState);
         heartbeatState = !heartbeatState;
-        init_AK4619VN();
+        // init_AK4619VN();
     }
 }

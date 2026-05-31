@@ -7,8 +7,8 @@
 #include "ADAU1452\USER_SETTINGS.h"
 
 #ifdef ADAU1452_VERIFY
-#include "ADAU1452\ADAU1452_Heartbeat_IC_1.h"
-#include "ADAU1452\ADAU1452_Heartbeat_IC_1_PARAM.h"
+#include "ADAU1452\MCL-DSP8x8Test_IC_1.h"
+#include "ADAU1452\MCL-DSP8x8Test_IC_1_PARAM.h"
 #else
 #include "ADAU1452\MCL-DSP8x8_IC_1.h"
 #include "ADAU1452\MCL-DSP8x8_IC_1_PARAM.h"

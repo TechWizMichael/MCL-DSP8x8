@@ -1,19 +1,19 @@
 ADAU145X Assembler, Analog Devices Inc.
 Version: 4.7.0,1827  (built 4/5/2022)
 
-##### Compile Started: Saturday, May 30, 2026 11:30:20 PM #####
+##### Compile Started: Sunday, May 31, 2026 12:13:43 AM #####
 ADAU145X Assembler, Analog Devices Inc.
 Version: 4.7.0,1827  (built 4/5/2022)
 
-##### Compile Started: Saturday, May 30, 2026 11:30:20 PM #####
+##### Compile Started: Sunday, May 31, 2026 12:13:43 AM #####
 ##### Compile succeeded:  0 errors, 0 warnings #####
 
 ##### Summary #####
-DM0 RAM used:       00157    (of 20480)
-DM1 RAM used:       00052    (of 20480)
+DM0 RAM used:       00126    (of 20480)
+DM1 RAM used:       00044    (of 20480)
 PM  RAM used(Data): 00000    (of 8192)
-PM  RAM used(Inst): 00366    (of 8192) 328 instructions (32bit: 290  64bit: 38)
-Total PM used:      00366    (of 8192)
+PM  RAM used(Inst): 00261    (of 8192) 244 instructions (32bit: 227  64bit: 17)
+Total PM used:      00261    (of 8192)
 
 --------------------------------------------------------------------------------------
 STREAM                        Inst      Inst      DM0     DM1     PM
@@ -22,34 +22,26 @@ Instance                      (cycles)  (size)
 STACK                          -         -        16      0       0       
 Compressor1                   43        47        69      2       0
 FRAMEWORK                     52        33        4       7       0
-Tone1                         18        18        10      1       0
-Add1                          18        18        0       1       0
 Pulse1                        17        17        4       2       0
-Mute1_8                       8         11        3       1       0
-Mute1_7                       8         11        3       1       0
-Mute1_6                       8         11        3       1       0
-Mute1_5                       8         11        3       1       0
-Mute1_4                       8         11        3       1       0
-Mute1_3                       8         11        3       1       0
-Mute1_2                       8         11        3       1       0
+Add1                          16        16        0       1       0
 Mute1                         8         11        3       1       0
-Output1                       10        10        0       0       0
 DCB1_8                        8         8         3       3       0
+DCB1_7                        8         8         3       3       0
 DCB1_6                        8         8         3       3       0
 DCB1_5                        8         8         3       3       0
 DCB1_4                        8         8         3       3       0
 DCB1_3                        8         8         3       3       0
 DCB1_2                        8         8         3       3       0
 DCB1                          8         8         3       3       0
-DCB1_7                        8         8         3       3       0
 Input1                        8         8         0       0       0
 Input2                        8         8         0       0       0
 ABCD 1                        7         7         0       1       0
 DC1                           2         2         1       1       0
 DC1_2                         2         2         1       1       0
+Output1                       2         2         0       0       0
 GPO1                          2         2         0       0       0
 --------------------------------------------------------------------------------------
-Total                         315       324       153     48      0
+Total                         231       219       122     40      0
 --------------------------------------------------------------------------------------
-(% Fs=48.0kHz)                6%        4%        1%      1%      0%
+(% Fs=48.0kHz)                4%        3%        1%      1%      0%
 

@@ -1,8 +1,8 @@
 /*
- * File:           C:\Users\loral\OneDrive\Documents\EE4893\MCL-DSP8x8\Firmware\MCL-DSP8x8\ADAU1452\MCL-DSP8x8_IC_1_REG.h
+ * File:           C:\Users\loral\OneDrive\Documents\EE4893\MCL-DSP8x8\Firmware\MCL-DSP8x8\ADAU1452\MCL-DSP8x8Test2_IC_1_REG.h
  *
- * Created:        Sunday, May 31, 2026 2:32:36 AM
- * Description:    MCL-DSP8x8:IC 1 control register definitions.
+ * Created:        Sunday, May 31, 2026 12:12:39 AM
+ * Description:    MCL-DSP8x8Test2:IC 1 control register definitions.
  *
  * This software is distributed in the hope that it will be useful,
  * but is distributed on an "AS IS" BASIS, WITHOUT WARRANTIES OR
@@ -16,8 +16,8 @@
  *
  * Copyright ©2026 Analog Devices, Inc. All rights reserved.
  */
-#ifndef __MCL_DSP8X8_IC_1_REG_H__
-#define __MCL_DSP8X8_IC_1_REG_H__
+#ifndef __MCL_DSP8X8TEST2_IC_1_REG_H__
+#define __MCL_DSP8X8TEST2_IC_1_REG_H__
 
 
 /* PLL_CTRL0  - Registers (IC 1) */
@@ -333,7 +333,7 @@
 /* SERIAL_BYTE_2_0  - Registers (IC 1) */
 #define REG_SERIAL_BYTE_2_0_IC_1_ADDR             0xF208
 #define REG_SERIAL_BYTE_2_0_IC_1_BYTE             2
-#define REG_SERIAL_BYTE_2_0_IC_1_VALUE            0x4800
+#define REG_SERIAL_BYTE_2_0_IC_1_VALUE            0x4804
 
 /* SERIAL_BYTE_2_1  - Registers (IC 1) */
 #define REG_SERIAL_BYTE_2_1_IC_1_ADDR             0xF209
@@ -343,7 +343,7 @@
 /* SERIAL_BYTE_3_0  - Registers (IC 1) */
 #define REG_SERIAL_BYTE_3_0_IC_1_ADDR             0xF20C
 #define REG_SERIAL_BYTE_3_0_IC_1_BYTE             2
-#define REG_SERIAL_BYTE_3_0_IC_1_VALUE            0x6C00
+#define REG_SERIAL_BYTE_3_0_IC_1_VALUE            0x6C04
 
 /* SERIAL_BYTE_3_1  - Registers (IC 1) */
 #define REG_SERIAL_BYTE_3_1_IC_1_ADDR             0xF20D
@@ -373,7 +373,7 @@
 /* SERIAL_BYTE_6_0  - Registers (IC 1) */
 #define REG_SERIAL_BYTE_6_0_IC_1_ADDR             0xF218
 #define REG_SERIAL_BYTE_6_0_IC_1_BYTE             2
-#define REG_SERIAL_BYTE_6_0_IC_1_VALUE            0x9000
+#define REG_SERIAL_BYTE_6_0_IC_1_VALUE            0x9001
 
 /* SERIAL_BYTE_6_1  - Registers (IC 1) */
 #define REG_SERIAL_BYTE_6_1_IC_1_ADDR             0xF219
@@ -383,7 +383,7 @@
 /* SERIAL_BYTE_7_0  - Registers (IC 1) */
 #define REG_SERIAL_BYTE_7_0_IC_1_ADDR             0xF21C
 #define REG_SERIAL_BYTE_7_0_IC_1_BYTE             2
-#define REG_SERIAL_BYTE_7_0_IC_1_VALUE            0x9000
+#define REG_SERIAL_BYTE_7_0_IC_1_VALUE            0x9001
 
 /* SERIAL_BYTE_7_1  - Registers (IC 1) */
 #define REG_SERIAL_BYTE_7_1_IC_1_ADDR             0xF21D
@@ -1278,7 +1278,7 @@
 /* MP11_MODE  - Registers (IC 1) */
 #define REG_MP11_MODE_IC_1_ADDR                   0xF51B
 #define REG_MP11_MODE_IC_1_BYTE                   2
-#define REG_MP11_MODE_IC_1_VALUE                  0x0
+#define REG_MP11_MODE_IC_1_VALUE                  0x100
 
 /* MP12_MODE  - Registers (IC 1) */
 #define REG_MP12_MODE_IC_1_ADDR                   0xF51C
@@ -3242,7 +3242,7 @@
 #define R61_SERIAL_BYTE_1_1_TRISTATE_IC_1_SHIFT   5
 
 /* SERIAL_BYTE_2_0 (IC 1) */
-#define R62_SERIAL_BYTE_2_0_TDM_MODE_IC_1         0x0    /* 000b	[2:0] */
+#define R62_SERIAL_BYTE_2_0_TDM_MODE_IC_1         0x4    /* 100b	[2:0] */
 #define R62_SERIAL_BYTE_2_0_DATA_FMT_IC_1         0x0    /* 00b	[4:3] */
 #define R62_SERIAL_BYTE_2_0_WORD_LEN_IC_1         0x0    /* 00b	[6:5] */
 #define R62_SERIAL_BYTE_2_0_BCLK_POL_IC_1         0x0    /* 0b	[7] */
@@ -3279,7 +3279,7 @@
 #define R63_SERIAL_BYTE_2_1_TRISTATE_IC_1_SHIFT   5
 
 /* SERIAL_BYTE_3_0 (IC 1) */
-#define R64_SERIAL_BYTE_3_0_TDM_MODE_IC_1         0x0    /* 000b	[2:0] */
+#define R64_SERIAL_BYTE_3_0_TDM_MODE_IC_1         0x4    /* 100b	[2:0] */
 #define R64_SERIAL_BYTE_3_0_DATA_FMT_IC_1         0x0    /* 00b	[4:3] */
 #define R64_SERIAL_BYTE_3_0_WORD_LEN_IC_1         0x0    /* 00b	[6:5] */
 #define R64_SERIAL_BYTE_3_0_BCLK_POL_IC_1         0x0    /* 0b	[7] */
@@ -3390,7 +3390,7 @@
 #define R69_SERIAL_BYTE_5_1_TRISTATE_IC_1_SHIFT   5
 
 /* SERIAL_BYTE_6_0 (IC 1) */
-#define R70_SERIAL_BYTE_6_0_TDM_MODE_IC_1         0x0    /* 000b	[2:0] */
+#define R70_SERIAL_BYTE_6_0_TDM_MODE_IC_1         0x1    /* 001b	[2:0] */
 #define R70_SERIAL_BYTE_6_0_DATA_FMT_IC_1         0x0    /* 00b	[4:3] */
 #define R70_SERIAL_BYTE_6_0_WORD_LEN_IC_1         0x0    /* 00b	[6:5] */
 #define R70_SERIAL_BYTE_6_0_BCLK_POL_IC_1         0x0    /* 0b	[7] */
@@ -3427,7 +3427,7 @@
 #define R71_SERIAL_BYTE_6_1_TRISTATE_IC_1_SHIFT   5
 
 /* SERIAL_BYTE_7_0 (IC 1) */
-#define R72_SERIAL_BYTE_7_0_TDM_MODE_IC_1         0x0    /* 000b	[2:0] */
+#define R72_SERIAL_BYTE_7_0_TDM_MODE_IC_1         0x1    /* 001b	[2:0] */
 #define R72_SERIAL_BYTE_7_0_DATA_FMT_IC_1         0x0    /* 00b	[4:3] */
 #define R72_SERIAL_BYTE_7_0_WORD_LEN_IC_1         0x0    /* 00b	[6:5] */
 #define R72_SERIAL_BYTE_7_0_BCLK_POL_IC_1         0x0    /* 0b	[7] */
@@ -6065,7 +6065,7 @@
 #define R251_MP11_MODE_MP_ENABLE_IC_1             0x0    /* 0b	[0] */
 #define R251_MP11_MODE_MP_MODE_IC_1               0x0    /* 000b	[3:1] */
 #define R251_MP11_MODE_DEBOUNCE_VALUE_IC_1        0x0    /* 0000b	[7:4] */
-#define R251_MP11_MODE_SS_SELECT_IC_1             0x0    /* 000b	[10:8] */
+#define R251_MP11_MODE_SS_SELECT_IC_1             0x1    /* 001b	[10:8] */
 #define R251_MP11_MODE_MP_ENABLE_IC_1_MASK        0x1
 #define R251_MP11_MODE_MP_ENABLE_IC_1_SHIFT       0
 #define R251_MP11_MODE_MP_MODE_IC_1_MASK          0xE

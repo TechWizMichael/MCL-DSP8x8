@@ -70,6 +70,32 @@ uint8_t read_AK4619VN(uint8_t device_address, byte register_address, uint8_t * r
     return transmission_result;
 }
 
+// unmute ADC output of the AK4619VN
+void unmute_AK4619VN() {
+    byte temp_data = 0x00;
+
+    byte temp_address = DACMUTFLT;
+    read_AK4619VN(AK4619VN_1_ADDRESS, temp_address, &temp_data);
+    temp_data = temp_data & 0xCF;
+    write_AK4619VN(AK4619VN_1_ADDRESS, temp_address, temp_data);
+    read_AK4619VN(AK4619VN_2_ADDRESS, temp_address, &temp_data);
+    temp_data = temp_data & 0xCF;
+    write_AK4619VN(AK4619VN_2_ADDRESS, temp_address, temp_data);
+}
+
+// mute the AK4619VN ADC output
+void mute_AK4619VN() {
+    byte temp_data = 0x00;
+
+    byte temp_address = DACMUTFLT;
+    read_AK4619VN(AK4619VN_1_ADDRESS, temp_address, &temp_data);
+    temp_data = temp_data | 0x30;
+    write_AK4619VN(AK4619VN_1_ADDRESS, temp_address, temp_data);
+    read_AK4619VN(AK4619VN_2_ADDRESS, temp_address, &temp_data);
+    temp_data = temp_data | 0x30;
+    write_AK4619VN(AK4619VN_2_ADDRESS, temp_address, temp_data);
+}
+
 // Initialize AK4619VN over I2C
 // NOTE: many settings maintain their default values, but having them here already makes changes easier
 void init_AK4619VN() {
@@ -98,17 +124,19 @@ void init_AK4619VN() {
     write_AK4619VN(AK4619VN_1_ADDRESS, temp_address, temp_data);
     write_AK4619VN(AK4619VN_2_ADDRESS, temp_address, temp_data);
 
+    mute_AK4619VN();
+
     // Audio Format Registers
     // TDM128 with four channels, 32-bit slot length, 24-bit data in and out, negative polatity on BICK, slow SDOUT.
     // Note: MSB first, left justified, delayed by 1 BICK period.
 
     temp_address = AUDFORM1; // {TDM, DCF[2], DCF[1], DCF[0], DSL[1], DSL[0], BCKP, SDOPH}
-    temp_data = 0x8C; // TDM, I2S Compatible, 32 bit slot, falling edge of BICK, SDOUT slow mode
+    temp_data = 0xAC; // TDM, I2S Compatible, 32 bit slot, falling edge of BICK, SDOUT slow mode
     write_AK4619VN(AK4619VN_1_ADDRESS, temp_address, temp_data);
     write_AK4619VN(AK4619VN_2_ADDRESS, temp_address, temp_data);
 
     temp_address = AUDFORM2; // {0, 0, 0, SLOT, DIDL[1], DIDL[0], DODL[1], DODL[0]}
-    temp_data = 0x00; // Data start on LRCLK edge, 24 bit date in, 24-bit data out
+    temp_data = 0x10; // Data start on LRCLK edge, 24 bit date in, 24-bit data out
     write_AK4619VN(AK4619VN_1_ADDRESS, temp_address, temp_data);
     write_AK4619VN(AK4619VN_2_ADDRESS, temp_address, temp_data);
 
@@ -178,7 +206,7 @@ void init_AK4619VN() {
     // Set ADC input mode
 
     temp_address = ADCAIN; // {ADC1LSEL[1], ADC1LSEL[0], ADC1RSEL[1], ADC1RSEL[0], ADC2LSEL[1], ADC2LSEL[0], ADC2RSEL[1], ADC2RSEL[0]}
-    temp_data = 0x00; // differential on all ADC inputs
+    temp_data = 0x55; // differential on all ADC inputs
     write_AK4619VN(AK4619VN_1_ADDRESS, temp_address, temp_data);
     write_AK4619VN(AK4619VN_2_ADDRESS, temp_address, temp_data);
 
@@ -214,7 +242,9 @@ void init_AK4619VN() {
     // Set DAC input source
 
     temp_address = DACDIN; // {0, 0, 0, 0,  DAC2SEL[1], DAC2SEL[0], DAC1SEL[1], DAC1SEL[0]}
-    temp_data = 0x05; // SDIN1 on both outputs
+    // temp_data = 0x05; // SDIN2 on both outputs
+    // temp_data = 0x00; // SDIN1 on both outputs
+    temp_data = 0x04; // SDIN1 for ADC1, SDIN2 for ADC2
     write_AK4619VN(AK4619VN_1_ADDRESS, temp_address, temp_data);
     write_AK4619VN(AK4619VN_2_ADDRESS, temp_address, temp_data);
 
@@ -242,6 +272,8 @@ void init_AK4619VN() {
     read_AK4619VN(AK4619VN_2_ADDRESS, temp_address, &temp_data);
     temp_data = temp_data | 0x01;
     write_AK4619VN(AK4619VN_2_ADDRESS, temp_address, temp_data);
+
+    unmute_AK4619VN();
 
     return;
 }
