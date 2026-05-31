@@ -59,7 +59,7 @@
     "ssh_key": ""
   },
   "meta": {
-    "filename": "DIYDSPv0.4.kicad_prl",
+    "filename": "DIYDSPv0.8.kicad_prl",
     "version": 5
   },
   "net_inspector_panel": {
@@ -92,18 +92,18 @@
       11
     ],
     "col_widths": [
-      222,
-      207,
-      136,
-      92,
-      136,
-      136,
-      136,
-      98,
-      136,
-      136,
-      136,
-      136
+      148,
+      138,
+      91,
+      61,
+      91,
+      91,
+      91,
+      65,
+      91,
+      91,
+      91,
+      91
     ],
     "custom_group_rules": [],
     "expanded_rows": [],
