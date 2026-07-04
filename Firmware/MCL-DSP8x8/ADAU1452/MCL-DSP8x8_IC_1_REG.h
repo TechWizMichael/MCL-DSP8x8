@@ -1,7 +1,7 @@
 /*
  * File:           C:\Users\loral\OneDrive\Documents\EE4893\MCL-DSP8x8\Firmware\MCL-DSP8x8\ADAU1452\MCL-DSP8x8_IC_1_REG.h
  *
- * Created:        Sunday, May 31, 2026 2:32:36 AM
+ * Created:        Tuesday, June 30, 2026 11:35:17 PM
  * Description:    MCL-DSP8x8:IC 1 control register definitions.
  *
  * This software is distributed in the hope that it will be useful,

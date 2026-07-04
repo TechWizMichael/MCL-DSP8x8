@@ -1,94 +1,4 @@
-Cell Name         = Output.Mute1
-Parameter Name    = MuteHWSlewAlgADAU145X1mute
-Parameter Address = 112
-Parameter Value   = 1
-Parameter Data :
-0x01, 0x00, 0x00, 0x00, 
-
-
-
-Cell Name         = Output.Mute1
-Parameter Name    = MuteHWSlewAlgADAU145X1slew_mode
-Parameter Address = 111
-Parameter Value   = 8330
-Parameter Data :
-0x00, 0x00, 0x20, 0x8A, 
-
-
-
-Cell Name         = Input.DCB1
-Parameter Name    = DCBlockAlgDblPrecS3001pole
-Parameter Address = 26
-Parameter Value   = 0.999899983406067
-Parameter Data :
-0x00, 0xFF, 0xF9, 0x72, 
-
-
-
-Cell Name         = Input.DCB1_2
-Parameter Name    = DCBlockAlgDblPrecS3002pole
-Parameter Address = 29
-Parameter Value   = 0.999899983406067
-Parameter Data :
-0x00, 0xFF, 0xF9, 0x72, 
-
-
-
-Cell Name         = Input.DCB1_3
-Parameter Name    = DCBlockAlgDblPrecS3003pole
-Parameter Address = 32
-Parameter Value   = 0.999899983406067
-Parameter Data :
-0x00, 0xFF, 0xF9, 0x72, 
-
-
-
-Cell Name         = Input.DCB1_4
-Parameter Name    = DCBlockAlgDblPrecS3004pole
-Parameter Address = 35
-Parameter Value   = 0.999899983406067
-Parameter Data :
-0x00, 0xFF, 0xF9, 0x72, 
-
-
-
-Cell Name         = Input.DCB1_5
-Parameter Name    = DCBlockAlgDblPrecS3005pole
-Parameter Address = 38
-Parameter Value   = 0.999899983406067
-Parameter Data :
-0x00, 0xFF, 0xF9, 0x72, 
-
-
-
-Cell Name         = Input.DCB1_6
-Parameter Name    = DCBlockAlgDblPrecS3006pole
-Parameter Address = 41
-Parameter Value   = 0.999899983406067
-Parameter Data :
-0x00, 0xFF, 0xF9, 0x72, 
-
-
-
-Cell Name         = Input.DCB1_7
-Parameter Name    = DCBlockAlgDblPrecS3007pole
-Parameter Address = 44
-Parameter Value   = 0.999899983406067
-Parameter Data :
-0x00, 0xFF, 0xF9, 0x72, 
-
-
-
-Cell Name         = Input.DCB1_8
-Parameter Name    = DCBlockAlgDblPrecS3008pole
-Parameter Address = 47
-Parameter Value   = 0.999899983406067
-Parameter Data :
-0x00, 0xFF, 0xF9, 0x72, 
-
-
-
-Cell Name         = LED Heartbeat.Pulse1
+Cell Name         = LED_Heartbeat.Heartbeat_Pulse
 Parameter Name    = PulseS300Alg1isRounded
 Parameter Address = 20
 Parameter Value   = 0
@@ -97,7 +7,7 @@ Parameter Data :
 
 
 
-Cell Name         = LED Heartbeat.Pulse1
+Cell Name         = LED_Heartbeat.Heartbeat_Pulse
 Parameter Name    = PulseS300Alg1freq_step
 Parameter Address = 21
 Parameter Value   = 4.1663646697998E-05
@@ -106,7 +16,7 @@ Parameter Data :
 
 
 
-Cell Name         = LED Heartbeat.Pulse1
+Cell Name         = LED_Heartbeat.Heartbeat_Pulse
 Parameter Name    = PulseS300Alg1freq_th
 Parameter Address = 23
 Parameter Value   = 0.5
@@ -115,7 +25,7 @@ Parameter Data :
 
 
 
-Cell Name         = LED Heartbeat.Pulse1
+Cell Name         = LED_Heartbeat.Heartbeat_Pulse
 Parameter Name    = PulseS300Alg1ison
 Parameter Address = 22
 Parameter Value   = 1
@@ -124,95 +34,809 @@ Parameter Data :
 
 
 
-Cell Name         = LED Heartbeat.DC1_2
+Cell Name         = LED_Heartbeat.Heartbeat_DC
 Parameter Name    = DCInpAlg145X1value
-Parameter Address = 113
+Parameter Address = 153
+Parameter Value   = 0
+Parameter Data :
+0x00, 0x00, 0x00, 0x00, 
+
+
+
+Cell Name         = LED_Heartbeat.Heartbeat_Switch
+Parameter Name    = monomuxSigma300ns1index
+Parameter Address = 155
+Parameter Value   = 0
+Parameter Data :
+0x00, 0x00, 0x00, 0x00, 
+
+
+
+Cell Name         = Mixer
+Parameter Name    = AudioSignalRouter34S300Alg1alpha
+Parameter Address = 148
+Parameter Data :
+0x00, 0xFF, 0xEF, 0x56, 
+0x00, 0x00, 0x10, 0xAA, 
+
+
+
+Cell Name         = Mixer
+Parameter Name    = AudioSignalRouter34S300Alg1InputGain_0
+Parameter Address = 50
+Parameter Value   = 1.77827942371368
+Parameter Data :
+0x01 ,	0xC7 ,	0x3D ,	0x52 ,	
+
+
+
+Cell Name         = Mixer
+Parameter Name    = AudioSignalRouter34S300Alg1InputGain_1
+Parameter Address = 51
+Parameter Value   = 1.77827942371368
+Parameter Data :
+0x01 ,	0xC7 ,	0x3D ,	0x52 ,	
+
+
+
+Cell Name         = Mixer
+Parameter Name    = AudioSignalRouter34S300Alg1InputGain_2
+Parameter Address = 52
+Parameter Value   = 1.77827942371368
+Parameter Data :
+0x01 ,	0xC7 ,	0x3D ,	0x52 ,	
+
+
+
+Cell Name         = Mixer
+Parameter Name    = AudioSignalRouter34S300Alg1InputGain_3
+Parameter Address = 53
+Parameter Value   = 1.77827942371368
+Parameter Data :
+0x01 ,	0xC7 ,	0x3D ,	0x52 ,	
+
+
+
+Cell Name         = Mixer
+Parameter Name    = AudioSignalRouter34S300Alg1InputGain_4
+Parameter Address = 54
+Parameter Value   = 1.77827942371368
+Parameter Data :
+0x01 ,	0xC7 ,	0x3D ,	0x52 ,	
+
+
+
+Cell Name         = Mixer
+Parameter Name    = AudioSignalRouter34S300Alg1InputGain_5
+Parameter Address = 55
+Parameter Value   = 1.77827942371368
+Parameter Data :
+0x01 ,	0xC7 ,	0x3D ,	0x52 ,	
+
+
+
+Cell Name         = Mixer
+Parameter Name    = AudioSignalRouter34S300Alg1InputGain_6
+Parameter Address = 56
+Parameter Value   = 1.77827942371368
+Parameter Data :
+0x01 ,	0xC7 ,	0x3D ,	0x52 ,	
+
+
+
+Cell Name         = Mixer
+Parameter Name    = AudioSignalRouter34S300Alg1InputGain_7
+Parameter Address = 57
+Parameter Value   = 1.77827942371368
+Parameter Data :
+0x01 ,	0xC7 ,	0x3D ,	0x52 ,	
+
+
+
+Cell Name         = Mixer
+Parameter Name    = AudioSignalRouter34S300Alg1InputGain_8
+Parameter Address = 58
 Parameter Value   = 1
 Parameter Data :
-0x01, 0x00, 0x00, 0x00, 
+0x01 ,	0x00 ,	0x00 ,	0x00 ,	
 
 
 
-Cell Name         = LED Heartbeat.DC1
-Parameter Name    = DCInpAlg145X2value
+Cell Name         = Mixer
+Parameter Name    = AudioSignalRouter34S300Alg1InputGain_9
+Parameter Address = 59
+Parameter Value   = 1
+Parameter Data :
+0x01 ,	0x00 ,	0x00 ,	0x00 ,	
+
+
+
+Cell Name         = Mixer
+Parameter Name    = AudioSignalRouter34S300Alg1OutputGain_0
+Parameter Address = 60
+Parameter Value   = 1
+Parameter Data :
+0x01 ,	0x00 ,	0x00 ,	0x00 ,	
+
+
+
+Cell Name         = Mixer
+Parameter Name    = AudioSignalRouter34S300Alg1OutputGain_1
+Parameter Address = 61
+Parameter Value   = 1
+Parameter Data :
+0x01 ,	0x00 ,	0x00 ,	0x00 ,	
+
+
+
+Cell Name         = Mixer
+Parameter Name    = AudioSignalRouter34S300Alg1OutputGain_2
+Parameter Address = 62
+Parameter Value   = 1
+Parameter Data :
+0x01 ,	0x00 ,	0x00 ,	0x00 ,	
+
+
+
+Cell Name         = Mixer
+Parameter Name    = AudioSignalRouter34S300Alg1OutputGain_3
+Parameter Address = 63
+Parameter Value   = 1
+Parameter Data :
+0x01 ,	0x00 ,	0x00 ,	0x00 ,	
+
+
+
+Cell Name         = Mixer
+Parameter Name    = AudioSignalRouter34S300Alg1OutputGain_4
+Parameter Address = 64
+Parameter Value   = 1
+Parameter Data :
+0x01 ,	0x00 ,	0x00 ,	0x00 ,	
+
+
+
+Cell Name         = Mixer
+Parameter Name    = AudioSignalRouter34S300Alg1OutputGain_5
+Parameter Address = 65
+Parameter Value   = 1
+Parameter Data :
+0x01 ,	0x00 ,	0x00 ,	0x00 ,	
+
+
+
+Cell Name         = Mixer
+Parameter Name    = AudioSignalRouter34S300Alg1OutputGain_6
+Parameter Address = 66
+Parameter Value   = 1
+Parameter Data :
+0x01 ,	0x00 ,	0x00 ,	0x00 ,	
+
+
+
+Cell Name         = Mixer
+Parameter Name    = AudioSignalRouter34S300Alg1OutputGain_7
+Parameter Address = 67
+Parameter Value   = 1
+Parameter Data :
+0x01 ,	0x00 ,	0x00 ,	0x00 ,	
+
+
+
+Cell Name         = Mixer
+Parameter Name    = AudioSignalRouter34S300Alg1CrossGain_0_0
+Parameter Address = 68
+Parameter Value   = 1
+Parameter Data :
+0x01 ,	0x00 ,	0x00 ,	0x00 ,	
+
+
+
+Cell Name         = Mixer
+Parameter Name    = AudioSignalRouter34S300Alg1CrossGain_1_0
+Parameter Address = 78
+Parameter Value   = 1
+Parameter Data :
+0x01 ,	0x00 ,	0x00 ,	0x00 ,	
+
+
+
+Cell Name         = Mixer
+Parameter Name    = AudioSignalRouter34S300Alg1CrossGain_2_0
+Parameter Address = 88
+Parameter Value   = 0
+Parameter Data :
+0x00 ,	0x00 ,	0x00 ,	0x00 ,	
+
+
+
+Cell Name         = Mixer
+Parameter Name    = AudioSignalRouter34S300Alg1CrossGain_3_0
+Parameter Address = 98
+Parameter Value   = 0
+Parameter Data :
+0x00 ,	0x00 ,	0x00 ,	0x00 ,	
+
+
+
+Cell Name         = Mixer
+Parameter Name    = AudioSignalRouter34S300Alg1CrossGain_4_0
+Parameter Address = 108
+Parameter Value   = 0
+Parameter Data :
+0x00 ,	0x00 ,	0x00 ,	0x00 ,	
+
+
+
+Cell Name         = Mixer
+Parameter Name    = AudioSignalRouter34S300Alg1CrossGain_5_0
+Parameter Address = 118
+Parameter Value   = 0
+Parameter Data :
+0x00 ,	0x00 ,	0x00 ,	0x00 ,	
+
+
+
+Cell Name         = Mixer
+Parameter Name    = AudioSignalRouter34S300Alg1CrossGain_6_0
+Parameter Address = 128
+Parameter Value   = 1
+Parameter Data :
+0x01 ,	0x00 ,	0x00 ,	0x00 ,	
+
+
+
+Cell Name         = Mixer
+Parameter Name    = AudioSignalRouter34S300Alg1CrossGain_7_0
+Parameter Address = 138
+Parameter Value   = 0
+Parameter Data :
+0x00 ,	0x00 ,	0x00 ,	0x00 ,	
+
+
+
+Cell Name         = Mixer
+Parameter Name    = AudioSignalRouter34S300Alg1CrossGain_0_1
+Parameter Address = 69
+Parameter Value   = 0
+Parameter Data :
+0x00 ,	0x00 ,	0x00 ,	0x00 ,	
+
+
+
+Cell Name         = Mixer
+Parameter Name    = AudioSignalRouter34S300Alg1CrossGain_1_1
+Parameter Address = 79
+Parameter Value   = 0
+Parameter Data :
+0x00 ,	0x00 ,	0x00 ,	0x00 ,	
+
+
+
+Cell Name         = Mixer
+Parameter Name    = AudioSignalRouter34S300Alg1CrossGain_2_1
+Parameter Address = 89
+Parameter Value   = 1
+Parameter Data :
+0x01 ,	0x00 ,	0x00 ,	0x00 ,	
+
+
+
+Cell Name         = Mixer
+Parameter Name    = AudioSignalRouter34S300Alg1CrossGain_3_1
+Parameter Address = 99
+Parameter Value   = 1
+Parameter Data :
+0x01 ,	0x00 ,	0x00 ,	0x00 ,	
+
+
+
+Cell Name         = Mixer
+Parameter Name    = AudioSignalRouter34S300Alg1CrossGain_4_1
+Parameter Address = 109
+Parameter Value   = 0
+Parameter Data :
+0x00 ,	0x00 ,	0x00 ,	0x00 ,	
+
+
+
+Cell Name         = Mixer
+Parameter Name    = AudioSignalRouter34S300Alg1CrossGain_5_1
+Parameter Address = 119
+Parameter Value   = 0
+Parameter Data :
+0x00 ,	0x00 ,	0x00 ,	0x00 ,	
+
+
+
+Cell Name         = Mixer
+Parameter Name    = AudioSignalRouter34S300Alg1CrossGain_6_1
+Parameter Address = 129
+Parameter Value   = 1
+Parameter Data :
+0x01 ,	0x00 ,	0x00 ,	0x00 ,	
+
+
+
+Cell Name         = Mixer
+Parameter Name    = AudioSignalRouter34S300Alg1CrossGain_7_1
+Parameter Address = 139
+Parameter Value   = 0
+Parameter Data :
+0x00 ,	0x00 ,	0x00 ,	0x00 ,	
+
+
+
+Cell Name         = Mixer
+Parameter Name    = AudioSignalRouter34S300Alg1CrossGain_0_2
+Parameter Address = 70
+Parameter Value   = 1
+Parameter Data :
+0x01 ,	0x00 ,	0x00 ,	0x00 ,	
+
+
+
+Cell Name         = Mixer
+Parameter Name    = AudioSignalRouter34S300Alg1CrossGain_1_2
+Parameter Address = 80
+Parameter Value   = 1
+Parameter Data :
+0x01 ,	0x00 ,	0x00 ,	0x00 ,	
+
+
+
+Cell Name         = Mixer
+Parameter Name    = AudioSignalRouter34S300Alg1CrossGain_2_2
+Parameter Address = 90
+Parameter Value   = 1
+Parameter Data :
+0x01 ,	0x00 ,	0x00 ,	0x00 ,	
+
+
+
+Cell Name         = Mixer
+Parameter Name    = AudioSignalRouter34S300Alg1CrossGain_3_2
+Parameter Address = 100
+Parameter Value   = 1
+Parameter Data :
+0x01 ,	0x00 ,	0x00 ,	0x00 ,	
+
+
+
+Cell Name         = Mixer
+Parameter Name    = AudioSignalRouter34S300Alg1CrossGain_4_2
+Parameter Address = 110
+Parameter Value   = 0
+Parameter Data :
+0x00 ,	0x00 ,	0x00 ,	0x00 ,	
+
+
+
+Cell Name         = Mixer
+Parameter Name    = AudioSignalRouter34S300Alg1CrossGain_5_2
+Parameter Address = 120
+Parameter Value   = 0
+Parameter Data :
+0x00 ,	0x00 ,	0x00 ,	0x00 ,	
+
+
+
+Cell Name         = Mixer
+Parameter Name    = AudioSignalRouter34S300Alg1CrossGain_6_2
+Parameter Address = 130
+Parameter Value   = 1
+Parameter Data :
+0x01 ,	0x00 ,	0x00 ,	0x00 ,	
+
+
+
+Cell Name         = Mixer
+Parameter Name    = AudioSignalRouter34S300Alg1CrossGain_7_2
+Parameter Address = 140
+Parameter Value   = 0
+Parameter Data :
+0x00 ,	0x00 ,	0x00 ,	0x00 ,	
+
+
+
+Cell Name         = Mixer
+Parameter Name    = AudioSignalRouter34S300Alg1CrossGain_0_3
+Parameter Address = 71
+Parameter Value   = 0
+Parameter Data :
+0x00 ,	0x00 ,	0x00 ,	0x00 ,	
+
+
+
+Cell Name         = Mixer
+Parameter Name    = AudioSignalRouter34S300Alg1CrossGain_1_3
+Parameter Address = 81
+Parameter Value   = 0
+Parameter Data :
+0x00 ,	0x00 ,	0x00 ,	0x00 ,	
+
+
+
+Cell Name         = Mixer
+Parameter Name    = AudioSignalRouter34S300Alg1CrossGain_2_3
+Parameter Address = 91
+Parameter Value   = 0
+Parameter Data :
+0x00 ,	0x00 ,	0x00 ,	0x00 ,	
+
+
+
+Cell Name         = Mixer
+Parameter Name    = AudioSignalRouter34S300Alg1CrossGain_3_3
+Parameter Address = 101
+Parameter Value   = 0
+Parameter Data :
+0x00 ,	0x00 ,	0x00 ,	0x00 ,	
+
+
+
+Cell Name         = Mixer
+Parameter Name    = AudioSignalRouter34S300Alg1CrossGain_4_3
+Parameter Address = 111
+Parameter Value   = 0
+Parameter Data :
+0x00 ,	0x00 ,	0x00 ,	0x00 ,	
+
+
+
+Cell Name         = Mixer
+Parameter Name    = AudioSignalRouter34S300Alg1CrossGain_5_3
+Parameter Address = 121
+Parameter Value   = 0
+Parameter Data :
+0x00 ,	0x00 ,	0x00 ,	0x00 ,	
+
+
+
+Cell Name         = Mixer
+Parameter Name    = AudioSignalRouter34S300Alg1CrossGain_6_3
+Parameter Address = 131
+Parameter Value   = 1
+Parameter Data :
+0x01 ,	0x00 ,	0x00 ,	0x00 ,	
+
+
+
+Cell Name         = Mixer
+Parameter Name    = AudioSignalRouter34S300Alg1CrossGain_7_3
+Parameter Address = 141
+Parameter Value   = 0
+Parameter Data :
+0x00 ,	0x00 ,	0x00 ,	0x00 ,	
+
+
+
+Cell Name         = Mixer
+Parameter Name    = AudioSignalRouter34S300Alg1CrossGain_0_4
+Parameter Address = 72
+Parameter Value   = 0
+Parameter Data :
+0x00 ,	0x00 ,	0x00 ,	0x00 ,	
+
+
+
+Cell Name         = Mixer
+Parameter Name    = AudioSignalRouter34S300Alg1CrossGain_1_4
+Parameter Address = 82
+Parameter Value   = 0
+Parameter Data :
+0x00 ,	0x00 ,	0x00 ,	0x00 ,	
+
+
+
+Cell Name         = Mixer
+Parameter Name    = AudioSignalRouter34S300Alg1CrossGain_2_4
+Parameter Address = 92
+Parameter Value   = 0
+Parameter Data :
+0x00 ,	0x00 ,	0x00 ,	0x00 ,	
+
+
+
+Cell Name         = Mixer
+Parameter Name    = AudioSignalRouter34S300Alg1CrossGain_3_4
+Parameter Address = 102
+Parameter Value   = 0
+Parameter Data :
+0x00 ,	0x00 ,	0x00 ,	0x00 ,	
+
+
+
+Cell Name         = Mixer
+Parameter Name    = AudioSignalRouter34S300Alg1CrossGain_4_4
+Parameter Address = 112
+Parameter Value   = 0
+Parameter Data :
+0x00 ,	0x00 ,	0x00 ,	0x00 ,	
+
+
+
+Cell Name         = Mixer
+Parameter Name    = AudioSignalRouter34S300Alg1CrossGain_5_4
+Parameter Address = 122
+Parameter Value   = 0
+Parameter Data :
+0x00 ,	0x00 ,	0x00 ,	0x00 ,	
+
+
+
+Cell Name         = Mixer
+Parameter Name    = AudioSignalRouter34S300Alg1CrossGain_6_4
+Parameter Address = 132
+Parameter Value   = 0
+Parameter Data :
+0x00 ,	0x00 ,	0x00 ,	0x00 ,	
+
+
+
+Cell Name         = Mixer
+Parameter Name    = AudioSignalRouter34S300Alg1CrossGain_7_4
+Parameter Address = 142
+Parameter Value   = 0
+Parameter Data :
+0x00 ,	0x00 ,	0x00 ,	0x00 ,	
+
+
+
+Cell Name         = Mixer
+Parameter Name    = AudioSignalRouter34S300Alg1CrossGain_0_5
+Parameter Address = 73
+Parameter Value   = 0
+Parameter Data :
+0x00 ,	0x00 ,	0x00 ,	0x00 ,	
+
+
+
+Cell Name         = Mixer
+Parameter Name    = AudioSignalRouter34S300Alg1CrossGain_1_5
+Parameter Address = 83
+Parameter Value   = 0
+Parameter Data :
+0x00 ,	0x00 ,	0x00 ,	0x00 ,	
+
+
+
+Cell Name         = Mixer
+Parameter Name    = AudioSignalRouter34S300Alg1CrossGain_2_5
+Parameter Address = 93
+Parameter Value   = 0
+Parameter Data :
+0x00 ,	0x00 ,	0x00 ,	0x00 ,	
+
+
+
+Cell Name         = Mixer
+Parameter Name    = AudioSignalRouter34S300Alg1CrossGain_3_5
+Parameter Address = 103
+Parameter Value   = 0
+Parameter Data :
+0x00 ,	0x00 ,	0x00 ,	0x00 ,	
+
+
+
+Cell Name         = Mixer
+Parameter Name    = AudioSignalRouter34S300Alg1CrossGain_4_5
+Parameter Address = 113
+Parameter Value   = 0
+Parameter Data :
+0x00 ,	0x00 ,	0x00 ,	0x00 ,	
+
+
+
+Cell Name         = Mixer
+Parameter Name    = AudioSignalRouter34S300Alg1CrossGain_5_5
+Parameter Address = 123
+Parameter Value   = 0
+Parameter Data :
+0x00 ,	0x00 ,	0x00 ,	0x00 ,	
+
+
+
+Cell Name         = Mixer
+Parameter Name    = AudioSignalRouter34S300Alg1CrossGain_6_5
+Parameter Address = 133
+Parameter Value   = 0
+Parameter Data :
+0x00 ,	0x00 ,	0x00 ,	0x00 ,	
+
+
+
+Cell Name         = Mixer
+Parameter Name    = AudioSignalRouter34S300Alg1CrossGain_7_5
+Parameter Address = 143
+Parameter Value   = 0
+Parameter Data :
+0x00 ,	0x00 ,	0x00 ,	0x00 ,	
+
+
+
+Cell Name         = Mixer
+Parameter Name    = AudioSignalRouter34S300Alg1CrossGain_0_6
+Parameter Address = 74
+Parameter Value   = 0
+Parameter Data :
+0x00 ,	0x00 ,	0x00 ,	0x00 ,	
+
+
+
+Cell Name         = Mixer
+Parameter Name    = AudioSignalRouter34S300Alg1CrossGain_1_6
+Parameter Address = 84
+Parameter Value   = 0
+Parameter Data :
+0x00 ,	0x00 ,	0x00 ,	0x00 ,	
+
+
+
+Cell Name         = Mixer
+Parameter Name    = AudioSignalRouter34S300Alg1CrossGain_2_6
+Parameter Address = 94
+Parameter Value   = 0
+Parameter Data :
+0x00 ,	0x00 ,	0x00 ,	0x00 ,	
+
+
+
+Cell Name         = Mixer
+Parameter Name    = AudioSignalRouter34S300Alg1CrossGain_3_6
+Parameter Address = 104
+Parameter Value   = 0
+Parameter Data :
+0x00 ,	0x00 ,	0x00 ,	0x00 ,	
+
+
+
+Cell Name         = Mixer
+Parameter Name    = AudioSignalRouter34S300Alg1CrossGain_4_6
 Parameter Address = 114
-Parameter Value   = 0.5
+Parameter Value   = 0
 Parameter Data :
-0x00, 0x80, 0x00, 0x00, 
+0x00 ,	0x00 ,	0x00 ,	0x00 ,	
 
 
 
-Cell Name         = Compressor1
-Parameter Name    = MultiChanPeakExtNoPostGainS300_FullRangeExpGain1points
-Parameter Address = 48
+Cell Name         = Mixer
+Parameter Name    = AudioSignalRouter34S300Alg1CrossGain_5_6
+Parameter Address = 124
+Parameter Value   = 0
 Parameter Data :
-0x01, 0x00, 0x00, 0x00, 
-0x01, 0x00, 0x00, 0x00, 
-0x01, 0x00, 0x00, 0x00, 
-0x01, 0x00, 0x00, 0x00, 
-0x01, 0x00, 0x00, 0x00, 
-0x01, 0x00, 0x00, 0x00, 
-0x01, 0x00, 0x00, 0x00, 
-0x01, 0x00, 0x00, 0x00, 
-0x01, 0x00, 0x00, 0x00, 
-0x01, 0x00, 0x00, 0x00, 
-0x01, 0x00, 0x00, 0x00, 
-0x01, 0x00, 0x00, 0x00, 
-0x00, 0xFF, 0xE6, 0xC3, 
-0x00, 0xFB, 0x99, 0xA7, 
-0x00, 0xF7, 0x46, 0xAA, 
-0x00, 0xF3, 0x06, 0xB3, 
-0x00, 0xEE, 0xD9, 0x6F, 
-0x00, 0xEA, 0xBE, 0x8C, 
-0x00, 0xE6, 0xB5, 0xB8, 
-0x00, 0xE2, 0xBE, 0xA5, 
-0x00, 0xDE, 0xD9, 0x04, 
-0x00, 0xDB, 0x04, 0x88, 
-0x00, 0xD7, 0x40, 0xE6, 
-0x00, 0xD3, 0x8D, 0xD4, 
-0x00, 0xCE, 0xA1, 0xCB, 
-0x00, 0x93, 0x31, 0xDB, 
-0x00, 0x68, 0x34, 0xB6, 
-0x00, 0x49, 0xC5, 0xAA, 
-0x00, 0x34, 0x3A, 0x07, 
-0x00, 0x24, 0xF9, 0x41, 
-0x00, 0x1A, 0x2C, 0xE3, 
-0x00, 0x12, 0x87, 0xDD, 
-0x00, 0x0D, 0x1E, 0x66, 
-0x00, 0x09, 0x49, 0x90, 
-0x00, 0x06, 0x93, 0x30, 
-0x00, 0x04, 0xA7, 0x9B, 
-0x00, 0x03, 0x4B, 0x97, 
-0x00, 0x02, 0x55, 0x38, 
-0x00, 0x01, 0xA6, 0xCC, 
-0x00, 0x01, 0x2B, 0x51, 
-0x00, 0x00, 0xD3, 0xE7, 
-0x00, 0x00, 0x96, 0x04, 
-0x00, 0x00, 0x6A, 0x34, 
-0x00, 0x00, 0x4B, 0x2F, 
-0x00, 0x00, 0x35, 0x3A, 
-0x00, 0x00, 0x25, 0xAF, 
-0x00, 0x00, 0x1A, 0xAD, 
-0x00, 0x00, 0x12, 0xE3, 
-0x00, 0x00, 0x0D, 0x5F, 
-0x00, 0x00, 0x09, 0x77, 
-0x00, 0x00, 0x06, 0xB3, 
-0x00, 0x00, 0x04, 0xBE, 
-0x00, 0x00, 0x03, 0x5C, 
-0x00, 0x00, 0x02, 0x61, 
-0x00, 0x00, 0x01, 0xAF, 
-0x00, 0x00, 0x01, 0x31, 
-0x00, 0x00, 0x00, 0xD8, 
-0x00, 0x00, 0x00, 0x99, 
-0x00, 0x00, 0x00, 0x6C, 
-0x00, 0x00, 0x00, 0x4D, 
-0x00, 0x00, 0x00, 0x36, 
-0x00, 0x00, 0x00, 0x26, 
+0x00 ,	0x00 ,	0x00 ,	0x00 ,	
 
 
 
-Cell Name         = Compressor1
-Parameter Name    = MultiChanPeakExtNoPostGainS300_FullRangeExpGain1hold
+Cell Name         = Mixer
+Parameter Name    = AudioSignalRouter34S300Alg1CrossGain_6_6
+Parameter Address = 134
+Parameter Value   = 0
+Parameter Data :
+0x00 ,	0x00 ,	0x00 ,	0x00 ,	
+
+
+
+Cell Name         = Mixer
+Parameter Name    = AudioSignalRouter34S300Alg1CrossGain_7_6
+Parameter Address = 144
+Parameter Value   = 0
+Parameter Data :
+0x00 ,	0x00 ,	0x00 ,	0x00 ,	
+
+
+
+Cell Name         = Mixer
+Parameter Name    = AudioSignalRouter34S300Alg1CrossGain_0_7
+Parameter Address = 75
+Parameter Value   = 0
+Parameter Data :
+0x00 ,	0x00 ,	0x00 ,	0x00 ,	
+
+
+
+Cell Name         = Mixer
+Parameter Name    = AudioSignalRouter34S300Alg1CrossGain_1_7
+Parameter Address = 85
+Parameter Value   = 0
+Parameter Data :
+0x00 ,	0x00 ,	0x00 ,	0x00 ,	
+
+
+
+Cell Name         = Mixer
+Parameter Name    = AudioSignalRouter34S300Alg1CrossGain_2_7
+Parameter Address = 95
+Parameter Value   = 0
+Parameter Data :
+0x00 ,	0x00 ,	0x00 ,	0x00 ,	
+
+
+
+Cell Name         = Mixer
+Parameter Name    = AudioSignalRouter34S300Alg1CrossGain_3_7
+Parameter Address = 105
+Parameter Value   = 0
+Parameter Data :
+0x00 ,	0x00 ,	0x00 ,	0x00 ,	
+
+
+
+Cell Name         = Mixer
+Parameter Name    = AudioSignalRouter34S300Alg1CrossGain_4_7
+Parameter Address = 115
+Parameter Value   = 0
+Parameter Data :
+0x00 ,	0x00 ,	0x00 ,	0x00 ,	
+
+
+
+Cell Name         = Mixer
+Parameter Name    = AudioSignalRouter34S300Alg1CrossGain_5_7
+Parameter Address = 125
+Parameter Value   = 0
+Parameter Data :
+0x00 ,	0x00 ,	0x00 ,	0x00 ,	
+
+
+
+Cell Name         = Mixer
+Parameter Name    = AudioSignalRouter34S300Alg1CrossGain_6_7
+Parameter Address = 135
+Parameter Value   = 0
+Parameter Data :
+0x00 ,	0x00 ,	0x00 ,	0x00 ,	
+
+
+
+Cell Name         = Mixer
+Parameter Name    = AudioSignalRouter34S300Alg1CrossGain_7_7
+Parameter Address = 145
+Parameter Value   = 0
+Parameter Data :
+0x00 ,	0x00 ,	0x00 ,	0x00 ,	
+
+
+
+Cell Name         = Mixer
+Parameter Name    = AudioSignalRouter34S300Alg1CrossGain_0_8
+Parameter Address = 76
+Parameter Value   = 0
+Parameter Data :
+0x00 ,	0x00 ,	0x00 ,	0x00 ,	
+
+
+
+Cell Name         = Mixer
+Parameter Name    = AudioSignalRouter34S300Alg1CrossGain_1_8
+Parameter Address = 86
+Parameter Value   = 0
+Parameter Data :
+0x00 ,	0x00 ,	0x00 ,	0x00 ,	
+
+
+
+Cell Name         = Mixer
+Parameter Name    = AudioSignalRouter34S300Alg1CrossGain_2_8
+Parameter Address = 96
+Parameter Value   = 0
+Parameter Data :
+0x00 ,	0x00 ,	0x00 ,	0x00 ,	
+
+
+
+Cell Name         = Mixer
+Parameter Name    = AudioSignalRouter34S300Alg1CrossGain_3_8
+Parameter Address = 106
+Parameter Value   = 0
+Parameter Data :
+0x00 ,	0x00 ,	0x00 ,	0x00 ,	
+
+
+
+Cell Name         = Mixer
+Parameter Name    = AudioSignalRouter34S300Alg1CrossGain_4_8
 Parameter Address = 116
 Parameter Value   = 0
 Parameter Data :
@@ -220,12 +844,194 @@ Parameter Data :
 
 
 
-Cell Name         = Compressor1
-Parameter Name    = MultiChanPeakExtNoPostGainS300_FullRangeExpGain1decay
-Parameter Address = 117
-Parameter Value   = 2.14576721191406E-06
+Cell Name         = Mixer
+Parameter Name    = AudioSignalRouter34S300Alg1CrossGain_5_8
+Parameter Address = 126
+Parameter Value   = 0
 Parameter Data :
-0x00 ,	0x00 ,	0x00 ,	0x24 ,	
+0x00 ,	0x00 ,	0x00 ,	0x00 ,	
+
+
+
+Cell Name         = Mixer
+Parameter Name    = AudioSignalRouter34S300Alg1CrossGain_6_8
+Parameter Address = 136
+Parameter Value   = 0
+Parameter Data :
+0x00 ,	0x00 ,	0x00 ,	0x00 ,	
+
+
+
+Cell Name         = Mixer
+Parameter Name    = AudioSignalRouter34S300Alg1CrossGain_7_8
+Parameter Address = 146
+Parameter Value   = 0
+Parameter Data :
+0x00 ,	0x00 ,	0x00 ,	0x00 ,	
+
+
+
+Cell Name         = Mixer
+Parameter Name    = AudioSignalRouter34S300Alg1CrossGain_0_9
+Parameter Address = 77
+Parameter Value   = 0
+Parameter Data :
+0x00 ,	0x00 ,	0x00 ,	0x00 ,	
+
+
+
+Cell Name         = Mixer
+Parameter Name    = AudioSignalRouter34S300Alg1CrossGain_1_9
+Parameter Address = 87
+Parameter Value   = 0
+Parameter Data :
+0x00 ,	0x00 ,	0x00 ,	0x00 ,	
+
+
+
+Cell Name         = Mixer
+Parameter Name    = AudioSignalRouter34S300Alg1CrossGain_2_9
+Parameter Address = 97
+Parameter Value   = 0
+Parameter Data :
+0x00 ,	0x00 ,	0x00 ,	0x00 ,	
+
+
+
+Cell Name         = Mixer
+Parameter Name    = AudioSignalRouter34S300Alg1CrossGain_3_9
+Parameter Address = 107
+Parameter Value   = 0
+Parameter Data :
+0x00 ,	0x00 ,	0x00 ,	0x00 ,	
+
+
+
+Cell Name         = Mixer
+Parameter Name    = AudioSignalRouter34S300Alg1CrossGain_4_9
+Parameter Address = 117
+Parameter Value   = 0
+Parameter Data :
+0x00 ,	0x00 ,	0x00 ,	0x00 ,	
+
+
+
+Cell Name         = Mixer
+Parameter Name    = AudioSignalRouter34S300Alg1CrossGain_5_9
+Parameter Address = 127
+Parameter Value   = 0
+Parameter Data :
+0x00 ,	0x00 ,	0x00 ,	0x00 ,	
+
+
+
+Cell Name         = Mixer
+Parameter Name    = AudioSignalRouter34S300Alg1CrossGain_6_9
+Parameter Address = 137
+Parameter Value   = 0
+Parameter Data :
+0x00 ,	0x00 ,	0x00 ,	0x00 ,	
+
+
+
+Cell Name         = Mixer
+Parameter Name    = AudioSignalRouter34S300Alg1CrossGain_7_9
+Parameter Address = 147
+Parameter Value   = 0
+Parameter Data :
+0x00 ,	0x00 ,	0x00 ,	0x00 ,	
+
+
+
+Cell Name         = Tone_Gen
+Parameter Name    = SinePhaseGainAlgS3002inc
+Parameter Address = 29
+Parameter Value   = 0.00249999761581421
+Parameter Data :
+0x00, 0x00, 0xA3, 0xD7, 
+
+
+
+Cell Name         = Tone_Gen
+Parameter Name    = SinePhaseGainAlgS3002index_fp_hi_0
+Parameter Address = 25
+Parameter Data :
+0x00, 0x00, 0x00, 0x00, 
+0x00, 0x00, 0x00, 0x00, 
+
+
+
+Cell Name         = Tone_Gen
+Parameter Name    = SinePhaseGainAlgS3002gain_0
+Parameter Address = 24
+Parameter Data :
+0x03, 0xFB, 0x27, 0x84, 
+
+
+
+Cell Name         = Noise_Pink_Filter
+Parameter Name    = PinkFAlgS3001coeff0a
+Parameter Address = 36
+Parameter Data :
+0x00, 0xFF, 0xB5, 0x4A, 
+0x00, 0x0E, 0x36, 0x6C, 
+0x00, 0xFE, 0x4A, 0x38, 
+0x00, 0x13, 0x38, 0x2D, 
+0x00, 0xF8, 0x10, 0x62, 
+0x00, 0x27, 0x62, 0xD8, 
+0x00, 0xDD, 0xD2, 0xF2, 
+0x00, 0x4F, 0x7B, 0xFC, 
+0x00, 0x8C, 0xCC, 0xCD, 
+0x00, 0x88, 0x6F, 0x8E, 
+0xFF, 0x3D, 0x07, 0xC8, 
+0xFF, 0xFB, 0xAC, 0x93, 
+0x00, 0x1D, 0xAD, 0x54, 
+0x00, 0x89, 0x44, 0x67, 
+
+
+
+Cell Name         = Noise_Pink_Filter
+Parameter Name    = PinkFAlgS3001input_gain
+Parameter Address = 34
+Parameter Value   = 1
+Parameter Data :
+0x01, 0x00, 0x00, 0x00, 
+
+
+
+Cell Name         = Noise_Pink_Filter
+Parameter Name    = PinkFAlgS3001output_gain
+Parameter Address = 35
+Parameter Value   = 1
+Parameter Data :
+0x01, 0x00, 0x00, 0x00, 
+
+
+
+Cell Name         = Noise_Gen
+Parameter Name    = WhiteNAlgS3001enable
+Parameter Address = 154
+Parameter Value   = 0
+Parameter Data :
+0x00, 0x00, 0x00, 0x00, 
+
+
+
+Cell Name         = Master_Gain
+Parameter Name    = HWGainADAU145XAlg1slew_mode
+Parameter Address = 152
+Parameter Value   = 8330
+Parameter Data :
+0x00, 0x00, 0x20, 0x8A, 
+
+
+
+Cell Name         = Master_Gain
+Parameter Name    = HWGainADAU145XAlg1target
+Parameter Address = 151
+Parameter Value   = 1
+Parameter Data :
+0x01, 0x00, 0x00, 0x00, 
 
 
 
