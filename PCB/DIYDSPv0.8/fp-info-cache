@@ -1,4 +1,4 @@
-27256257890659680
+27272303420637658
 Audio_Module
 Reverb_BTDR-1H
 Digital Reverberation Unit, http://www.belton.co.kr/inc/downfile.php?seq=17&file=pdf (footprint from http://www.uk-electronic.de/PDF/BTDR-1.pdf)
@@ -60179,6 +60179,13 @@ ADAU1452WBCPZ-RL
 73
 73
 Custom
+ADAU1701JSTZ-RL
+
+
+0
+48
+48
+Custom
 ADM811TARTZ-REEL7
 
 
@@ -60194,6 +60201,20 @@ AK4619VN
 33
 Custom
 AMS1117-1.2
+
+
+0
+4
+4
+Custom
+AMS1117-1.8
+
+
+0
+4
+4
+Custom
+DB166-5.0-4P-GN-P
 
 
 0
@@ -60242,6 +60263,13 @@ HX PJ-320A-3P DIP
 3
 3
 Custom
+K7803-1000
+
+
+0
+3
+3
+Custom
 K7803M-1000R3
 
 
@@ -60270,7 +60298,21 @@ PJ-320D
 4
 4
 Custom
+RVT1V221M0810
+
+
+0
+2
+2
+Custom
 S47SMD12.288M20PF20R30B3
+
+
+0
+2
+2
+Custom
+SL1265-100M
 
 
 0
@@ -60283,6 +60325,27 @@ SMF20CA
 0
 2
 2
+Custom
+SS14 Diode
+
+
+0
+2
+2
+Custom
+TLV9062IDR
+
+
+0
+8
+8
+Custom
+TPA3118D2DAPR
+
+
+0
+33
+33
 Custom
 TPS55289RYQR
 

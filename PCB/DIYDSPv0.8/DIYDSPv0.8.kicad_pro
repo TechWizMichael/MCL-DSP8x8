@@ -58,24 +58,7 @@
           "width": 0.0
         }
       ],
-      "drc_exclusions": [
-        [
-          "copper_edge_clearance|106816000|93076000|163d9cc2-90c9-4f62-8a67-ea30515bce94|63ff8c74-d48a-4331-9352-397558a51313",
-          ""
-        ],
-        [
-          "copper_edge_clearance|107016000|93076000|163d9cc2-90c9-4f62-8a67-ea30515bce94|3d40bc01-ee4c-49c3-9b78-86914d156825",
-          ""
-        ],
-        [
-          "copper_edge_clearance|112416000|93076000|cdd42287-4f1c-423d-95cd-3db255bc7584|7d4963b9-37d9-410d-a5bf-6ccc11f0106f",
-          ""
-        ],
-        [
-          "copper_edge_clearance|112648421|93076000|cdd42287-4f1c-423d-95cd-3db255bc7584|10cc7032-37a3-4f38-b81b-8604231e7729",
-          ""
-        ]
-      ],
+      "drc_exclusions": [],
       "meta": {
         "version": 2
       },

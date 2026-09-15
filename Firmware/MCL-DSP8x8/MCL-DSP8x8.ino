@@ -5,7 +5,7 @@
 // Description: Firmware for ESP32-S3-WROOM-1U to control ADAU1452 and AK4619VN chips for an 8 channel in, 8 channel out DSP device.
 
 // Note: uncomment below for simple ADAU1452 program
-#define ADAU1452_VERIFY
+// #define ADAU1452_VERIFY
 
 #include <Arduino.h>
 #include <BLEDevice.h>
@@ -30,7 +30,7 @@ BLEServer *pServer;
 BLEService *pService;
 BLEAdvertising *pAdvertising;
 BLECharacteristic *gainCharacteristic;
-BLECharacteristic *
+// BLECharacteristic *
 
 
 // Functions
@@ -69,12 +69,12 @@ void loop() {
     digitalWrite(HEARTBEAT_LED, heartbeatState);
 
     heartbeatState = !heartbeatState;
-#ifdef ADAU1452_VERIFY
-    String temp_string = pCharacteristic->getValue();
-    if(!temp_string.equals("X")) {
-      SIGMA_WRITE_REGISTER_FLOAT(MOD_MASTER_GAIN_ALG0_TARGET_ADDR, 0.125*(temp_string.toInt()));
-    }
-#endif
+// #ifdef ADAU1452_VERIFY
+//     String temp_string = gainCharacteristic->getValue();
+//     if(!temp_string.equals("X")) {
+//       SIGMA_WRITE_REGISTER_FLOAT(MOD_MASTER_GAIN_ALG0_TARGET_ADDR, 0.125*(temp_string.toInt()));
+//     }
+// #endif
   }
 }
 
@@ -87,9 +87,9 @@ void init_BLE() {
   pServer = BLEDevice::createServer();
   pService = pServer->createService(SERVICE_UUID);
   pServer->advertiseOnDisconnect(true);
-  pCharacteristic = pService->createCharacteristic(CHARACTERISTIC_UUID, BLECharacteristic::PROPERTY_READ | BLECharacteristic::PROPERTY_WRITE);
+  gainCharacteristic = pService->createCharacteristic(CHARACTERISTIC_UUID, BLECharacteristic::PROPERTY_READ | BLECharacteristic::PROPERTY_WRITE);
 
-  pCharacteristic->setValue("8");
+  gainCharacteristic->setValue("8");
   pService->start();
 
   pAdvertising = BLEDevice::getAdvertising();

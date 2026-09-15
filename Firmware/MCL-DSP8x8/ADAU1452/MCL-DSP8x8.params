@@ -45,7 +45,7 @@ Parameter Data :
 
 Cell Name         = LED_Heartbeat.Heartbeat_Switch
 Parameter Name    = monomuxSigma300ns1index
-Parameter Address = 7696
+Parameter Address = 7720
 Parameter Value   = 1
 Parameter Data :
 0x00, 0x00, 0x00, 0x01, 
@@ -1098,7 +1098,7 @@ Parameter Data :
 
 Cell Name         = Channel_8.RMS_LIM
 Parameter Name    = MonoNoPostGainS300FullRange16points
-Parameter Address = 5340
+Parameter Address = 5364
 Parameter Data :
 0x01, 0x00, 0x00, 0x00, 
 0x01, 0x00, 0x00, 0x00, 
@@ -1159,7 +1159,7 @@ Parameter Data :
 
 Cell Name         = Channel_8.RMS_LIM
 Parameter Name    = MonoNoPostGainS300FullRange16tc
-Parameter Address = 7753
+Parameter Address = 7777
 Parameter Value   = 0.000206291675567627
 Parameter Data :
 0x00 ,	0x00 ,	0x0D ,	0x85 ,	
@@ -1168,7 +1168,7 @@ Parameter Data :
 
 Cell Name         = Channel_8.RMS_LIM
 Parameter Name    = MonoNoPostGainS300FullRange16hold
-Parameter Address = 7754
+Parameter Address = 7778
 Parameter Value   = 0
 Parameter Data :
 0x00 ,	0x00 ,	0x00 ,	0x00 ,	
@@ -1177,7 +1177,7 @@ Parameter Data :
 
 Cell Name         = Channel_8.RMS_LIM
 Parameter Name    = MonoNoPostGainS300FullRange16decay
-Parameter Address = 7755
+Parameter Address = 7779
 Parameter Value   = 9.35792922973633E-06
 Parameter Data :
 0x00 ,	0x00 ,	0x00 ,	0x9D ,	
@@ -1186,7 +1186,7 @@ Parameter Data :
 
 Cell Name         = Channel_8.PK_LIM
 Parameter Name    = OneChanPeakNoPostGainS300_FullRange8points
-Parameter Address = 4844
+Parameter Address = 4868
 Parameter Data :
 0x01, 0x00, 0x00, 0x00, 
 0x01, 0x00, 0x00, 0x00, 
@@ -1255,7 +1255,7 @@ Parameter Data :
 
 Cell Name         = Channel_8.PK_LIM
 Parameter Name    = OneChanPeakNoPostGainS300_FullRange8hold
-Parameter Address = 7698
+Parameter Address = 7722
 Parameter Value   = 0
 Parameter Data :
 0x00 ,	0x00 ,	0x00 ,	0x00 ,	
@@ -1264,55 +1264,73 @@ Parameter Data :
 
 Cell Name         = Channel_8.PK_LIM
 Parameter Name    = OneChanPeakNoPostGainS300_FullRange8decay
-Parameter Address = 7699
+Parameter Address = 7723
 Parameter Value   = 1.88946723937988E-05
 Parameter Data :
 0x00 ,	0x00 ,	0x01 ,	0x3D ,	
 
 
 
+Cell Name         = Channel_8.Gain
+Parameter Name    = HWGainADAU145XAlg8slew_mode
+Parameter Address = 4846
+Parameter Value   = 8330
+Parameter Data :
+0x00, 0x00, 0x20, 0x8A, 
+
+
+
+Cell Name         = Channel_8.Gain
+Parameter Name    = HWGainADAU145XAlg8target
+Parameter Address = 4845
+Parameter Value   = 1
+Parameter Data :
+0x01, 0x00, 0x00, 0x00, 
+
+
+
 Cell Name         = Channel_7.PEQ
 Parameter Name    = EQGenFilterDPS300Alg7B2_1
 Parameter Address = 212
-Parameter Value   = 0.499989867210388
+Parameter Value   = 0
 Parameter Data :
-0x00 ,	0x7F ,	0xFF ,	0x56 ,	
+0x00 ,	0x00 ,	0x00 ,	0x00 ,	
 
 
 
 Cell Name         = Channel_7.PEQ
 Parameter Name    = EQGenFilterDPS300Alg7B1_1
 Parameter Address = 213
-Parameter Value   = -1.0013707280159
+Parameter Value   = 0
 Parameter Data :
-0xFE ,	0xFF ,	0xA6 ,	0x2B ,	
+0x00 ,	0x00 ,	0x00 ,	0x00 ,	
 
 
 
 Cell Name         = Channel_7.PEQ
 Parameter Name    = EQGenFilterDPS300Alg7B0_1
 Parameter Address = 214
-Parameter Value   = 0.501392006874084
+Parameter Value   = 1
 Parameter Data :
-0x00 ,	0x80 ,	0x5B ,	0x3A ,	
+0x01 ,	0x00 ,	0x00 ,	0x00 ,	
 
 
 
 Cell Name         = Channel_7.PEQ
 Parameter Name    = EQGenFilterDPS300Alg7A2_1
 Parameter Address = 215
-Parameter Value   = -0.998019456863403
+Parameter Value   = 0
 Parameter Data :
-0xFF ,	0x00 ,	0x81 ,	0xCC ,	
+0x00 ,	0x00 ,	0x00 ,	0x00 ,	
 
 
 
 Cell Name         = Channel_7.PEQ
 Parameter Name    = EQGenFilterDPS300Alg7A1_1
 Parameter Address = 216
-Parameter Value   = 1.99799728393555
+Parameter Value   = 0
 Parameter Data :
-0x01 ,	0xFF ,	0x7C ,	0xC0 ,	
+0x00 ,	0x00 ,	0x00 ,	0x00 ,	
 
 
 
@@ -2253,11 +2271,11 @@ Cell Name         = Channel_7.HighPass
 Parameter Name    = EQS300MultiDPHWSlewP1Alg25Targ_B2_1
 Parameter Address = 24699
 Parameter Data :
-0x00, 0xFE, 0xE2, 0xED, 
-0xFE, 0x02, 0x3A, 0x26, 
-0x00, 0xFE, 0xE2, 0xED, 
-0xFF, 0x02, 0x39, 0x6C, 
-0x01, 0xFD, 0xC5, 0x21, 
+0x00, 0xFF, 0x22, 0x20, 
+0xFE, 0x01, 0xBB, 0xC0, 
+0x00, 0xFF, 0x22, 0x20, 
+0xFF, 0x01, 0xBB, 0x50, 
+0x01, 0xFE, 0x43, 0xCF, 
 
 
 
@@ -2265,11 +2283,11 @@ Cell Name         = Channel_7.HighPass
 Parameter Name    = EQS300MultiDPHWSlewP1Alg25Targ_B2_2
 Parameter Address = 24704
 Parameter Data :
-0x00, 0xFF, 0x89, 0xF9, 
-0xFE, 0x00, 0xEC, 0x0D, 
-0x00, 0xFF, 0x89, 0xF9, 
-0xFF, 0x00, 0xEB, 0x53, 
-0x01, 0xFF, 0x13, 0x39, 
+0x00, 0xFF, 0xA4, 0x3A, 
+0xFE, 0x00, 0xB7, 0x8B, 
+0x00, 0xFF, 0xA4, 0x3A, 
+0xFF, 0x00, 0xB7, 0x1B, 
+0x01, 0xFF, 0x48, 0x04, 
 
 
 
@@ -2317,7 +2335,7 @@ Parameter Data :
 
 Cell Name         = Channel_7.RMS_LIM
 Parameter Name    = MonoNoPostGainS300FullRange15points
-Parameter Address = 5394
+Parameter Address = 5418
 Parameter Data :
 0x01, 0x00, 0x00, 0x00, 
 0x01, 0x00, 0x00, 0x00, 
@@ -2378,7 +2396,7 @@ Parameter Data :
 
 Cell Name         = Channel_7.RMS_LIM
 Parameter Name    = MonoNoPostGainS300FullRange15tc
-Parameter Address = 7760
+Parameter Address = 7784
 Parameter Value   = 0.000206291675567627
 Parameter Data :
 0x00 ,	0x00 ,	0x0D ,	0x85 ,	
@@ -2387,7 +2405,7 @@ Parameter Data :
 
 Cell Name         = Channel_7.RMS_LIM
 Parameter Name    = MonoNoPostGainS300FullRange15hold
-Parameter Address = 7761
+Parameter Address = 7785
 Parameter Value   = 0
 Parameter Data :
 0x00 ,	0x00 ,	0x00 ,	0x00 ,	
@@ -2396,7 +2414,7 @@ Parameter Data :
 
 Cell Name         = Channel_7.RMS_LIM
 Parameter Name    = MonoNoPostGainS300FullRange15decay
-Parameter Address = 7762
+Parameter Address = 7786
 Parameter Value   = 9.35792922973633E-06
 Parameter Data :
 0x00 ,	0x00 ,	0x00 ,	0x9D ,	
@@ -2405,7 +2423,7 @@ Parameter Data :
 
 Cell Name         = Channel_7.PK_LIM
 Parameter Name    = OneChanPeakNoPostGainS300_FullRange7points
-Parameter Address = 4906
+Parameter Address = 4930
 Parameter Data :
 0x01, 0x00, 0x00, 0x00, 
 0x01, 0x00, 0x00, 0x00, 
@@ -2474,7 +2492,7 @@ Parameter Data :
 
 Cell Name         = Channel_7.PK_LIM
 Parameter Name    = OneChanPeakNoPostGainS300_FullRange7hold
-Parameter Address = 7705
+Parameter Address = 7729
 Parameter Value   = 0
 Parameter Data :
 0x00 ,	0x00 ,	0x00 ,	0x00 ,	
@@ -2483,10 +2501,28 @@ Parameter Data :
 
 Cell Name         = Channel_7.PK_LIM
 Parameter Name    = OneChanPeakNoPostGainS300_FullRange7decay
-Parameter Address = 7706
+Parameter Address = 7730
 Parameter Value   = 1.88946723937988E-05
 Parameter Data :
 0x00 ,	0x00 ,	0x01 ,	0x3D ,	
+
+
+
+Cell Name         = Channel_7.Gain
+Parameter Name    = HWGainADAU145XAlg7slew_mode
+Parameter Address = 4849
+Parameter Value   = 8330
+Parameter Data :
+0x00, 0x00, 0x20, 0x8A, 
+
+
+
+Cell Name         = Channel_7.Gain
+Parameter Name    = HWGainADAU145XAlg7target
+Parameter Address = 4848
+Parameter Value   = 1.99526232481003
+Parameter Data :
+0x01, 0xFE, 0xC9, 0x83, 
 
 
 
@@ -3536,7 +3572,7 @@ Parameter Data :
 
 Cell Name         = Channel_6.RMS_LIM
 Parameter Name    = MonoNoPostGainS300FullRange14points
-Parameter Address = 5448
+Parameter Address = 5472
 Parameter Data :
 0x01, 0x00, 0x00, 0x00, 
 0x01, 0x00, 0x00, 0x00, 
@@ -3597,7 +3633,7 @@ Parameter Data :
 
 Cell Name         = Channel_6.RMS_LIM
 Parameter Name    = MonoNoPostGainS300FullRange14tc
-Parameter Address = 7767
+Parameter Address = 7791
 Parameter Value   = 0.000206291675567627
 Parameter Data :
 0x00 ,	0x00 ,	0x0D ,	0x85 ,	
@@ -3606,7 +3642,7 @@ Parameter Data :
 
 Cell Name         = Channel_6.RMS_LIM
 Parameter Name    = MonoNoPostGainS300FullRange14hold
-Parameter Address = 7768
+Parameter Address = 7792
 Parameter Value   = 0
 Parameter Data :
 0x00 ,	0x00 ,	0x00 ,	0x00 ,	
@@ -3615,7 +3651,7 @@ Parameter Data :
 
 Cell Name         = Channel_6.RMS_LIM
 Parameter Name    = MonoNoPostGainS300FullRange14decay
-Parameter Address = 7769
+Parameter Address = 7793
 Parameter Value   = 9.35792922973633E-06
 Parameter Data :
 0x00 ,	0x00 ,	0x00 ,	0x9D ,	
@@ -3624,7 +3660,7 @@ Parameter Data :
 
 Cell Name         = Channel_6.PK_LIM
 Parameter Name    = OneChanPeakNoPostGainS300_FullRange6points
-Parameter Address = 4968
+Parameter Address = 4992
 Parameter Data :
 0x01, 0x00, 0x00, 0x00, 
 0x01, 0x00, 0x00, 0x00, 
@@ -3693,7 +3729,7 @@ Parameter Data :
 
 Cell Name         = Channel_6.PK_LIM
 Parameter Name    = OneChanPeakNoPostGainS300_FullRange6hold
-Parameter Address = 7712
+Parameter Address = 7736
 Parameter Value   = 0
 Parameter Data :
 0x00 ,	0x00 ,	0x00 ,	0x00 ,	
@@ -3702,10 +3738,28 @@ Parameter Data :
 
 Cell Name         = Channel_6.PK_LIM
 Parameter Name    = OneChanPeakNoPostGainS300_FullRange6decay
-Parameter Address = 7713
+Parameter Address = 7737
 Parameter Value   = 1.88946723937988E-05
 Parameter Data :
 0x00 ,	0x00 ,	0x01 ,	0x3D ,	
+
+
+
+Cell Name         = Channel_6.Gain
+Parameter Name    = HWGainADAU145XAlg6slew_mode
+Parameter Address = 4852
+Parameter Value   = 8330
+Parameter Data :
+0x00, 0x00, 0x20, 0x8A, 
+
+
+
+Cell Name         = Channel_6.Gain
+Parameter Name    = HWGainADAU145XAlg6target
+Parameter Address = 4851
+Parameter Value   = 1
+Parameter Data :
+0x01, 0x00, 0x00, 0x00, 
 
 
 
@@ -4755,7 +4809,7 @@ Parameter Data :
 
 Cell Name         = Channel_5.RMS_LIM
 Parameter Name    = MonoNoPostGainS300FullRange13points
-Parameter Address = 5502
+Parameter Address = 5526
 Parameter Data :
 0x01, 0x00, 0x00, 0x00, 
 0x01, 0x00, 0x00, 0x00, 
@@ -4816,7 +4870,7 @@ Parameter Data :
 
 Cell Name         = Channel_5.RMS_LIM
 Parameter Name    = MonoNoPostGainS300FullRange13tc
-Parameter Address = 7774
+Parameter Address = 7798
 Parameter Value   = 0.000206291675567627
 Parameter Data :
 0x00 ,	0x00 ,	0x0D ,	0x85 ,	
@@ -4825,7 +4879,7 @@ Parameter Data :
 
 Cell Name         = Channel_5.RMS_LIM
 Parameter Name    = MonoNoPostGainS300FullRange13hold
-Parameter Address = 7775
+Parameter Address = 7799
 Parameter Value   = 0
 Parameter Data :
 0x00 ,	0x00 ,	0x00 ,	0x00 ,	
@@ -4834,7 +4888,7 @@ Parameter Data :
 
 Cell Name         = Channel_5.RMS_LIM
 Parameter Name    = MonoNoPostGainS300FullRange13decay
-Parameter Address = 7776
+Parameter Address = 7800
 Parameter Value   = 9.35792922973633E-06
 Parameter Data :
 0x00 ,	0x00 ,	0x00 ,	0x9D ,	
@@ -4843,7 +4897,7 @@ Parameter Data :
 
 Cell Name         = Channel_5.PK_LIM
 Parameter Name    = OneChanPeakNoPostGainS300_FullRange5points
-Parameter Address = 5030
+Parameter Address = 5054
 Parameter Data :
 0x01, 0x00, 0x00, 0x00, 
 0x01, 0x00, 0x00, 0x00, 
@@ -4912,7 +4966,7 @@ Parameter Data :
 
 Cell Name         = Channel_5.PK_LIM
 Parameter Name    = OneChanPeakNoPostGainS300_FullRange5hold
-Parameter Address = 7719
+Parameter Address = 7743
 Parameter Value   = 0
 Parameter Data :
 0x00 ,	0x00 ,	0x00 ,	0x00 ,	
@@ -4921,145 +4975,163 @@ Parameter Data :
 
 Cell Name         = Channel_5.PK_LIM
 Parameter Name    = OneChanPeakNoPostGainS300_FullRange5decay
-Parameter Address = 7720
+Parameter Address = 7744
 Parameter Value   = 1.88946723937988E-05
 Parameter Data :
 0x00 ,	0x00 ,	0x01 ,	0x3D ,	
 
 
 
+Cell Name         = Channel_5.Gain
+Parameter Name    = HWGainADAU145XAlg5slew_mode
+Parameter Address = 4855
+Parameter Value   = 8330
+Parameter Data :
+0x00, 0x00, 0x20, 0x8A, 
+
+
+
+Cell Name         = Channel_5.Gain
+Parameter Name    = HWGainADAU145XAlg5target
+Parameter Address = 4854
+Parameter Value   = 1
+Parameter Data :
+0x01, 0x00, 0x00, 0x00, 
+
+
+
 Cell Name         = Channel_4.PEQ
 Parameter Name    = EQGenFilterDPS300Alg4B2_1
 Parameter Address = 362
-Parameter Value   = 0.249080896377563
+Parameter Value   = 0.474786579608917
 Parameter Data :
-0x00 ,	0x3F ,	0xC3 ,	0xC4 ,	
+0x00 ,	0x79 ,	0x8B ,	0x9D ,	
 
 
 
 Cell Name         = Channel_4.PEQ
 Parameter Name    = EQGenFilterDPS300Alg4B1_1
 Parameter Address = 363
-Parameter Value   = -0.517041742801666
+Parameter Value   = -0.811202883720398
 Parameter Data :
-0xFF ,	0x7B ,	0xA3 ,	0x27 ,	
+0xFF ,	0x30 ,	0x55 ,	0x02 ,	
 
 
 
 Cell Name         = Channel_4.PEQ
 Parameter Name    = EQGenFilterDPS300Alg4B0_1
 Parameter Address = 364
-Parameter Value   = 0.304745852947235
+Parameter Value   = 1.49606555700302
 Parameter Data :
-0x00 ,	0x4E ,	0x03 ,	0xD3 ,	
+0x01 ,	0x7E ,	0xFE ,	0x27 ,	
 
 
 
 Cell Name         = Channel_4.PEQ
 Parameter Name    = EQGenFilterDPS300Alg4A2_1
 Parameter Address = 365
-Parameter Value   = -0.751353800296783
+Parameter Value   = -0.276989877223969
 Parameter Data :
-0xFF ,	0x3F ,	0xA7 ,	0x47 ,	
+0xFF ,	0xB9 ,	0x17 ,	0x31 ,	
 
 
 
 Cell Name         = Channel_4.PEQ
 Parameter Name    = EQGenFilterDPS300Alg4A1_1
 Parameter Address = 366
-Parameter Value   = 1.63502961397171
+Parameter Value   = 0.117340564727783
 Parameter Data :
-0x01 ,	0xA2 ,	0x91 ,	0x4D ,	
+0x00 ,	0x1E ,	0x0A ,	0x08 ,	
 
 
 
 Cell Name         = Channel_4.PEQ
 Parameter Name    = EQGenFilterDPS300Alg4B2_2
 Parameter Address = 367
-Parameter Value   = 0.806709587574005
+Parameter Value   = 0
 Parameter Data :
-0x00 ,	0xCE ,	0x84 ,	0x85 ,	
+0x00 ,	0x00 ,	0x00 ,	0x00 ,	
 
 
 
 Cell Name         = Channel_4.PEQ
 Parameter Name    = EQGenFilterDPS300Alg4B1_2
 Parameter Address = 368
-Parameter Value   = 0.953561365604401
+Parameter Value   = 0
 Parameter Data :
-0x00 ,	0xF4 ,	0x1C ,	0x99 ,	
+0x00 ,	0x00 ,	0x00 ,	0x00 ,	
 
 
 
 Cell Name         = Channel_4.PEQ
 Parameter Name    = EQGenFilterDPS300Alg4B0_2
 Parameter Address = 369
-Parameter Value   = 1.10041320323944
+Parameter Value   = 1
 Parameter Data :
-0x01 ,	0x19 ,	0xB4 ,	0xAE ,	
+0x01 ,	0x00 ,	0x00 ,	0x00 ,	
 
 
 
 Cell Name         = Channel_4.PEQ
 Parameter Name    = EQGenFilterDPS300Alg4A2_2
 Parameter Address = 370
-Parameter Value   = -0.907122790813446
+Parameter Value   = 0
 Parameter Data :
-0xFF ,	0x17 ,	0xC6 ,	0xCD ,	
+0x00 ,	0x00 ,	0x00 ,	0x00 ,	
 
 
 
 Cell Name         = Channel_4.PEQ
 Parameter Name    = EQGenFilterDPS300Alg4A1_2
 Parameter Address = 371
-Parameter Value   = -0.953561365604401
+Parameter Value   = 0
 Parameter Data :
-0xFF ,	0x0B ,	0xE3 ,	0x67 ,	
+0x00 ,	0x00 ,	0x00 ,	0x00 ,	
 
 
 
 Cell Name         = Channel_4.PEQ
 Parameter Name    = EQGenFilterDPS300Alg4B2_3
 Parameter Address = 372
-Parameter Value   = 0.840611219406128
+Parameter Value   = 0
 Parameter Data :
-0x00 ,	0xD7 ,	0x32 ,	0x4C ,	
+0x00 ,	0x00 ,	0x00 ,	0x00 ,	
 
 
 
 Cell Name         = Channel_4.PEQ
 Parameter Name    = EQGenFilterDPS300Alg4B1_3
 Parameter Address = 373
-Parameter Value   = -0.906678080558777
+Parameter Value   = 0
 Parameter Data :
-0xFF ,	0x17 ,	0xE3 ,	0xF2 ,	
+0x00 ,	0x00 ,	0x00 ,	0x00 ,	
 
 
 
 Cell Name         = Channel_4.PEQ
 Parameter Name    = EQGenFilterDPS300Alg4B0_3
 Parameter Address = 374
-Parameter Value   = 0.972744941711426
+Parameter Value   = 1
 Parameter Data :
-0x00 ,	0xF9 ,	0x05 ,	0xD0 ,	
+0x01 ,	0x00 ,	0x00 ,	0x00 ,	
 
 
 
 Cell Name         = Channel_4.PEQ
 Parameter Name    = EQGenFilterDPS300Alg4A2_3
 Parameter Address = 375
-Parameter Value   = -0.813356101512909
+Parameter Value   = 0
 Parameter Data :
-0xFF ,	0x2F ,	0xC7 ,	0xE5 ,	
+0x00 ,	0x00 ,	0x00 ,	0x00 ,	
 
 
 
 Cell Name         = Channel_4.PEQ
 Parameter Name    = EQGenFilterDPS300Alg4A1_3
 Parameter Address = 376
-Parameter Value   = 0.906678080558777
+Parameter Value   = 0
 Parameter Data :
-0x00 ,	0xE8 ,	0x1C ,	0x0E ,	
+0x00 ,	0x00 ,	0x00 ,	0x00 ,	
 
 
 
@@ -5974,7 +6046,7 @@ Parameter Data :
 
 Cell Name         = Channel_4.RMS_LIM
 Parameter Name    = MonoNoPostGainS300FullRange12points
-Parameter Address = 5556
+Parameter Address = 5580
 Parameter Data :
 0x01, 0x00, 0x00, 0x00, 
 0x01, 0x00, 0x00, 0x00, 
@@ -6035,7 +6107,7 @@ Parameter Data :
 
 Cell Name         = Channel_4.RMS_LIM
 Parameter Name    = MonoNoPostGainS300FullRange12tc
-Parameter Address = 7781
+Parameter Address = 7805
 Parameter Value   = 0.000206291675567627
 Parameter Data :
 0x00 ,	0x00 ,	0x0D ,	0x85 ,	
@@ -6044,7 +6116,7 @@ Parameter Data :
 
 Cell Name         = Channel_4.RMS_LIM
 Parameter Name    = MonoNoPostGainS300FullRange12hold
-Parameter Address = 7782
+Parameter Address = 7806
 Parameter Value   = 0
 Parameter Data :
 0x00 ,	0x00 ,	0x00 ,	0x00 ,	
@@ -6053,7 +6125,7 @@ Parameter Data :
 
 Cell Name         = Channel_4.RMS_LIM
 Parameter Name    = MonoNoPostGainS300FullRange12decay
-Parameter Address = 7783
+Parameter Address = 7807
 Parameter Value   = 9.35792922973633E-06
 Parameter Data :
 0x00 ,	0x00 ,	0x00 ,	0x9D ,	
@@ -6062,7 +6134,7 @@ Parameter Data :
 
 Cell Name         = Channel_4.PK_LIM
 Parameter Name    = OneChanPeakNoPostGainS300_FullRange4points
-Parameter Address = 5092
+Parameter Address = 5116
 Parameter Data :
 0x01, 0x00, 0x00, 0x00, 
 0x01, 0x00, 0x00, 0x00, 
@@ -6131,7 +6203,7 @@ Parameter Data :
 
 Cell Name         = Channel_4.PK_LIM
 Parameter Name    = OneChanPeakNoPostGainS300_FullRange4hold
-Parameter Address = 7726
+Parameter Address = 7750
 Parameter Value   = 0
 Parameter Data :
 0x00 ,	0x00 ,	0x00 ,	0x00 ,	
@@ -6140,235 +6212,253 @@ Parameter Data :
 
 Cell Name         = Channel_4.PK_LIM
 Parameter Name    = OneChanPeakNoPostGainS300_FullRange4decay
-Parameter Address = 7727
+Parameter Address = 7751
 Parameter Value   = 1.88946723937988E-05
 Parameter Data :
 0x00 ,	0x00 ,	0x01 ,	0x3D ,	
 
 
 
+Cell Name         = Channel_4.Gain
+Parameter Name    = HWGainADAU145XAlg4slew_mode
+Parameter Address = 4858
+Parameter Value   = 8330
+Parameter Data :
+0x00, 0x00, 0x20, 0x8A, 
+
+
+
+Cell Name         = Channel_4.Gain
+Parameter Name    = HWGainADAU145XAlg4target
+Parameter Address = 4857
+Parameter Value   = 0.251188635826111
+Parameter Data :
+0x00, 0x40, 0x4D, 0xE6, 
+
+
+
 Cell Name         = Channel_3.PEQ
 Parameter Name    = EQGenFilterDPS300Alg3B2_1
 Parameter Address = 412
-Parameter Value   = 0.991696298122406
+Parameter Value   = 0.964399039745331
 Parameter Data :
-0x00 ,	0xFD ,	0xDF ,	0xCF ,	
+0x00 ,	0xF6 ,	0xE2 ,	0xDB ,	
 
 
 
 Cell Name         = Channel_3.PEQ
 Parameter Name    = EQGenFilterDPS300Alg3B1_1
 Parameter Address = 413
-Parameter Value   = -1.99420940876007
+Parameter Value   = -1.97565799951553
 Parameter Data :
-0xFE ,	0x01 ,	0x7B ,	0x7E ,	
+0xFE ,	0x06 ,	0x3B ,	0x47 ,	
 
 
 
 Cell Name         = Channel_3.PEQ
 Parameter Name    = EQGenFilterDPS300Alg3B0_1
 Parameter Address = 414
-Parameter Value   = 1.0027591586113
+Parameter Value   = 1.01201903820038
 Parameter Data :
-0x01 ,	0x00 ,	0xB4 ,	0xD3 ,	
+0x01 ,	0x03 ,	0x13 ,	0xAE ,	
 
 
 
 Cell Name         = Channel_3.PEQ
 Parameter Name    = EQGenFilterDPS300Alg3A2_1
 Parameter Address = 415
-Parameter Value   = -0.994455456733704
+Parameter Value   = -0.976133465766907
 Parameter Data :
-0xFF ,	0x01 ,	0x6B ,	0x5E ,	
+0xFF ,	0x06 ,	0x1C ,	0x1E ,	
 
 
 
 Cell Name         = Channel_3.PEQ
 Parameter Name    = EQGenFilterDPS300Alg3A1_1
 Parameter Address = 416
-Parameter Value   = 1.99420940876007
+Parameter Value   = 1.97594255208969
 Parameter Data :
-0x01 ,	0xFE ,	0x84 ,	0x82 ,	
+0x01 ,	0xF9 ,	0xD7 ,	0x5F ,	
 
 
 
 Cell Name         = Channel_3.PEQ
 Parameter Name    = EQGenFilterDPS300Alg3B2_2
 Parameter Address = 417
-Parameter Value   = 0.981429219245911
+Parameter Value   = 0
 Parameter Data :
-0x00 ,	0xFB ,	0x3E ,	0xF2 ,	
+0x00 ,	0x00 ,	0x00 ,	0x00 ,	
 
 
 
 Cell Name         = Channel_3.PEQ
 Parameter Name    = EQGenFilterDPS300Alg3B1_2
 Parameter Address = 418
-Parameter Value   = -1.9631569981575
+Parameter Value   = 0
 Parameter Data :
-0xFE ,	0x09 ,	0x6E ,	0x8B ,	
+0x00 ,	0x00 ,	0x00 ,	0x00 ,	
 
 
 
 Cell Name         = Channel_3.PEQ
 Parameter Name    = EQGenFilterDPS300Alg3B0_2
 Parameter Address = 419
-Parameter Value   = 0.992005169391632
+Parameter Value   = 1
 Parameter Data :
-0x00 ,	0xFD ,	0xF4 ,	0x0D ,	
+0x01 ,	0x00 ,	0x00 ,	0x00 ,	
 
 
 
 Cell Name         = Channel_3.PEQ
 Parameter Name    = EQGenFilterDPS300Alg3A2_2
 Parameter Address = 420
-Parameter Value   = -0.973434388637543
+Parameter Value   = 0
 Parameter Data :
-0xFF ,	0x06 ,	0xCD ,	0x01 ,	
+0x00 ,	0x00 ,	0x00 ,	0x00 ,	
 
 
 
 Cell Name         = Channel_3.PEQ
 Parameter Name    = EQGenFilterDPS300Alg3A1_2
 Parameter Address = 421
-Parameter Value   = 1.9631569981575
+Parameter Value   = 0
 Parameter Data :
-0x01 ,	0xF6 ,	0x91 ,	0x75 ,	
+0x00 ,	0x00 ,	0x00 ,	0x00 ,	
 
 
 
 Cell Name         = Channel_3.PEQ
 Parameter Name    = EQGenFilterDPS300Alg3B2_3
 Parameter Address = 422
-Parameter Value   = 0.99724668264389
+Parameter Value   = 0
 Parameter Data :
-0x00 ,	0xFF ,	0x4B ,	0x8F ,	
+0x00 ,	0x00 ,	0x00 ,	0x00 ,	
 
 
 
 Cell Name         = Channel_3.PEQ
 Parameter Name    = EQGenFilterDPS300Alg3B1_3
 Parameter Address = 423
-Parameter Value   = -1.99840724468231
+Parameter Value   = 0
 Parameter Data :
-0xFE ,	0x00 ,	0x68 ,	0x62 ,	
+0x00 ,	0x00 ,	0x00 ,	0x00 ,	
 
 
 
 Cell Name         = Channel_3.PEQ
 Parameter Name    = EQGenFilterDPS300Alg3B0_3
 Parameter Address = 424
-Parameter Value   = 1.00118535757065
+Parameter Value   = 1
 Parameter Data :
-0x01 ,	0x00 ,	0x4D ,	0xAF ,	
+0x01 ,	0x00 ,	0x00 ,	0x00 ,	
 
 
 
 Cell Name         = Channel_3.PEQ
 Parameter Name    = EQGenFilterDPS300Alg3A2_3
 Parameter Address = 425
-Parameter Value   = -0.998431980609894
+Parameter Value   = 0
 Parameter Data :
-0xFF ,	0x00 ,	0x66 ,	0xC3 ,	
+0x00 ,	0x00 ,	0x00 ,	0x00 ,	
 
 
 
 Cell Name         = Channel_3.PEQ
 Parameter Name    = EQGenFilterDPS300Alg3A1_3
 Parameter Address = 426
-Parameter Value   = 1.99840724468231
+Parameter Value   = 0
 Parameter Data :
-0x01 ,	0xFF ,	0x97 ,	0x9E ,	
+0x00 ,	0x00 ,	0x00 ,	0x00 ,	
 
 
 
 Cell Name         = Channel_3.PEQ
 Parameter Name    = EQGenFilterDPS300Alg3B2_4
 Parameter Address = 427
-Parameter Value   = 0.927029430866241
+Parameter Value   = 0
 Parameter Data :
-0x00 ,	0xED ,	0x51 ,	0xCD ,	
+0x00 ,	0x00 ,	0x00 ,	0x00 ,	
 
 
 
 Cell Name         = Channel_3.PEQ
 Parameter Name    = EQGenFilterDPS300Alg3B1_4
 Parameter Address = 428
-Parameter Value   = -1.82091391086578
+Parameter Value   = 0
 Parameter Data :
-0xFE ,	0x2D ,	0xD8 ,	0x96 ,	
+0x00 ,	0x00 ,	0x00 ,	0x00 ,	
 
 
 
 Cell Name         = Channel_3.PEQ
 Parameter Name    = EQGenFilterDPS300Alg3B0_4
 Parameter Address = 429
-Parameter Value   = 0.972090780735016
+Parameter Value   = 1
 Parameter Data :
-0x00 ,	0xF8 ,	0xDA ,	0xF1 ,	
+0x01 ,	0x00 ,	0x00 ,	0x00 ,	
 
 
 
 Cell Name         = Channel_3.PEQ
 Parameter Name    = EQGenFilterDPS300Alg3A2_4
 Parameter Address = 430
-Parameter Value   = -0.899120211601257
+Parameter Value   = 0
 Parameter Data :
-0xFF ,	0x19 ,	0xD3 ,	0x42 ,	
+0x00 ,	0x00 ,	0x00 ,	0x00 ,	
 
 
 
 Cell Name         = Channel_3.PEQ
 Parameter Name    = EQGenFilterDPS300Alg3A1_4
 Parameter Address = 431
-Parameter Value   = 1.82091391086578
+Parameter Value   = 0
 Parameter Data :
-0x01 ,	0xD2 ,	0x27 ,	0x6A ,	
+0x00 ,	0x00 ,	0x00 ,	0x00 ,	
 
 
 
 Cell Name         = Channel_3.PEQ
 Parameter Name    = EQGenFilterDPS300Alg3B2_5
 Parameter Address = 432
-Parameter Value   = 0.923915445804596
+Parameter Value   = 0
 Parameter Data :
-0x00 ,	0xEC ,	0x85 ,	0xB9 ,	
+0x00 ,	0x00 ,	0x00 ,	0x00 ,	
 
 
 
 Cell Name         = Channel_3.PEQ
 Parameter Name    = EQGenFilterDPS300Alg3B1_5
 Parameter Address = 433
-Parameter Value   = -1.9050145149231
+Parameter Value   = 0
 Parameter Data :
-0xFE ,	0x18 ,	0x50 ,	0xF8 ,	
+0x00 ,	0x00 ,	0x00 ,	0x00 ,	
 
 
 
 Cell Name         = Channel_3.PEQ
 Parameter Name    = EQGenFilterDPS300Alg3B0_5
 Parameter Address = 434
-Parameter Value   = 0.986989736557007
+Parameter Value   = 1
 Parameter Data :
-0x00 ,	0xFC ,	0xAB ,	0x5C ,	
+0x01 ,	0x00 ,	0x00 ,	0x00 ,	
 
 
 
 Cell Name         = Channel_3.PEQ
 Parameter Name    = EQGenFilterDPS300Alg3A2_5
 Parameter Address = 435
-Parameter Value   = -0.910905182361603
+Parameter Value   = 0
 Parameter Data :
-0xFF ,	0x16 ,	0xCE ,	0xEB ,	
+0x00 ,	0x00 ,	0x00 ,	0x00 ,	
 
 
 
 Cell Name         = Channel_3.PEQ
 Parameter Name    = EQGenFilterDPS300Alg3A1_5
 Parameter Address = 436
-Parameter Value   = 1.9050145149231
+Parameter Value   = 0
 Parameter Data :
-0x01 ,	0xE7 ,	0xAF ,	0x08 ,	
+0x00 ,	0x00 ,	0x00 ,	0x00 ,	
 
 
 
@@ -7193,7 +7283,7 @@ Parameter Data :
 
 Cell Name         = Channel_3.RMS_LIM
 Parameter Name    = MonoNoPostGainS300FullRange11points
-Parameter Address = 5610
+Parameter Address = 5634
 Parameter Data :
 0x01, 0x00, 0x00, 0x00, 
 0x01, 0x00, 0x00, 0x00, 
@@ -7254,7 +7344,7 @@ Parameter Data :
 
 Cell Name         = Channel_3.RMS_LIM
 Parameter Name    = MonoNoPostGainS300FullRange11tc
-Parameter Address = 7788
+Parameter Address = 7812
 Parameter Value   = 0.000206291675567627
 Parameter Data :
 0x00 ,	0x00 ,	0x0D ,	0x85 ,	
@@ -7263,7 +7353,7 @@ Parameter Data :
 
 Cell Name         = Channel_3.RMS_LIM
 Parameter Name    = MonoNoPostGainS300FullRange11hold
-Parameter Address = 7789
+Parameter Address = 7813
 Parameter Value   = 0
 Parameter Data :
 0x00 ,	0x00 ,	0x00 ,	0x00 ,	
@@ -7272,7 +7362,7 @@ Parameter Data :
 
 Cell Name         = Channel_3.RMS_LIM
 Parameter Name    = MonoNoPostGainS300FullRange11decay
-Parameter Address = 7790
+Parameter Address = 7814
 Parameter Value   = 9.35792922973633E-06
 Parameter Data :
 0x00 ,	0x00 ,	0x00 ,	0x9D ,	
@@ -7281,7 +7371,7 @@ Parameter Data :
 
 Cell Name         = Channel_3.PK_LIM
 Parameter Name    = OneChanPeakNoPostGainS300_FullRange3points
-Parameter Address = 5154
+Parameter Address = 5178
 Parameter Data :
 0x01, 0x00, 0x00, 0x00, 
 0x01, 0x00, 0x00, 0x00, 
@@ -7350,7 +7440,7 @@ Parameter Data :
 
 Cell Name         = Channel_3.PK_LIM
 Parameter Name    = OneChanPeakNoPostGainS300_FullRange3hold
-Parameter Address = 7733
+Parameter Address = 7757
 Parameter Value   = 0
 Parameter Data :
 0x00 ,	0x00 ,	0x00 ,	0x00 ,	
@@ -7359,145 +7449,163 @@ Parameter Data :
 
 Cell Name         = Channel_3.PK_LIM
 Parameter Name    = OneChanPeakNoPostGainS300_FullRange3decay
-Parameter Address = 7734
+Parameter Address = 7758
 Parameter Value   = 1.88946723937988E-05
 Parameter Data :
 0x00 ,	0x00 ,	0x01 ,	0x3D ,	
 
 
 
+Cell Name         = Channel_3.Gain
+Parameter Name    = HWGainADAU145XAlg3slew_mode
+Parameter Address = 4861
+Parameter Value   = 8330
+Parameter Data :
+0x00, 0x00, 0x20, 0x8A, 
+
+
+
+Cell Name         = Channel_3.Gain
+Parameter Name    = HWGainADAU145XAlg3target
+Parameter Address = 4860
+Parameter Value   = 1
+Parameter Data :
+0x01, 0x00, 0x00, 0x00, 
+
+
+
 Cell Name         = Channel_2.PEQ
 Parameter Name    = EQGenFilterDPS300Alg2B2_1
 Parameter Address = 462
-Parameter Value   = 0.249080896377563
+Parameter Value   = 0.474786579608917
 Parameter Data :
-0x00 ,	0x3F ,	0xC3 ,	0xC4 ,	
+0x00 ,	0x79 ,	0x8B ,	0x9D ,	
 
 
 
 Cell Name         = Channel_2.PEQ
 Parameter Name    = EQGenFilterDPS300Alg2B1_1
 Parameter Address = 463
-Parameter Value   = -0.517041742801666
+Parameter Value   = -0.811202883720398
 Parameter Data :
-0xFF ,	0x7B ,	0xA3 ,	0x27 ,	
+0xFF ,	0x30 ,	0x55 ,	0x02 ,	
 
 
 
 Cell Name         = Channel_2.PEQ
 Parameter Name    = EQGenFilterDPS300Alg2B0_1
 Parameter Address = 464
-Parameter Value   = 0.304745852947235
+Parameter Value   = 1.49606555700302
 Parameter Data :
-0x00 ,	0x4E ,	0x03 ,	0xD3 ,	
+0x01 ,	0x7E ,	0xFE ,	0x27 ,	
 
 
 
 Cell Name         = Channel_2.PEQ
 Parameter Name    = EQGenFilterDPS300Alg2A2_1
 Parameter Address = 465
-Parameter Value   = -0.751353800296783
+Parameter Value   = -0.276989877223969
 Parameter Data :
-0xFF ,	0x3F ,	0xA7 ,	0x47 ,	
+0xFF ,	0xB9 ,	0x17 ,	0x31 ,	
 
 
 
 Cell Name         = Channel_2.PEQ
 Parameter Name    = EQGenFilterDPS300Alg2A1_1
 Parameter Address = 466
-Parameter Value   = 1.63502961397171
+Parameter Value   = 0.117340564727783
 Parameter Data :
-0x01 ,	0xA2 ,	0x91 ,	0x4D ,	
+0x00 ,	0x1E ,	0x0A ,	0x08 ,	
 
 
 
 Cell Name         = Channel_2.PEQ
 Parameter Name    = EQGenFilterDPS300Alg2B2_2
 Parameter Address = 467
-Parameter Value   = 0.806709587574005
+Parameter Value   = 0
 Parameter Data :
-0x00 ,	0xCE ,	0x84 ,	0x85 ,	
+0x00 ,	0x00 ,	0x00 ,	0x00 ,	
 
 
 
 Cell Name         = Channel_2.PEQ
 Parameter Name    = EQGenFilterDPS300Alg2B1_2
 Parameter Address = 468
-Parameter Value   = 0.953561365604401
+Parameter Value   = 0
 Parameter Data :
-0x00 ,	0xF4 ,	0x1C ,	0x99 ,	
+0x00 ,	0x00 ,	0x00 ,	0x00 ,	
 
 
 
 Cell Name         = Channel_2.PEQ
 Parameter Name    = EQGenFilterDPS300Alg2B0_2
 Parameter Address = 469
-Parameter Value   = 1.10041320323944
+Parameter Value   = 1
 Parameter Data :
-0x01 ,	0x19 ,	0xB4 ,	0xAE ,	
+0x01 ,	0x00 ,	0x00 ,	0x00 ,	
 
 
 
 Cell Name         = Channel_2.PEQ
 Parameter Name    = EQGenFilterDPS300Alg2A2_2
 Parameter Address = 470
-Parameter Value   = -0.907122790813446
+Parameter Value   = 0
 Parameter Data :
-0xFF ,	0x17 ,	0xC6 ,	0xCD ,	
+0x00 ,	0x00 ,	0x00 ,	0x00 ,	
 
 
 
 Cell Name         = Channel_2.PEQ
 Parameter Name    = EQGenFilterDPS300Alg2A1_2
 Parameter Address = 471
-Parameter Value   = -0.953561365604401
+Parameter Value   = 0
 Parameter Data :
-0xFF ,	0x0B ,	0xE3 ,	0x67 ,	
+0x00 ,	0x00 ,	0x00 ,	0x00 ,	
 
 
 
 Cell Name         = Channel_2.PEQ
 Parameter Name    = EQGenFilterDPS300Alg2B2_3
 Parameter Address = 472
-Parameter Value   = 0.840611219406128
+Parameter Value   = 0
 Parameter Data :
-0x00 ,	0xD7 ,	0x32 ,	0x4C ,	
+0x00 ,	0x00 ,	0x00 ,	0x00 ,	
 
 
 
 Cell Name         = Channel_2.PEQ
 Parameter Name    = EQGenFilterDPS300Alg2B1_3
 Parameter Address = 473
-Parameter Value   = -0.906678080558777
+Parameter Value   = 0
 Parameter Data :
-0xFF ,	0x17 ,	0xE3 ,	0xF2 ,	
+0x00 ,	0x00 ,	0x00 ,	0x00 ,	
 
 
 
 Cell Name         = Channel_2.PEQ
 Parameter Name    = EQGenFilterDPS300Alg2B0_3
 Parameter Address = 474
-Parameter Value   = 0.972744941711426
+Parameter Value   = 1
 Parameter Data :
-0x00 ,	0xF9 ,	0x05 ,	0xD0 ,	
+0x01 ,	0x00 ,	0x00 ,	0x00 ,	
 
 
 
 Cell Name         = Channel_2.PEQ
 Parameter Name    = EQGenFilterDPS300Alg2A2_3
 Parameter Address = 475
-Parameter Value   = -0.813356101512909
+Parameter Value   = 0
 Parameter Data :
-0xFF ,	0x2F ,	0xC7 ,	0xE5 ,	
+0x00 ,	0x00 ,	0x00 ,	0x00 ,	
 
 
 
 Cell Name         = Channel_2.PEQ
 Parameter Name    = EQGenFilterDPS300Alg2A1_3
 Parameter Address = 476
-Parameter Value   = 0.906678080558777
+Parameter Value   = 0
 Parameter Data :
-0x00 ,	0xE8 ,	0x1C ,	0x0E ,	
+0x00 ,	0x00 ,	0x00 ,	0x00 ,	
 
 
 
@@ -8393,11 +8501,11 @@ Cell Name         = Channel_2.LowPass
 Parameter Name    = EQS300MultiDPHWSlewP1Alg7Targ_B2_2
 Parameter Address = 24834
 Parameter Data :
-0x00, 0xFF, 0xF9, 0xEF, 
-0x01, 0xFF, 0xF3, 0xDE, 
-0x00, 0xFF, 0xF9, 0xEF, 
-0xFF, 0x00, 0x0C, 0x22, 
-0xFE, 0x00, 0x0C, 0x22, 
+0x00, 0x00, 0x00, 0x00, 
+0x00, 0x00, 0x00, 0x00, 
+0x01, 0x00, 0x00, 0x00, 
+0x00, 0x00, 0x00, 0x00, 
+0x00, 0x00, 0x00, 0x00, 
 
 
 
@@ -8412,7 +8520,7 @@ Parameter Data :
 
 Cell Name         = Channel_2.RMS_LIM
 Parameter Name    = MonoNoPostGainS300FullRange10points
-Parameter Address = 5664
+Parameter Address = 5688
 Parameter Data :
 0x01, 0x00, 0x00, 0x00, 
 0x01, 0x00, 0x00, 0x00, 
@@ -8473,7 +8581,7 @@ Parameter Data :
 
 Cell Name         = Channel_2.RMS_LIM
 Parameter Name    = MonoNoPostGainS300FullRange10tc
-Parameter Address = 7795
+Parameter Address = 7819
 Parameter Value   = 0.000206291675567627
 Parameter Data :
 0x00 ,	0x00 ,	0x0D ,	0x85 ,	
@@ -8482,7 +8590,7 @@ Parameter Data :
 
 Cell Name         = Channel_2.RMS_LIM
 Parameter Name    = MonoNoPostGainS300FullRange10hold
-Parameter Address = 7796
+Parameter Address = 7820
 Parameter Value   = 0
 Parameter Data :
 0x00 ,	0x00 ,	0x00 ,	0x00 ,	
@@ -8491,7 +8599,7 @@ Parameter Data :
 
 Cell Name         = Channel_2.RMS_LIM
 Parameter Name    = MonoNoPostGainS300FullRange10decay
-Parameter Address = 7797
+Parameter Address = 7821
 Parameter Value   = 9.35792922973633E-06
 Parameter Data :
 0x00 ,	0x00 ,	0x00 ,	0x9D ,	
@@ -8500,7 +8608,7 @@ Parameter Data :
 
 Cell Name         = Channel_2.PK_LIM
 Parameter Name    = OneChanPeakNoPostGainS300_FullRange2points
-Parameter Address = 5216
+Parameter Address = 5240
 Parameter Data :
 0x01, 0x00, 0x00, 0x00, 
 0x01, 0x00, 0x00, 0x00, 
@@ -8569,7 +8677,7 @@ Parameter Data :
 
 Cell Name         = Channel_2.PK_LIM
 Parameter Name    = OneChanPeakNoPostGainS300_FullRange2hold
-Parameter Address = 7740
+Parameter Address = 7764
 Parameter Value   = 0
 Parameter Data :
 0x00 ,	0x00 ,	0x00 ,	0x00 ,	
@@ -8578,235 +8686,253 @@ Parameter Data :
 
 Cell Name         = Channel_2.PK_LIM
 Parameter Name    = OneChanPeakNoPostGainS300_FullRange2decay
-Parameter Address = 7741
+Parameter Address = 7765
 Parameter Value   = 1.88946723937988E-05
 Parameter Data :
 0x00 ,	0x00 ,	0x01 ,	0x3D ,	
 
 
 
+Cell Name         = Channel_2.Gain
+Parameter Name    = HWGainADAU145XAlg1slew_mode
+Parameter Address = 4864
+Parameter Value   = 8330
+Parameter Data :
+0x00, 0x00, 0x20, 0x8A, 
+
+
+
+Cell Name         = Channel_2.Gain
+Parameter Name    = HWGainADAU145XAlg1target
+Parameter Address = 4863
+Parameter Value   = 0.251188635826111
+Parameter Data :
+0x00, 0x40, 0x4D, 0xE6, 
+
+
+
 Cell Name         = Channel_1.PEQ
 Parameter Name    = EQGenFilterDPS300Alg1B2_1
 Parameter Address = 512
-Parameter Value   = 0.991696298122406
+Parameter Value   = 0.964106500148773
 Parameter Data :
-0x00 ,	0xFD ,	0xDF ,	0xCF ,	
+0x00 ,	0xF6 ,	0xCF ,	0xAF ,	
 
 
 
 Cell Name         = Channel_1.PEQ
 Parameter Name    = EQGenFilterDPS300Alg1B1_1
 Parameter Address = 513
-Parameter Value   = -1.99420940876007
+Parameter Value   = -1.97546273469925
 Parameter Data :
-0xFE ,	0x01 ,	0x7B ,	0x7E ,	
+0xFE ,	0x06 ,	0x48 ,	0x13 ,	
 
 
 
 Cell Name         = Channel_1.PEQ
 Parameter Name    = EQGenFilterDPS300Alg1B0_1
 Parameter Address = 514
-Parameter Value   = 1.0027591586113
+Parameter Value   = 1.01211619377136
 Parameter Data :
-0x01 ,	0x00 ,	0xB4 ,	0xD3 ,	
+0x01 ,	0x03 ,	0x1A ,	0x0C ,	
 
 
 
 Cell Name         = Channel_1.PEQ
 Parameter Name    = EQGenFilterDPS300Alg1A2_1
 Parameter Address = 515
-Parameter Value   = -0.994455456733704
+Parameter Value   = -0.975938141345978
 Parameter Data :
-0xFF ,	0x01 ,	0x6B ,	0x5E ,	
+0xFF ,	0x06 ,	0x28 ,	0xEB ,	
 
 
 
 Cell Name         = Channel_1.PEQ
 Parameter Name    = EQGenFilterDPS300Alg1A1_1
 Parameter Address = 516
-Parameter Value   = 1.99420940876007
+Parameter Value   = 1.97574728727341
 Parameter Data :
-0x01 ,	0xFE ,	0x84 ,	0x82 ,	
+0x01 ,	0xF9 ,	0xCA ,	0x93 ,	
 
 
 
 Cell Name         = Channel_1.PEQ
 Parameter Name    = EQGenFilterDPS300Alg1B2_2
 Parameter Address = 517
-Parameter Value   = 0.981429219245911
+Parameter Value   = 0
 Parameter Data :
-0x00 ,	0xFB ,	0x3E ,	0xF2 ,	
+0x00 ,	0x00 ,	0x00 ,	0x00 ,	
 
 
 
 Cell Name         = Channel_1.PEQ
 Parameter Name    = EQGenFilterDPS300Alg1B1_2
 Parameter Address = 518
-Parameter Value   = -1.9631569981575
+Parameter Value   = 0
 Parameter Data :
-0xFE ,	0x09 ,	0x6E ,	0x8B ,	
+0x00 ,	0x00 ,	0x00 ,	0x00 ,	
 
 
 
 Cell Name         = Channel_1.PEQ
 Parameter Name    = EQGenFilterDPS300Alg1B0_2
 Parameter Address = 519
-Parameter Value   = 0.992005169391632
+Parameter Value   = 1
 Parameter Data :
-0x00 ,	0xFD ,	0xF4 ,	0x0D ,	
+0x01 ,	0x00 ,	0x00 ,	0x00 ,	
 
 
 
 Cell Name         = Channel_1.PEQ
 Parameter Name    = EQGenFilterDPS300Alg1A2_2
 Parameter Address = 520
-Parameter Value   = -0.973434388637543
+Parameter Value   = 0
 Parameter Data :
-0xFF ,	0x06 ,	0xCD ,	0x01 ,	
+0x00 ,	0x00 ,	0x00 ,	0x00 ,	
 
 
 
 Cell Name         = Channel_1.PEQ
 Parameter Name    = EQGenFilterDPS300Alg1A1_2
 Parameter Address = 521
-Parameter Value   = 1.9631569981575
+Parameter Value   = 0
 Parameter Data :
-0x01 ,	0xF6 ,	0x91 ,	0x75 ,	
+0x00 ,	0x00 ,	0x00 ,	0x00 ,	
 
 
 
 Cell Name         = Channel_1.PEQ
 Parameter Name    = EQGenFilterDPS300Alg1B2_3
 Parameter Address = 522
-Parameter Value   = 0.99724668264389
+Parameter Value   = 0
 Parameter Data :
-0x00 ,	0xFF ,	0x4B ,	0x8F ,	
+0x00 ,	0x00 ,	0x00 ,	0x00 ,	
 
 
 
 Cell Name         = Channel_1.PEQ
 Parameter Name    = EQGenFilterDPS300Alg1B1_3
 Parameter Address = 523
-Parameter Value   = -1.99840724468231
+Parameter Value   = 0
 Parameter Data :
-0xFE ,	0x00 ,	0x68 ,	0x62 ,	
+0x00 ,	0x00 ,	0x00 ,	0x00 ,	
 
 
 
 Cell Name         = Channel_1.PEQ
 Parameter Name    = EQGenFilterDPS300Alg1B0_3
 Parameter Address = 524
-Parameter Value   = 1.00118535757065
+Parameter Value   = 1
 Parameter Data :
-0x01 ,	0x00 ,	0x4D ,	0xAF ,	
+0x01 ,	0x00 ,	0x00 ,	0x00 ,	
 
 
 
 Cell Name         = Channel_1.PEQ
 Parameter Name    = EQGenFilterDPS300Alg1A2_3
 Parameter Address = 525
-Parameter Value   = -0.998431980609894
+Parameter Value   = 0
 Parameter Data :
-0xFF ,	0x00 ,	0x66 ,	0xC3 ,	
+0x00 ,	0x00 ,	0x00 ,	0x00 ,	
 
 
 
 Cell Name         = Channel_1.PEQ
 Parameter Name    = EQGenFilterDPS300Alg1A1_3
 Parameter Address = 526
-Parameter Value   = 1.99840724468231
+Parameter Value   = 0
 Parameter Data :
-0x01 ,	0xFF ,	0x97 ,	0x9E ,	
+0x00 ,	0x00 ,	0x00 ,	0x00 ,	
 
 
 
 Cell Name         = Channel_1.PEQ
 Parameter Name    = EQGenFilterDPS300Alg1B2_4
 Parameter Address = 527
-Parameter Value   = 0.927029430866241
+Parameter Value   = 0
 Parameter Data :
-0x00 ,	0xED ,	0x51 ,	0xCD ,	
+0x00 ,	0x00 ,	0x00 ,	0x00 ,	
 
 
 
 Cell Name         = Channel_1.PEQ
 Parameter Name    = EQGenFilterDPS300Alg1B1_4
 Parameter Address = 528
-Parameter Value   = -1.82091391086578
+Parameter Value   = 0
 Parameter Data :
-0xFE ,	0x2D ,	0xD8 ,	0x96 ,	
+0x00 ,	0x00 ,	0x00 ,	0x00 ,	
 
 
 
 Cell Name         = Channel_1.PEQ
 Parameter Name    = EQGenFilterDPS300Alg1B0_4
 Parameter Address = 529
-Parameter Value   = 0.972090780735016
+Parameter Value   = 1
 Parameter Data :
-0x00 ,	0xF8 ,	0xDA ,	0xF1 ,	
+0x01 ,	0x00 ,	0x00 ,	0x00 ,	
 
 
 
 Cell Name         = Channel_1.PEQ
 Parameter Name    = EQGenFilterDPS300Alg1A2_4
 Parameter Address = 530
-Parameter Value   = -0.899120211601257
+Parameter Value   = 0
 Parameter Data :
-0xFF ,	0x19 ,	0xD3 ,	0x42 ,	
+0x00 ,	0x00 ,	0x00 ,	0x00 ,	
 
 
 
 Cell Name         = Channel_1.PEQ
 Parameter Name    = EQGenFilterDPS300Alg1A1_4
 Parameter Address = 531
-Parameter Value   = 1.82091391086578
+Parameter Value   = 0
 Parameter Data :
-0x01 ,	0xD2 ,	0x27 ,	0x6A ,	
+0x00 ,	0x00 ,	0x00 ,	0x00 ,	
 
 
 
 Cell Name         = Channel_1.PEQ
 Parameter Name    = EQGenFilterDPS300Alg1B2_5
 Parameter Address = 532
-Parameter Value   = 0.923915445804596
+Parameter Value   = 0
 Parameter Data :
-0x00 ,	0xEC ,	0x85 ,	0xB9 ,	
+0x00 ,	0x00 ,	0x00 ,	0x00 ,	
 
 
 
 Cell Name         = Channel_1.PEQ
 Parameter Name    = EQGenFilterDPS300Alg1B1_5
 Parameter Address = 533
-Parameter Value   = -1.9050145149231
+Parameter Value   = 0
 Parameter Data :
-0xFE ,	0x18 ,	0x50 ,	0xF8 ,	
+0x00 ,	0x00 ,	0x00 ,	0x00 ,	
 
 
 
 Cell Name         = Channel_1.PEQ
 Parameter Name    = EQGenFilterDPS300Alg1B0_5
 Parameter Address = 534
-Parameter Value   = 0.986989736557007
+Parameter Value   = 1
 Parameter Data :
-0x00 ,	0xFC ,	0xAB ,	0x5C ,	
+0x01 ,	0x00 ,	0x00 ,	0x00 ,	
 
 
 
 Cell Name         = Channel_1.PEQ
 Parameter Name    = EQGenFilterDPS300Alg1A2_5
 Parameter Address = 535
-Parameter Value   = -0.910905182361603
+Parameter Value   = 0
 Parameter Data :
-0xFF ,	0x16 ,	0xCE ,	0xEB ,	
+0x00 ,	0x00 ,	0x00 ,	0x00 ,	
 
 
 
 Cell Name         = Channel_1.PEQ
 Parameter Name    = EQGenFilterDPS300Alg1A1_5
 Parameter Address = 536
-Parameter Value   = 1.9050145149231
+Parameter Value   = 0
 Parameter Data :
-0x01 ,	0xE7 ,	0xAF ,	0x08 ,	
+0x00 ,	0x00 ,	0x00 ,	0x00 ,	
 
 
 
@@ -9631,7 +9757,7 @@ Parameter Data :
 
 Cell Name         = Channel_1.RMS_LIM
 Parameter Name    = MonoNoPostGainS300FullRange9points
-Parameter Address = 5718
+Parameter Address = 5742
 Parameter Data :
 0x01, 0x00, 0x00, 0x00, 
 0x01, 0x00, 0x00, 0x00, 
@@ -9692,7 +9818,7 @@ Parameter Data :
 
 Cell Name         = Channel_1.RMS_LIM
 Parameter Name    = MonoNoPostGainS300FullRange9tc
-Parameter Address = 7802
+Parameter Address = 7826
 Parameter Value   = 0.000206291675567627
 Parameter Data :
 0x00 ,	0x00 ,	0x0D ,	0x85 ,	
@@ -9701,7 +9827,7 @@ Parameter Data :
 
 Cell Name         = Channel_1.RMS_LIM
 Parameter Name    = MonoNoPostGainS300FullRange9hold
-Parameter Address = 7803
+Parameter Address = 7827
 Parameter Value   = 0
 Parameter Data :
 0x00 ,	0x00 ,	0x00 ,	0x00 ,	
@@ -9710,7 +9836,7 @@ Parameter Data :
 
 Cell Name         = Channel_1.RMS_LIM
 Parameter Name    = MonoNoPostGainS300FullRange9decay
-Parameter Address = 7804
+Parameter Address = 7828
 Parameter Value   = 9.35792922973633E-06
 Parameter Data :
 0x00 ,	0x00 ,	0x00 ,	0x9D ,	
@@ -9719,7 +9845,7 @@ Parameter Data :
 
 Cell Name         = Channel_1.PK_LIM
 Parameter Name    = OneChanPeakNoPostGainS300_FullRange1points
-Parameter Address = 5278
+Parameter Address = 5302
 Parameter Data :
 0x01, 0x00, 0x00, 0x00, 
 0x01, 0x00, 0x00, 0x00, 
@@ -9788,7 +9914,7 @@ Parameter Data :
 
 Cell Name         = Channel_1.PK_LIM
 Parameter Name    = OneChanPeakNoPostGainS300_FullRange1hold
-Parameter Address = 7747
+Parameter Address = 7771
 Parameter Value   = 0
 Parameter Data :
 0x00 ,	0x00 ,	0x00 ,	0x00 ,	
@@ -9797,10 +9923,28 @@ Parameter Data :
 
 Cell Name         = Channel_1.PK_LIM
 Parameter Name    = OneChanPeakNoPostGainS300_FullRange1decay
-Parameter Address = 7748
+Parameter Address = 7772
 Parameter Value   = 1.88946723937988E-05
 Parameter Data :
 0x00 ,	0x00 ,	0x01 ,	0x3D ,	
+
+
+
+Cell Name         = Channel_1.Gain
+Parameter Name    = HWGainADAU145XAlg2slew_mode
+Parameter Address = 4867
+Parameter Value   = 8330
+Parameter Data :
+0x00, 0x00, 0x20, 0x8A, 
+
+
+
+Cell Name         = Channel_1.Gain
+Parameter Name    = HWGainADAU145XAlg2target
+Parameter Address = 4866
+Parameter Value   = 1
+Parameter Data :
+0x01, 0x00, 0x00, 0x00, 
 
 
 

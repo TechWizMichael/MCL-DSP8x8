@@ -18,16 +18,16 @@
     <IC name=" IC 1 " type="ADAU1452">
         <Schematic>
             <Algorithm name="ICInput2ADAU145X1" friendlyname="ADAU145x Inputs 16-31 " cell="Digital_Input.I2S_IN_1 " location="{X=58, Y=110} " Growth="16 " GrowthB="0 " FS="48000">
-                <Link pin="O_C493_A0_P1_out" dir="out" link="Link54" />
-                <Link pin="O_C493_A0_P2_out" dir="out" link="Link55" />
-                <Link pin="O_C493_A0_P3_out" dir="out" link="Link56" />
-                <Link pin="O_C493_A0_P4_out" dir="out" link="Link57" />
+                <Link pin="O_C493_A0_P1_out" dir="out" link="Link62" />
+                <Link pin="O_C493_A0_P2_out" dir="out" link="Link63" />
+                <Link pin="O_C493_A0_P3_out" dir="out" link="Link64" />
+                <Link pin="O_C493_A0_P4_out" dir="out" link="Link65" />
             </Algorithm>
             <Algorithm name="ICInputADAU145X1" friendlyname="ADAU145x Inputs 0-15 " cell="Digital_Input.I2S_OUT_0 " location="{X=285, Y=99} " Growth="16 " GrowthB="0 " FS="48000">
-                <Link pin="O_C675_A0_P1_out" dir="out" link="Link58" />
-                <Link pin="O_C675_A0_P2_out" dir="out" link="Link59" />
-                <Link pin="O_C675_A0_P3_out" dir="out" link="Link60" />
-                <Link pin="O_C675_A0_P4_out" dir="out" link="Link61" />
+                <Link pin="O_C675_A0_P1_out" dir="out" link="Link66" />
+                <Link pin="O_C675_A0_P2_out" dir="out" link="Link67" />
+                <Link pin="O_C675_A0_P3_out" dir="out" link="Link68" />
+                <Link pin="O_C675_A0_P4_out" dir="out" link="Link69" />
             </Algorithm>
             <Algorithm name="PulseS300Alg1" friendlyname="Pulse Generator " cell="LED_Heartbeat.Heartbeat_Pulse " location="{X=66, Y=128} " Growth="0 " GrowthB="0 " FS="48000">
                 <Link pin="O_C21_A0_P1_out" dir="out" link="Link1" />
@@ -36,10 +36,10 @@
                 <Link pin="O_C2_A0_P1_out" dir="out" link="Link2" />
             </Algorithm>
             <Algorithm name="SinePhaseGainAlgS3002" friendlyname="Sin Tone with Initial Phase " cell="Tone_Gen " location="{X=-181, Y=331} " Growth="2 " GrowthB="0 " FS="48000">
-                <Link pin="O_C0_A0_P1_out" dir="out" link="Link51" />
+                <Link pin="O_C0_A0_P1_out" dir="out" link="Link59" />
             </Algorithm>
             <Algorithm name="WhiteNAlgS3001" friendlyname="White Noise " cell="Noise_Gen " location="{X=-183, Y=476} " Growth="0 " GrowthB="0 " FS="48000">
-                <Link pin="O_C18_A0_P1_out" dir="out" link="Link52" />
+                <Link pin="O_C18_A0_P1_out" dir="out" link="Link60" />
             </Algorithm>
             <Algorithm name="monomuxSigma300ns1" friendlyname="Mono " cell="LED_Heartbeat.Heartbeat_Switch " location="{X=169, Y=161} " Growth="2 " GrowthB="0">
                 <Link pin="I_C96_A0_P2_in" dir="in" link="Link1" />
@@ -47,267 +47,299 @@
                 <Link pin="O_C96_A0_P1_out" dir="out" link="Link0" />
             </Algorithm>
             <Algorithm name="PinkFAlgS3001" friendlyname="Pink Noise Filter " cell="Noise_Pink_Filter " location="{X=-117, Y=436} " Growth="0 " GrowthB="0">
-                <Link pin="I_C14_A0_P1_in" dir="in" link="Link52" />
-                <Link pin="O_C14_A0_P2_out" dir="out" link="Link53" />
+                <Link pin="I_C14_A0_P1_in" dir="in" link="Link60" />
+                <Link pin="O_C14_A0_P2_out" dir="out" link="Link61" />
             </Algorithm>
             <Algorithm name="AudioSignalRouter34S300Alg1" friendlyname="Audio Signal Router " cell="Mixer " location="{X=-14, Y=238} " Growth="10 " GrowthB="8">
-                <Link pin="I_C117_A0_P2_in" dir="in" link="Link54" />
-                <Link pin="I_C117_A0_P3_in" dir="in" link="Link55" />
-                <Link pin="I_C117_A0_P4_in" dir="in" link="Link56" />
-                <Link pin="I_C117_A0_P5_in" dir="in" link="Link57" />
-                <Link pin="I_C117_A0_P6_in" dir="in" link="Link58" />
-                <Link pin="I_C117_A0_P7_in" dir="in" link="Link59" />
-                <Link pin="I_C117_A0_P8_in" dir="in" link="Link60" />
-                <Link pin="I_C117_A0_P9_in" dir="in" link="Link61" />
-                <Link pin="I_C117_A0_P17_in" dir="in" link="Link51" />
-                <Link pin="I_C117_A0_P18_in" dir="in" link="Link53" />
-                <Link pin="O_C117_A0_P1_out" dir="out" link="Link76" />
-                <Link pin="O_C117_A0_P10_out" dir="out" link="Link75" />
-                <Link pin="O_C117_A0_P11_out" dir="out" link="Link72" />
-                <Link pin="O_C117_A0_P12_out" dir="out" link="Link70" />
-                <Link pin="O_C117_A0_P13_out" dir="out" link="Link69" />
-                <Link pin="O_C117_A0_P14_out" dir="out" link="Link66" />
-                <Link pin="O_C117_A0_P15_out" dir="out" link="Link65" />
-                <Link pin="O_C117_A0_P16_out" dir="out" link="Link62" />
+                <Link pin="I_C117_A0_P2_in" dir="in" link="Link62" />
+                <Link pin="I_C117_A0_P3_in" dir="in" link="Link63" />
+                <Link pin="I_C117_A0_P4_in" dir="in" link="Link64" />
+                <Link pin="I_C117_A0_P5_in" dir="in" link="Link65" />
+                <Link pin="I_C117_A0_P6_in" dir="in" link="Link66" />
+                <Link pin="I_C117_A0_P7_in" dir="in" link="Link67" />
+                <Link pin="I_C117_A0_P8_in" dir="in" link="Link68" />
+                <Link pin="I_C117_A0_P9_in" dir="in" link="Link69" />
+                <Link pin="I_C117_A0_P17_in" dir="in" link="Link59" />
+                <Link pin="I_C117_A0_P18_in" dir="in" link="Link61" />
+                <Link pin="O_C117_A0_P1_out" dir="out" link="Link84" />
+                <Link pin="O_C117_A0_P10_out" dir="out" link="Link83" />
+                <Link pin="O_C117_A0_P11_out" dir="out" link="Link80" />
+                <Link pin="O_C117_A0_P12_out" dir="out" link="Link78" />
+                <Link pin="O_C117_A0_P13_out" dir="out" link="Link77" />
+                <Link pin="O_C117_A0_P14_out" dir="out" link="Link74" />
+                <Link pin="O_C117_A0_P15_out" dir="out" link="Link73" />
+                <Link pin="O_C117_A0_P16_out" dir="out" link="Link70" />
             </Algorithm>
             <Algorithm name="GPOAlg3001" friendlyname="General Purpose Output " cell="LED_Heartbeat.Heartbeat_OUT " location="{X=216, Y=125} " Growth="0 " GrowthB="0">
                 <Link pin="I_C70_A0_P1_in" dir="in" link="Link0" />
             </Algorithm>
             <Algorithm name="EQGenFilterDPS300Alg8" friendlyname="Multi-Channel - Double Precision " cell="Channel_8.PEQ " location="{X=160, Y=254} " Growth="1 " GrowthB="1">
-                <Link pin="I_C520_A0_P1_in" dir="in" link="Link62" />
+                <Link pin="I_C520_A0_P1_in" dir="in" link="Link70" />
                 <Link pin="O_C520_A0_P2_out" dir="out" link="Link3" />
             </Algorithm>
             <Algorithm name="EQGenFilterDPS300Alg7" friendlyname="Multi-Channel - Double Precision " cell="Channel_7.PEQ " location="{X=160, Y=254} " Growth="1 " GrowthB="1">
-                <Link pin="I_C464_A0_P1_in" dir="in" link="Link65" />
-                <Link pin="O_C464_A0_P2_out" dir="out" link="Link10" />
+                <Link pin="I_C464_A0_P1_in" dir="in" link="Link73" />
+                <Link pin="O_C464_A0_P2_out" dir="out" link="Link11" />
             </Algorithm>
             <Algorithm name="EQGenFilterDPS300Alg6" friendlyname="Multi-Channel - Double Precision " cell="Channel_6.PEQ " location="{X=160, Y=254} " Growth="1 " GrowthB="1">
-                <Link pin="I_C408_A0_P1_in" dir="in" link="Link66" />
-                <Link pin="O_C408_A0_P2_out" dir="out" link="Link15" />
+                <Link pin="I_C408_A0_P1_in" dir="in" link="Link74" />
+                <Link pin="O_C408_A0_P2_out" dir="out" link="Link17" />
             </Algorithm>
             <Algorithm name="EQGenFilterDPS300Alg5" friendlyname="Multi-Channel - Double Precision " cell="Channel_5.PEQ " location="{X=160, Y=254} " Growth="1 " GrowthB="1">
-                <Link pin="I_C352_A0_P1_in" dir="in" link="Link69" />
-                <Link pin="O_C352_A0_P2_out" dir="out" link="Link22" />
+                <Link pin="I_C352_A0_P1_in" dir="in" link="Link77" />
+                <Link pin="O_C352_A0_P2_out" dir="out" link="Link25" />
             </Algorithm>
             <Algorithm name="EQGenFilterDPS300Alg4" friendlyname="Multi-Channel - Double Precision " cell="Channel_4.PEQ " location="{X=160, Y=254} " Growth="1 " GrowthB="1">
-                <Link pin="I_C296_A0_P1_in" dir="in" link="Link70" />
-                <Link pin="O_C296_A0_P2_out" dir="out" link="Link30" />
+                <Link pin="I_C296_A0_P1_in" dir="in" link="Link78" />
+                <Link pin="O_C296_A0_P2_out" dir="out" link="Link34" />
             </Algorithm>
             <Algorithm name="EQGenFilterDPS300Alg3" friendlyname="Multi-Channel - Double Precision " cell="Channel_3.PEQ " location="{X=160, Y=254} " Growth="1 " GrowthB="1">
-                <Link pin="I_C240_A0_P1_in" dir="in" link="Link72" />
-                <Link pin="O_C240_A0_P2_out" dir="out" link="Link33" />
+                <Link pin="I_C240_A0_P1_in" dir="in" link="Link80" />
+                <Link pin="O_C240_A0_P2_out" dir="out" link="Link38" />
             </Algorithm>
             <Algorithm name="EQGenFilterDPS300Alg2" friendlyname="Multi-Channel - Double Precision " cell="Channel_2.PEQ " location="{X=160, Y=254} " Growth="1 " GrowthB="1">
-                <Link pin="I_C29_A0_P1_in" dir="in" link="Link75" />
-                <Link pin="O_C29_A0_P2_out" dir="out" link="Link39" />
+                <Link pin="I_C29_A0_P1_in" dir="in" link="Link83" />
+                <Link pin="O_C29_A0_P2_out" dir="out" link="Link45" />
             </Algorithm>
             <Algorithm name="EQGenFilterDPS300Alg1" friendlyname="Multi-Channel - Double Precision " cell="Channel_1.PEQ " location="{X=-71, Y=165} " Growth="1 " GrowthB="1">
-                <Link pin="I_C44_A0_P1_in" dir="in" link="Link76" />
-                <Link pin="O_C44_A0_P2_out" dir="out" link="Link45" />
+                <Link pin="I_C44_A0_P1_in" dir="in" link="Link84" />
+                <Link pin="O_C44_A0_P2_out" dir="out" link="Link52" />
             </Algorithm>
             <Algorithm name="FIRSigma300Alg8" friendlyname="FIR " cell="Channel_8.FIR " location="{X=221, Y=247} " Growth="1 " GrowthB="0">
                 <Link pin="I_C523_A0_P1_in" dir="in" link="Link3" />
-                <Link pin="O_C523_A0_P2_out" dir="out" link="Link6" />
+                <Link pin="O_C523_A0_P2_out" dir="out" link="Link5" />
             </Algorithm>
             <Algorithm name="FIRSigma300Alg7" friendlyname="FIR " cell="Channel_7.FIR " location="{X=221, Y=247} " Growth="1 " GrowthB="0">
-                <Link pin="I_C467_A0_P1_in" dir="in" link="Link10" />
-                <Link pin="O_C467_A0_P2_out" dir="out" link="Link12" />
+                <Link pin="I_C467_A0_P1_in" dir="in" link="Link11" />
+                <Link pin="O_C467_A0_P2_out" dir="out" link="Link13" />
             </Algorithm>
             <Algorithm name="FIRSigma300Alg6" friendlyname="FIR " cell="Channel_6.FIR " location="{X=221, Y=247} " Growth="1 " GrowthB="0">
-                <Link pin="I_C411_A0_P1_in" dir="in" link="Link15" />
-                <Link pin="O_C411_A0_P2_out" dir="out" link="Link18" />
+                <Link pin="I_C411_A0_P1_in" dir="in" link="Link17" />
+                <Link pin="O_C411_A0_P2_out" dir="out" link="Link20" />
             </Algorithm>
             <Algorithm name="FIRSigma300Alg5" friendlyname="FIR " cell="Channel_5.FIR " location="{X=221, Y=247} " Growth="1 " GrowthB="0">
-                <Link pin="I_C355_A0_P1_in" dir="in" link="Link22" />
-                <Link pin="O_C355_A0_P2_out" dir="out" link="Link23" />
+                <Link pin="I_C355_A0_P1_in" dir="in" link="Link25" />
+                <Link pin="O_C355_A0_P2_out" dir="out" link="Link26" />
             </Algorithm>
             <Algorithm name="FIRSigma300Alg4" friendlyname="FIR " cell="Channel_4.FIR " location="{X=221, Y=247} " Growth="1 " GrowthB="0">
-                <Link pin="I_C299_A0_P1_in" dir="in" link="Link30" />
-                <Link pin="O_C299_A0_P2_out" dir="out" link="Link29" />
+                <Link pin="I_C299_A0_P1_in" dir="in" link="Link34" />
+                <Link pin="O_C299_A0_P2_out" dir="out" link="Link33" />
             </Algorithm>
             <Algorithm name="FIRSigma300Alg3" friendlyname="FIR " cell="Channel_3.FIR " location="{X=221, Y=247} " Growth="1 " GrowthB="0">
-                <Link pin="I_C243_A0_P1_in" dir="in" link="Link33" />
-                <Link pin="O_C243_A0_P2_out" dir="out" link="Link34" />
+                <Link pin="I_C243_A0_P1_in" dir="in" link="Link38" />
+                <Link pin="O_C243_A0_P2_out" dir="out" link="Link39" />
             </Algorithm>
             <Algorithm name="FIRSigma300Alg2" friendlyname="FIR " cell="Channel_2.FIR " location="{X=221, Y=247} " Growth="1 " GrowthB="0">
-                <Link pin="I_C33_A0_P1_in" dir="in" link="Link39" />
-                <Link pin="O_C33_A0_P2_out" dir="out" link="Link42" />
+                <Link pin="I_C33_A0_P1_in" dir="in" link="Link45" />
+                <Link pin="O_C33_A0_P2_out" dir="out" link="Link47" />
             </Algorithm>
             <Algorithm name="FIRSigma300Alg1" friendlyname="FIR " cell="Channel_1.FIR " location="{X=-10, Y=158} " Growth="1 " GrowthB="0">
-                <Link pin="I_C49_A0_P1_in" dir="in" link="Link45" />
-                <Link pin="O_C49_A0_P2_out" dir="out" link="Link46" />
+                <Link pin="I_C49_A0_P1_in" dir="in" link="Link52" />
+                <Link pin="O_C49_A0_P2_out" dir="out" link="Link53" />
             </Algorithm>
             <Algorithm name="EQS300MultiDPHWSlewP1Alg29" friendlyname="Multi-Channel HW Slew - Double Precision " cell="Channel_8.HighPass " location="{X=316, Y=240} " Growth="2 " GrowthB="1">
-                <Link pin="I_C526_A0_P1_in" dir="in" link="Link6" />
-                <Link pin="O_C526_A0_P2_out" dir="out" link="Link7" />
+                <Link pin="I_C526_A0_P1_in" dir="in" link="Link5" />
+                <Link pin="O_C526_A0_P2_out" dir="out" link="Link6" />
             </Algorithm>
             <Algorithm name="EQS300MultiDPHWSlewP1Alg25" friendlyname="Multi-Channel HW Slew - Double Precision " cell="Channel_7.HighPass " location="{X=316, Y=240} " Growth="2 " GrowthB="1">
-                <Link pin="I_C470_A0_P1_in" dir="in" link="Link12" />
-                <Link pin="O_C470_A0_P2_out" dir="out" link="Link14" />
+                <Link pin="I_C470_A0_P1_in" dir="in" link="Link13" />
+                <Link pin="O_C470_A0_P2_out" dir="out" link="Link15" />
             </Algorithm>
             <Algorithm name="EQS300MultiDPHWSlewP1Alg21" friendlyname="Multi-Channel HW Slew - Double Precision " cell="Channel_6.HighPass " location="{X=316, Y=240} " Growth="2 " GrowthB="1">
-                <Link pin="I_C414_A0_P1_in" dir="in" link="Link18" />
-                <Link pin="O_C414_A0_P2_out" dir="out" link="Link19" />
+                <Link pin="I_C414_A0_P1_in" dir="in" link="Link20" />
+                <Link pin="O_C414_A0_P2_out" dir="out" link="Link21" />
             </Algorithm>
             <Algorithm name="EQS300MultiDPHWSlewP1Alg17" friendlyname="Multi-Channel HW Slew - Double Precision " cell="Channel_5.HighPass " location="{X=316, Y=240} " Growth="2 " GrowthB="1">
-                <Link pin="I_C358_A0_P1_in" dir="in" link="Link23" />
-                <Link pin="O_C358_A0_P2_out" dir="out" link="Link26" />
+                <Link pin="I_C358_A0_P1_in" dir="in" link="Link26" />
+                <Link pin="O_C358_A0_P2_out" dir="out" link="Link28" />
             </Algorithm>
             <Algorithm name="EQS300MultiDPHWSlewP1Alg13" friendlyname="Multi-Channel HW Slew - Double Precision " cell="Channel_4.HighPass " location="{X=316, Y=240} " Growth="2 " GrowthB="1">
-                <Link pin="I_C302_A0_P1_in" dir="in" link="Link29" />
-                <Link pin="O_C302_A0_P2_out" dir="out" link="Link31" />
+                <Link pin="I_C302_A0_P1_in" dir="in" link="Link33" />
+                <Link pin="O_C302_A0_P2_out" dir="out" link="Link35" />
             </Algorithm>
             <Algorithm name="EQS300MultiDPHWSlewP1Alg9" friendlyname="Multi-Channel HW Slew - Double Precision " cell="Channel_3.HighPass " location="{X=316, Y=240} " Growth="2 " GrowthB="1">
-                <Link pin="I_C246_A0_P1_in" dir="in" link="Link34" />
-                <Link pin="O_C246_A0_P2_out" dir="out" link="Link37" />
+                <Link pin="I_C246_A0_P1_in" dir="in" link="Link39" />
+                <Link pin="O_C246_A0_P2_out" dir="out" link="Link41" />
             </Algorithm>
             <Algorithm name="EQS300MultiDPHWSlewP1Alg5" friendlyname="Multi-Channel HW Slew - Double Precision " cell="Channel_2.HighPass " location="{X=317, Y=240} " Growth="2 " GrowthB="1">
-                <Link pin="I_C37_A0_P1_in" dir="in" link="Link42" />
-                <Link pin="O_C37_A0_P2_out" dir="out" link="Link43" />
+                <Link pin="I_C37_A0_P1_in" dir="in" link="Link47" />
+                <Link pin="O_C37_A0_P2_out" dir="out" link="Link48" />
             </Algorithm>
             <Algorithm name="EQS300MultiDPHWSlewP1Alg1" friendlyname="Multi-Channel HW Slew - Double Precision " cell="Channel_1.HighPass " location="{X=85, Y=151} " Growth="2 " GrowthB="1">
-                <Link pin="I_C125_A0_P1_in" dir="in" link="Link46" />
-                <Link pin="O_C125_A0_P2_out" dir="out" link="Link49" />
+                <Link pin="I_C125_A0_P1_in" dir="in" link="Link53" />
+                <Link pin="O_C125_A0_P2_out" dir="out" link="Link55" />
             </Algorithm>
             <Algorithm name="EQS300MultiDPHWSlewP1Alg31" friendlyname="Multi-Channel HW Slew - Double Precision " cell="Channel_8.LowPass " location="{X=483, Y=234} " Growth="2 " GrowthB="1">
-                <Link pin="I_C532_A0_P1_in" dir="in" link="Link7" />
-                <Link pin="O_C532_A0_P2_out" dir="out" link="Link8" />
+                <Link pin="I_C532_A0_P1_in" dir="in" link="Link6" />
+                <Link pin="O_C532_A0_P2_out" dir="out" link="Link7" />
             </Algorithm>
             <Algorithm name="EQS300MultiDPHWSlewP1Alg27" friendlyname="Multi-Channel HW Slew - Double Precision " cell="Channel_7.LowPass " location="{X=483, Y=234} " Growth="2 " GrowthB="1">
-                <Link pin="I_C476_A0_P1_in" dir="in" link="Link14" />
-                <Link pin="O_C476_A0_P2_out" dir="out" link="Link13" />
+                <Link pin="I_C476_A0_P1_in" dir="in" link="Link15" />
+                <Link pin="O_C476_A0_P2_out" dir="out" link="Link14" />
             </Algorithm>
             <Algorithm name="EQS300MultiDPHWSlewP1Alg23" friendlyname="Multi-Channel HW Slew - Double Precision " cell="Channel_6.LowPass " location="{X=483, Y=234} " Growth="2 " GrowthB="1">
-                <Link pin="I_C420_A0_P1_in" dir="in" link="Link19" />
-                <Link pin="O_C420_A0_P2_out" dir="out" link="Link20" />
+                <Link pin="I_C420_A0_P1_in" dir="in" link="Link21" />
+                <Link pin="O_C420_A0_P2_out" dir="out" link="Link22" />
             </Algorithm>
             <Algorithm name="EQS300MultiDPHWSlewP1Alg19" friendlyname="Multi-Channel HW Slew - Double Precision " cell="Channel_5.LowPass " location="{X=483, Y=234} " Growth="2 " GrowthB="1">
-                <Link pin="I_C364_A0_P1_in" dir="in" link="Link26" />
-                <Link pin="O_C364_A0_P2_out" dir="out" link="Link25" />
+                <Link pin="I_C364_A0_P1_in" dir="in" link="Link28" />
+                <Link pin="O_C364_A0_P2_out" dir="out" link="Link27" />
             </Algorithm>
             <Algorithm name="EQS300MultiDPHWSlewP1Alg15" friendlyname="Multi-Channel HW Slew - Double Precision " cell="Channel_4.LowPass " location="{X=483, Y=234} " Growth="2 " GrowthB="1">
-                <Link pin="I_C308_A0_P1_in" dir="in" link="Link31" />
-                <Link pin="O_C308_A0_P2_out" dir="out" link="Link32" />
+                <Link pin="I_C308_A0_P1_in" dir="in" link="Link35" />
+                <Link pin="O_C308_A0_P2_out" dir="out" link="Link36" />
             </Algorithm>
             <Algorithm name="EQS300MultiDPHWSlewP1Alg11" friendlyname="Multi-Channel HW Slew - Double Precision " cell="Channel_3.LowPass " location="{X=483, Y=234} " Growth="2 " GrowthB="1">
-                <Link pin="I_C252_A0_P1_in" dir="in" link="Link37" />
-                <Link pin="O_C252_A0_P2_out" dir="out" link="Link38" />
+                <Link pin="I_C252_A0_P1_in" dir="in" link="Link41" />
+                <Link pin="O_C252_A0_P2_out" dir="out" link="Link42" />
             </Algorithm>
             <Algorithm name="EQS300MultiDPHWSlewP1Alg7" friendlyname="Multi-Channel HW Slew - Double Precision " cell="Channel_2.LowPass " location="{X=483, Y=234} " Growth="2 " GrowthB="1">
-                <Link pin="I_C54_A0_P1_in" dir="in" link="Link43" />
-                <Link pin="O_C54_A0_P2_out" dir="out" link="Link44" />
+                <Link pin="I_C54_A0_P1_in" dir="in" link="Link48" />
+                <Link pin="O_C54_A0_P2_out" dir="out" link="Link49" />
             </Algorithm>
             <Algorithm name="EQS300MultiDPHWSlewP1Alg3" friendlyname="Multi-Channel HW Slew - Double Precision " cell="Channel_1.LowPass " location="{X=252, Y=145} " Growth="2 " GrowthB="1">
-                <Link pin="I_C149_A0_P1_in" dir="in" link="Link49" />
-                <Link pin="O_C149_A0_P2_out" dir="out" link="Link50" />
+                <Link pin="I_C149_A0_P1_in" dir="in" link="Link55" />
+                <Link pin="O_C149_A0_P2_out" dir="out" link="Link56" />
             </Algorithm>
             <Algorithm name="DelaySigma300PMAlg8" friendlyname="Growable Delay " cell="Channel_8.Delay " location="{X=666, Y=226} " Growth="1 " GrowthB="0">
-                <Link pin="I_C538_A0_P1_in" dir="in" link="Link8" />
-                <Link pin="O_C538_A0_P2_out" dir="out" link="Link5" />
+                <Link pin="I_C538_A0_P1_in" dir="in" link="Link7" />
+                <Link pin="O_C538_A0_P2_out" dir="out" link="Link9" />
             </Algorithm>
             <Algorithm name="DelaySigma300PMAlg7" friendlyname="Growable Delay " cell="Channel_7.Delay " location="{X=666, Y=226} " Growth="1 " GrowthB="0">
-                <Link pin="I_C482_A0_P1_in" dir="in" link="Link13" />
-                <Link pin="O_C482_A0_P2_out" dir="out" link="Link11" />
+                <Link pin="I_C482_A0_P1_in" dir="in" link="Link14" />
+                <Link pin="O_C482_A0_P2_out" dir="out" link="Link12" />
             </Algorithm>
             <Algorithm name="DelaySigma300PMAlg6" friendlyname="Growable Delay " cell="Channel_6.Delay " location="{X=666, Y=226} " Growth="1 " GrowthB="0">
-                <Link pin="I_C426_A0_P1_in" dir="in" link="Link20" />
-                <Link pin="O_C426_A0_P2_out" dir="out" link="Link17" />
+                <Link pin="I_C426_A0_P1_in" dir="in" link="Link22" />
+                <Link pin="O_C426_A0_P2_out" dir="out" link="Link19" />
             </Algorithm>
-            <Algorithm name="DelaySigma300PMAlg5" friendlyname="Growable Delay " cell="Channel_5.Delay " location="{X=666, Y=226} " Growth="1 " GrowthB="0">
-                <Link pin="I_C370_A0_P1_in" dir="in" link="Link25" />
-                <Link pin="O_C370_A0_P2_out" dir="out" link="Link24" />
+            <Algorithm name="DelaySigma300PMAlg5" friendlyname="Growable Delay " cell="Channel_5.Delay " location="{X=632, Y=224} " Growth="1 " GrowthB="0">
+                <Link pin="I_C370_A0_P1_in" dir="in" link="Link27" />
+                <Link pin="O_C370_A0_P2_out" dir="out" link="Link29" />
             </Algorithm>
-            <Algorithm name="DelaySigma300PMAlg4" friendlyname="Growable Delay " cell="Channel_4.Delay " location="{X=666, Y=226} " Growth="1 " GrowthB="0">
-                <Link pin="I_C314_A0_P1_in" dir="in" link="Link32" />
-                <Link pin="O_C314_A0_P2_out" dir="out" link="Link27" />
+            <Algorithm name="DelaySigma300PMAlg4" friendlyname="Growable Delay " cell="Channel_4.Delay " location="{X=642, Y=224} " Growth="1 " GrowthB="0">
+                <Link pin="I_C314_A0_P1_in" dir="in" link="Link36" />
+                <Link pin="O_C314_A0_P2_out" dir="out" link="Link31" />
             </Algorithm>
             <Algorithm name="DelaySigma300PMAlg3" friendlyname="Growable Delay " cell="Channel_3.Delay " location="{X=666, Y=226} " Growth="1 " GrowthB="0">
-                <Link pin="I_C258_A0_P1_in" dir="in" link="Link38" />
-                <Link pin="O_C258_A0_P2_out" dir="out" link="Link36" />
+                <Link pin="I_C258_A0_P1_in" dir="in" link="Link42" />
+                <Link pin="O_C258_A0_P2_out" dir="out" link="Link43" />
             </Algorithm>
-            <Algorithm name="DelaySigma300PMAlg2" friendlyname="Growable Delay " cell="Channel_2.Delay " location="{X=666, Y=226} " Growth="1 " GrowthB="0">
-                <Link pin="I_C61_A0_P1_in" dir="in" link="Link44" />
-                <Link pin="O_C61_A0_P2_out" dir="out" link="Link40" />
+            <Algorithm name="DelaySigma300PMAlg2" friendlyname="Growable Delay " cell="Channel_2.Delay " location="{X=633, Y=226} " Growth="1 " GrowthB="0">
+                <Link pin="I_C61_A0_P1_in" dir="in" link="Link49" />
+                <Link pin="O_C61_A0_P2_out" dir="out" link="Link50" />
             </Algorithm>
             <Algorithm name="DelaySigma300PMAlg1" friendlyname="Growable Delay " cell="Channel_1.Delay " location="{X=435, Y=137} " Growth="1 " GrowthB="0">
-                <Link pin="I_C166_A0_P1_in" dir="in" link="Link50" />
-                <Link pin="O_C166_A0_P2_out" dir="out" link="Link47" />
+                <Link pin="I_C166_A0_P1_in" dir="in" link="Link56" />
+                <Link pin="O_C166_A0_P2_out" dir="out" link="Link58" />
             </Algorithm>
-            <Algorithm name="OneChanPeakNoPostGainS300_FullRange8" friendlyname="1-Channel Peak Compressor " cell="Channel_8.PK_LIM " location="{X=772, Y=206} " Growth="0 " GrowthB="0">
-                <Link pin="I_C544_A0_P1_in" dir="in" link="Link5" />
+            <Algorithm name="HWGainADAU145XAlg8" friendlyname="Gain (HW slew) " cell="Channel_8.Gain " location="{X=795, Y=237} " Growth="1 " GrowthB="0">
+                <Link pin="I_C192_A0_P1_in" dir="in" link="Link9" />
+                <Link pin="O_C192_A0_P2_out" dir="out" link="Link8" />
+            </Algorithm>
+            <Algorithm name="HWGainADAU145XAlg7" friendlyname="Gain (HW slew) " cell="Channel_7.Gain " location="{X=777, Y=238} " Growth="1 " GrowthB="0">
+                <Link pin="I_C180_A0_P1_in" dir="in" link="Link12" />
+                <Link pin="O_C180_A0_P2_out" dir="out" link="Link16" />
+            </Algorithm>
+            <Algorithm name="HWGainADAU145XAlg6" friendlyname="Gain (HW slew) " cell="Channel_6.Gain " location="{X=792, Y=248} " Growth="1 " GrowthB="0">
+                <Link pin="I_C165_A0_P1_in" dir="in" link="Link19" />
+                <Link pin="O_C165_A0_P2_out" dir="out" link="Link23" />
+            </Algorithm>
+            <Algorithm name="HWGainADAU145XAlg5" friendlyname="Gain (HW slew) " cell="Channel_5.Gain " location="{X=772, Y=233} " Growth="1 " GrowthB="0">
+                <Link pin="I_C158_A0_P1_in" dir="in" link="Link29" />
+                <Link pin="O_C158_A0_P2_out" dir="out" link="Link30" />
+            </Algorithm>
+            <Algorithm name="HWGainADAU145XAlg4" friendlyname="Gain (HW slew) " cell="Channel_4.Gain " location="{X=765, Y=227} " Growth="1 " GrowthB="0">
+                <Link pin="I_C151_A0_P1_in" dir="in" link="Link31" />
+                <Link pin="O_C151_A0_P2_out" dir="out" link="Link37" />
+            </Algorithm>
+            <Algorithm name="HWGainADAU145XAlg3" friendlyname="Gain (HW slew) " cell="Channel_3.Gain " location="{X=780, Y=239} " Growth="1 " GrowthB="0">
+                <Link pin="I_C143_A0_P1_in" dir="in" link="Link43" />
+                <Link pin="O_C143_A0_P2_out" dir="out" link="Link44" />
+            </Algorithm>
+            <Algorithm name="HWGainADAU145XAlg1" friendlyname="Gain (HW slew) " cell="Channel_2.Gain " location="{X=778, Y=233} " Growth="1 " GrowthB="0">
+                <Link pin="I_C100_A0_P1_in" dir="in" link="Link50" />
+                <Link pin="O_C100_A0_P2_out" dir="out" link="Link51" />
+            </Algorithm>
+            <Algorithm name="HWGainADAU145XAlg2" friendlyname="Gain (HW slew) " cell="Channel_1.Gain " location="{X=556, Y=151} " Growth="1 " GrowthB="0">
+                <Link pin="I_C111_A0_P1_in" dir="in" link="Link58" />
+                <Link pin="O_C111_A0_P2_out" dir="out" link="Link57" />
+            </Algorithm>
+            <Algorithm name="OneChanPeakNoPostGainS300_FullRange8" friendlyname="1-Channel Peak Compressor " cell="Channel_8.PK_LIM " location="{X=896, Y=204} " Growth="0 " GrowthB="0">
+                <Link pin="I_C544_A0_P1_in" dir="in" link="Link8" />
                 <Link pin="O_C544_A0_P2_out" dir="out" link="Link4" />
             </Algorithm>
-            <Algorithm name="OneChanPeakNoPostGainS300_FullRange7" friendlyname="1-Channel Peak Compressor " cell="Channel_7.PK_LIM " location="{X=772, Y=206} " Growth="0 " GrowthB="0">
-                <Link pin="I_C488_A0_P1_in" dir="in" link="Link11" />
-                <Link pin="O_C488_A0_P2_out" dir="out" link="Link9" />
+            <Algorithm name="OneChanPeakNoPostGainS300_FullRange7" friendlyname="1-Channel Peak Compressor " cell="Channel_7.PK_LIM " location="{X=852, Y=198} " Growth="0 " GrowthB="0">
+                <Link pin="I_C488_A0_P1_in" dir="in" link="Link16" />
+                <Link pin="O_C488_A0_P2_out" dir="out" link="Link10" />
             </Algorithm>
-            <Algorithm name="OneChanPeakNoPostGainS300_FullRange6" friendlyname="1-Channel Peak Compressor " cell="Channel_6.PK_LIM " location="{X=772, Y=206} " Growth="0 " GrowthB="0">
-                <Link pin="I_C432_A0_P1_in" dir="in" link="Link17" />
-                <Link pin="O_C432_A0_P2_out" dir="out" link="Link16" />
+            <Algorithm name="OneChanPeakNoPostGainS300_FullRange6" friendlyname="1-Channel Peak Compressor " cell="Channel_6.PK_LIM " location="{X=893, Y=205} " Growth="0 " GrowthB="0">
+                <Link pin="I_C432_A0_P1_in" dir="in" link="Link23" />
+                <Link pin="O_C432_A0_P2_out" dir="out" link="Link18" />
             </Algorithm>
-            <Algorithm name="OneChanPeakNoPostGainS300_FullRange5" friendlyname="1-Channel Peak Compressor " cell="Channel_5.PK_LIM " location="{X=772, Y=206} " Growth="0 " GrowthB="0">
-                <Link pin="I_C376_A0_P1_in" dir="in" link="Link24" />
-                <Link pin="O_C376_A0_P2_out" dir="out" link="Link21" />
+            <Algorithm name="OneChanPeakNoPostGainS300_FullRange5" friendlyname="1-Channel Peak Compressor " cell="Channel_5.PK_LIM " location="{X=881, Y=206} " Growth="0 " GrowthB="0">
+                <Link pin="I_C376_A0_P1_in" dir="in" link="Link30" />
+                <Link pin="O_C376_A0_P2_out" dir="out" link="Link24" />
             </Algorithm>
-            <Algorithm name="OneChanPeakNoPostGainS300_FullRange4" friendlyname="1-Channel Peak Compressor " cell="Channel_4.PK_LIM " location="{X=772, Y=206} " Growth="0 " GrowthB="0">
-                <Link pin="I_C320_A0_P1_in" dir="in" link="Link27" />
-                <Link pin="O_C320_A0_P2_out" dir="out" link="Link28" />
+            <Algorithm name="OneChanPeakNoPostGainS300_FullRange4" friendlyname="1-Channel Peak Compressor " cell="Channel_4.PK_LIM " location="{X=856, Y=206} " Growth="0 " GrowthB="0">
+                <Link pin="I_C320_A0_P1_in" dir="in" link="Link37" />
+                <Link pin="O_C320_A0_P2_out" dir="out" link="Link32" />
             </Algorithm>
-            <Algorithm name="OneChanPeakNoPostGainS300_FullRange3" friendlyname="1-Channel Peak Compressor " cell="Channel_3.PK_LIM " location="{X=772, Y=206} " Growth="0 " GrowthB="0">
-                <Link pin="I_C264_A0_P1_in" dir="in" link="Link36" />
-                <Link pin="O_C264_A0_P2_out" dir="out" link="Link35" />
+            <Algorithm name="OneChanPeakNoPostGainS300_FullRange3" friendlyname="1-Channel Peak Compressor " cell="Channel_3.PK_LIM " location="{X=865, Y=205} " Growth="0 " GrowthB="0">
+                <Link pin="I_C264_A0_P1_in" dir="in" link="Link44" />
+                <Link pin="O_C264_A0_P2_out" dir="out" link="Link40" />
             </Algorithm>
-            <Algorithm name="OneChanPeakNoPostGainS300_FullRange2" friendlyname="1-Channel Peak Compressor " cell="Channel_2.PK_LIM " location="{X=772, Y=206} " Growth="0 " GrowthB="0">
-                <Link pin="I_C67_A0_P1_in" dir="in" link="Link40" />
-                <Link pin="O_C67_A0_P2_out" dir="out" link="Link41" />
+            <Algorithm name="OneChanPeakNoPostGainS300_FullRange2" friendlyname="1-Channel Peak Compressor " cell="Channel_2.PK_LIM " location="{X=892, Y=209} " Growth="0 " GrowthB="0">
+                <Link pin="I_C67_A0_P1_in" dir="in" link="Link51" />
+                <Link pin="O_C67_A0_P2_out" dir="out" link="Link46" />
             </Algorithm>
-            <Algorithm name="OneChanPeakNoPostGainS300_FullRange1" friendlyname="1-Channel Peak Compressor " cell="Channel_1.PK_LIM " location="{X=541, Y=117} " Growth="0 " GrowthB="0">
-                <Link pin="I_C176_A0_P1_in" dir="in" link="Link47" />
-                <Link pin="O_C176_A0_P2_out" dir="out" link="Link48" />
+            <Algorithm name="OneChanPeakNoPostGainS300_FullRange1" friendlyname="1-Channel Peak Compressor " cell="Channel_1.PK_LIM " location="{X=647, Y=112} " Growth="0 " GrowthB="0">
+                <Link pin="I_C176_A0_P1_in" dir="in" link="Link57" />
+                <Link pin="O_C176_A0_P2_out" dir="out" link="Link54" />
             </Algorithm>
-            <Algorithm name="MonoNoPostGainS300FullRange16" friendlyname="1-Channel RMS Compressor " cell="Channel_8.RMS_LIM " location="{X=881, Y=194} " Growth="0 " GrowthB="0">
+            <Algorithm name="MonoNoPostGainS300FullRange16" friendlyname="1-Channel RMS Compressor " cell="Channel_8.RMS_LIM " location="{X=1005, Y=192} " Growth="0 " GrowthB="0">
                 <Link pin="I_C541_A0_P1_in" dir="in" link="Link4" />
-                <Link pin="O_C541_A0_P2_out" dir="out" link="Link63" />
+                <Link pin="O_C541_A0_P2_out" dir="out" link="Link71" />
             </Algorithm>
-            <Algorithm name="MonoNoPostGainS300FullRange15" friendlyname="1-Channel RMS Compressor " cell="Channel_7.RMS_LIM " location="{X=881, Y=194} " Growth="0 " GrowthB="0">
-                <Link pin="I_C485_A0_P1_in" dir="in" link="Link9" />
-                <Link pin="O_C485_A0_P2_out" dir="out" link="Link64" />
+            <Algorithm name="MonoNoPostGainS300FullRange15" friendlyname="1-Channel RMS Compressor " cell="Channel_7.RMS_LIM " location="{X=961, Y=186} " Growth="0 " GrowthB="0">
+                <Link pin="I_C485_A0_P1_in" dir="in" link="Link10" />
+                <Link pin="O_C485_A0_P2_out" dir="out" link="Link72" />
             </Algorithm>
-            <Algorithm name="MonoNoPostGainS300FullRange14" friendlyname="1-Channel RMS Compressor " cell="Channel_6.RMS_LIM " location="{X=881, Y=194} " Growth="0 " GrowthB="0">
-                <Link pin="I_C429_A0_P1_in" dir="in" link="Link16" />
-                <Link pin="O_C429_A0_P2_out" dir="out" link="Link67" />
+            <Algorithm name="MonoNoPostGainS300FullRange14" friendlyname="1-Channel RMS Compressor " cell="Channel_6.RMS_LIM " location="{X=1002, Y=193} " Growth="0 " GrowthB="0">
+                <Link pin="I_C429_A0_P1_in" dir="in" link="Link18" />
+                <Link pin="O_C429_A0_P2_out" dir="out" link="Link75" />
             </Algorithm>
-            <Algorithm name="MonoNoPostGainS300FullRange13" friendlyname="1-Channel RMS Compressor " cell="Channel_5.RMS_LIM " location="{X=881, Y=194} " Growth="0 " GrowthB="0">
-                <Link pin="I_C373_A0_P1_in" dir="in" link="Link21" />
-                <Link pin="O_C373_A0_P2_out" dir="out" link="Link68" />
+            <Algorithm name="MonoNoPostGainS300FullRange13" friendlyname="1-Channel RMS Compressor " cell="Channel_5.RMS_LIM " location="{X=990, Y=194} " Growth="0 " GrowthB="0">
+                <Link pin="I_C373_A0_P1_in" dir="in" link="Link24" />
+                <Link pin="O_C373_A0_P2_out" dir="out" link="Link76" />
             </Algorithm>
-            <Algorithm name="MonoNoPostGainS300FullRange12" friendlyname="1-Channel RMS Compressor " cell="Channel_4.RMS_LIM " location="{X=881, Y=194} " Growth="0 " GrowthB="0">
-                <Link pin="I_C317_A0_P1_in" dir="in" link="Link28" />
-                <Link pin="O_C317_A0_P2_out" dir="out" link="Link71" />
+            <Algorithm name="MonoNoPostGainS300FullRange12" friendlyname="1-Channel RMS Compressor " cell="Channel_4.RMS_LIM " location="{X=965, Y=194} " Growth="0 " GrowthB="0">
+                <Link pin="I_C317_A0_P1_in" dir="in" link="Link32" />
+                <Link pin="O_C317_A0_P2_out" dir="out" link="Link79" />
             </Algorithm>
-            <Algorithm name="MonoNoPostGainS300FullRange11" friendlyname="1-Channel RMS Compressor " cell="Channel_3.RMS_LIM " location="{X=881, Y=194} " Growth="0 " GrowthB="0">
-                <Link pin="I_C261_A0_P1_in" dir="in" link="Link35" />
-                <Link pin="O_C261_A0_P2_out" dir="out" link="Link73" />
+            <Algorithm name="MonoNoPostGainS300FullRange11" friendlyname="1-Channel RMS Compressor " cell="Channel_3.RMS_LIM " location="{X=974, Y=193} " Growth="0 " GrowthB="0">
+                <Link pin="I_C261_A0_P1_in" dir="in" link="Link40" />
+                <Link pin="O_C261_A0_P2_out" dir="out" link="Link81" />
             </Algorithm>
-            <Algorithm name="MonoNoPostGainS300FullRange10" friendlyname="1-Channel RMS Compressor " cell="Channel_2.RMS_LIM " location="{X=881, Y=194} " Growth="0 " GrowthB="0">
-                <Link pin="I_C64_A0_P1_in" dir="in" link="Link41" />
-                <Link pin="O_C64_A0_P2_out" dir="out" link="Link74" />
+            <Algorithm name="MonoNoPostGainS300FullRange10" friendlyname="1-Channel RMS Compressor " cell="Channel_2.RMS_LIM " location="{X=1001, Y=197} " Growth="0 " GrowthB="0">
+                <Link pin="I_C64_A0_P1_in" dir="in" link="Link46" />
+                <Link pin="O_C64_A0_P2_out" dir="out" link="Link82" />
             </Algorithm>
-            <Algorithm name="MonoNoPostGainS300FullRange9" friendlyname="1-Channel RMS Compressor " cell="Channel_1.RMS_LIM " location="{X=650, Y=105} " Growth="0 " GrowthB="0">
-                <Link pin="I_C171_A0_P1_in" dir="in" link="Link48" />
-                <Link pin="O_C171_A0_P2_out" dir="out" link="Link77" />
+            <Algorithm name="MonoNoPostGainS300FullRange9" friendlyname="1-Channel RMS Compressor " cell="Channel_1.RMS_LIM " location="{X=756, Y=100} " Growth="0 " GrowthB="0">
+                <Link pin="I_C171_A0_P1_in" dir="in" link="Link54" />
+                <Link pin="O_C171_A0_P2_out" dir="out" link="Link85" />
             </Algorithm>
             <Algorithm name="ICOutADAU145X1" friendlyname="Output " cell="Digital_Output.I2S_OUT_1 " location="{X=227, Y=-78.9697} " Growth="4 " GrowthB="0">
-                <Link pin="I_C869_A0_P1_in" dir="in" link="Link77" />
-                <Link pin="I_C869_A0_P2_in" dir="in" link="Link74" />
-                <Link pin="I_C869_A0_P3_in" dir="in" link="Link73" />
-                <Link pin="I_C869_A0_P4_in" dir="in" link="Link71" />
+                <Link pin="I_C869_A0_P1_in" dir="in" link="Link85" />
+                <Link pin="I_C869_A0_P2_in" dir="in" link="Link82" />
+                <Link pin="I_C869_A0_P3_in" dir="in" link="Link81" />
+                <Link pin="I_C869_A0_P4_in" dir="in" link="Link79" />
             </Algorithm>
             <Algorithm name="ICOutADAU145X5" friendlyname="Output " cell="Digital_Output.I2S_OUT_0 " location="{X=393, Y=-91.96968} " Growth="4 " GrowthB="0">
-                <Link pin="I_C923_A0_P1_in" dir="in" link="Link68" />
-                <Link pin="I_C923_A0_P2_in" dir="in" link="Link67" />
-                <Link pin="I_C923_A0_P3_in" dir="in" link="Link64" />
-                <Link pin="I_C923_A0_P4_in" dir="in" link="Link63" />
+                <Link pin="I_C923_A0_P1_in" dir="in" link="Link76" />
+                <Link pin="I_C923_A0_P2_in" dir="in" link="Link75" />
+                <Link pin="I_C923_A0_P3_in" dir="in" link="Link72" />
+                <Link pin="I_C923_A0_P4_in" dir="in" link="Link71" />
             </Algorithm>
         </Schematic>
     </IC>

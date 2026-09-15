@@ -1,19 +1,19 @@
 ADAU145X Assembler, Analog Devices Inc.
 Version: 4.7.0,1827  (built 4/5/2022)
 
-##### Compile Started: Tuesday, June 30, 2026 11:35:06 PM #####
+##### Compile Started: Saturday, August 1, 2026 5:59:31 PM #####
 ADAU145X Assembler, Analog Devices Inc.
 Version: 4.7.0,1827  (built 4/5/2022)
 
-##### Compile Started: Tuesday, June 30, 2026 11:35:06 PM #####
+##### Compile Started: Saturday, August 1, 2026 5:59:31 PM #####
 ##### Compile succeeded:  0 errors, 0 warnings #####
 
 ##### Summary #####
-DM0 RAM used:       07811    (of 20480)
-DM1 RAM used:       06907    (of 20480)
+DM0 RAM used:       07835    (of 20480)
+DM1 RAM used:       06915    (of 20480)
 PM  RAM used(Data): 03844    (of 8192)
-PM  RAM used(Inst): 02510    (of 8192) 1774 instructions (32bit: 1038  64bit: 736)
-Total PM used:      06354    (of 8192)
+PM  RAM used(Inst): 02614    (of 8192) 1838 instructions (32bit: 1062  64bit: 776)
+Total PM used:      06458    (of 8192)
 
 --------------------------------------------------------------------------------------
 STREAM                        Inst      Inst      DM0     DM1     PM
@@ -27,6 +27,7 @@ LowPass                       248       328       88      190     0
 HighPass                      248       328       88      184     0
 PEQ                           224       232       400     360     0
 FIR                           1072      128       4096    4096    0
+Gain                          64        104       24      8       0
 Delay                         70        92        1930    1930    3844
 FRAMEWORK                     61        42        16      7       0
 Noise_Pink_Filter             19        30        16      8       0
@@ -40,7 +41,7 @@ Noise_Gen                     4         4         1       1       0
 Heartbeat_DC                  2         2         1       1       0
 Heartbeat_OUT                 2         2         0       0       0
 --------------------------------------------------------------------------------------
-Total                         2971      2454      7807    6903    3844
+Total                         3035      2558      7831    6911    3844
 --------------------------------------------------------------------------------------
-(% Fs=48.0kHz)                49%       30%       39%     34%     47%
+(% Fs=48.0kHz)                50%       32%       39%     34%     47%
 
