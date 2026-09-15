@@ -41,11 +41,12 @@ uint8_t write_AK4619VN(uint8_t device_address, byte register_address, byte regis
     Wire.write(register_value);
     
     uint8_t transmission_result = Wire.endTransmission(true);
-    
-    String message = "transmitting 0x" + String(int(register_value), HEX) + " to register 0x" + String(int(register_address), HEX);
-    Serial.println(message);
 
-    Serial.println("0x" + String(int(transmission_result), HEX));
+    if(transmission_result != 0){
+        String message = "transmitting 0x" + String(int(register_value), HEX) + " to register 0x" + String(int(register_address), HEX);
+        Serial.println(message);
+        Serial.println("0x" + String(int(transmission_result), HEX));
+    }
 
     return transmission_result;
 }
@@ -65,7 +66,9 @@ uint8_t read_AK4619VN(uint8_t device_address, byte register_address, uint8_t * r
 
     uint8_t transmission_result = Wire.endTransmission(true); //Send STOP
 
-    Serial.println("0x" + String(int(transmission_result), HEX));
+    if(transmission_result != 0) {
+        Serial.println("0x" + String(int(transmission_result), HEX));
+    }
 
     return transmission_result;
 }
@@ -103,24 +106,13 @@ void init_AK4619VN() {
     Wire.setClock(400000); // 400 kHz (Fast Mode)
     byte temp_data = 0x00;
     byte temp_address = 0x00;
-
-    // Reset both AK4619VN
-    // Clearing last bit (RSTN)
-
-    temp_address = PWRMGM; // {0, 0, PMAD2, PMAD1, 0, PMDA2, PMDA1, RSTN}
-    read_AK4619VN(AK4619VN_1_ADDRESS, temp_address, &temp_data);
-    temp_data = temp_data & 0xFE;
-    write_AK4619VN(AK4619VN_1_ADDRESS, temp_address, temp_data);
-    read_AK4619VN(AK4619VN_2_ADDRESS, temp_address, &temp_data);
-    temp_data = temp_data & 0xFE;
-    write_AK4619VN(AK4619VN_2_ADDRESS, temp_address, temp_data);
     
     // ADC/DAC Power
     // Set bits for ADC and DAC power (PMAD2, PMAD1, PMDA2, PMDA1)
     // HIGH (1) means enabled
 
     temp_address = PWRMGM; // {0, 0, PMAD2, PMAD1, 0, PMDA2, PMDA1, RSTN}
-    temp_data = 0x36; // ADC and DAC on
+    temp_data = 0x37; // ADC and DAC on
     write_AK4619VN(AK4619VN_1_ADDRESS, temp_address, temp_data);
     write_AK4619VN(AK4619VN_2_ADDRESS, temp_address, temp_data);
 
@@ -259,7 +251,7 @@ void init_AK4619VN() {
     // DAC Mute and Filter
 
     temp_address = DACMUTFLT; // {ATSPDA, 0, DA2MUTE, DA1MUTE, DA2SD, DA2SL, DA1SD, DA1SL}
-    temp_data = 0x80; // Slow transition. Mute off. Filters with sharp roll off, long delay.
+    temp_data = 0xB0; // Slow transition. Mute on. Filters with sharp roll off, long delay.
     write_AK4619VN(AK4619VN_1_ADDRESS, temp_address, temp_data);
     write_AK4619VN(AK4619VN_2_ADDRESS, temp_address, temp_data);
 
@@ -273,7 +265,7 @@ void init_AK4619VN() {
     temp_data = temp_data | 0x01;
     write_AK4619VN(AK4619VN_2_ADDRESS, temp_address, temp_data);
 
-    unmute_AK4619VN();
+    // unmute_AK4619VN();
 
     return;
 }

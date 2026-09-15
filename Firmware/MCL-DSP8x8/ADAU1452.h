@@ -22,8 +22,8 @@ void DSP_HARD_RESET() {
     digitalWrite(DSP_RESET_PIN, LOW);
     delay(10);
     digitalWrite(DSP_RESET_PIN, HIGH);
-    // This delay accounts for ADM811T reset generator hold time on ADAU1467 eval board, adjust
-    // as needed
+    
+    // Adjust as needed
     delay(560);
 
     // Toggle the DSP into SPI mode by pulling the /SS pin low, then high, 3 times.
