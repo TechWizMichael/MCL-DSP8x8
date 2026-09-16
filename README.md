@@ -34,3 +34,4 @@ Description last updated September 16, 2026
 - [x] Upgrade capacitors on input
 - [ ] add capacitors on power rails of opamps
 - [ ] ESP32 controls PDN of AK4619VN
+- [ ] \(optional) Input Gain
