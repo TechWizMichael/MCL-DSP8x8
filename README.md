@@ -1,7 +1,7 @@
 # MCL-DSP8x8
 ## Description
 Audio Signal Processor based on ESP32-S3 and ADAU1452. 
-Description last updated September 16, 2026
+Description last updated September 17, 2026
 
 ## Goals
 + Eight channels of analog audio input and output
@@ -29,9 +29,10 @@ Description last updated September 16, 2026
 - [ ] Upgrade/Replace audio connectors
 - [x] swap I2S connections for AK4619VN
 - [x] \(optional) Ability to power from USB 5V rail
-- [ ] Update output gain stage
+- [x] Update output gain stage
 - [x] Add Schottky diode(s) for power input
 - [x] Upgrade capacitors on input
 - [ ] add capacitors on power rails of opamps
-- [ ] ESP32 controls PDN of AK4619VN
+- [x] ESP32 controls PDN of AK4619VN
 - [ ] \(optional) Input Gain
+- [ ] Updated layout
