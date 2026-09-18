@@ -25,14 +25,14 @@ Description last updated September 17, 2026
 ### v0.8 (In Progress)
 - [x] New analog rail
 - [x] Reset IC for ESP32
-- [ ] Upgrade buttons
-- [ ] Upgrade/Replace audio connectors
+- [x] Upgrade buttons
+- [x] Upgrade/Replace audio connectors
 - [x] swap I2S connections for AK4619VN
 - [x] \(optional) Ability to power from USB 5V rail
 - [x] Update output gain stage
 - [x] Add Schottky diode(s) for power input
 - [x] Upgrade capacitors on input
-- [ ] add capacitors on power rails of opamps
+- [x] add capacitors on power rails of opamps
 - [x] ESP32 controls PDN of AK4619VN
 - [ ] \(optional) Input Gain
 - [ ] Updated layout
