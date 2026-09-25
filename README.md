@@ -36,3 +36,7 @@ Description last updated September 17, 2026
 - [x] ESP32 controls PDN of AK4619VN
 - [x] Updated layout of main board
 - [ ] Connector boards
+
+### Preview of v0.8 from JLCPCB
+<img width="760" height="513" alt="image" src="https://github.com/user-attachments/assets/3d379e2b-e514-4c6f-8108-fa303ee4f4f1" />
+
