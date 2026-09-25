@@ -13078,7 +13078,7 @@
 		(uuid "0c42d612-f6d4-43bc-a634-67aa9f6a0d34")
 	)
 	(label "AOUT_8P"
-		(at 565.15 148.59 0)
+		(at 565.15 151.13 0)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -13218,7 +13218,7 @@
 		(uuid "1d0d2e21-3555-47d5-88f3-4435a782fb46")
 	)
 	(label "AOUT_5N"
-		(at 544.83 156.21 0)
+		(at 544.83 153.67 0)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -13228,7 +13228,7 @@
 		(uuid "1e6c77a1-c003-4808-8e3f-f057ce86c2b9")
 	)
 	(label "AOUT_7P"
-		(at 565.15 153.67 0)
+		(at 565.15 156.21 0)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -13517,7 +13517,7 @@
 		)
 		(uuid "3c237f58-05a5-405e-9fa0-870ab866db2f")
 	)
-	(label "BCLK_OUT0"
+	(label "BCLK_OUT1"
 		(at 40.64 219.71 180)
 		(effects
 			(font
@@ -13567,7 +13567,7 @@
 		)
 		(uuid "42b0c588-29f9-450d-98c0-03d9d24ea9e0")
 	)
-	(label "BCLK_OUT1"
+	(label "BCLK_OUT0"
 		(at 41.91 307.34 180)
 		(effects
 			(font
@@ -13677,7 +13677,7 @@
 		)
 		(uuid "53391960-9273-45dc-b5ef-f8dd99e964a8")
 	)
-	(label "SDATA_OUT1"
+	(label "SDATA_OUT0"
 		(at 45.72 292.1 180)
 		(effects
 			(font
@@ -13707,7 +13707,7 @@
 		)
 		(uuid "5548fdb5-80d2-471a-945f-61685569774a")
 	)
-	(label "SDATA_OUT0"
+	(label "SDATA_OUT1"
 		(at 44.45 204.47 180)
 		(effects
 			(font
@@ -13778,7 +13778,7 @@
 		(uuid "606762ad-7e45-42b5-9abc-e0fdad65ad05")
 	)
 	(label "AOUT_7N"
-		(at 565.15 156.21 0)
+		(at 565.15 153.67 0)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -13848,7 +13848,7 @@
 		(uuid "6971eb96-987d-442f-b096-8f4a1ef1ed04")
 	)
 	(label "AOUT_3P"
-		(at 524.51 153.67 0)
+		(at 524.51 156.21 0)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -13988,7 +13988,7 @@
 		(uuid "73ac1eae-e247-462d-a399-3ec172800092")
 	)
 	(label "AOUT_6P"
-		(at 544.83 148.59 0)
+		(at 544.83 151.13 0)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -14077,7 +14077,7 @@
 		)
 		(uuid "7d762e22-9465-4477-bc18-72d2cc7925c9")
 	)
-	(label "LRCLK_OUT1"
+	(label "LRCLK_OUT0"
 		(at 41.91 304.8 180)
 		(effects
 			(font
@@ -14228,7 +14228,7 @@
 		(uuid "8c9e48fb-1640-400e-8357-690c0783a93d")
 	)
 	(label "AOUT_1N"
-		(at 502.92 156.21 0)
+		(at 502.92 153.67 0)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -14238,7 +14238,7 @@
 		(uuid "8e83bcc4-bedd-4d4b-9a99-6739340b2f82")
 	)
 	(label "AOUT_3N"
-		(at 524.51 156.21 0)
+		(at 524.51 153.67 0)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -14377,7 +14377,7 @@
 		)
 		(uuid "a06c762f-19b6-43c1-bda7-9a5d07a5303d")
 	)
-	(label "SDATA_IN0"
+	(label "SDATA_IN1"
 		(at 57.15 173.99 180)
 		(effects
 			(font
@@ -14498,7 +14498,7 @@
 		(uuid "aeb6c305-1800-44a5-802d-0abc31b4543f")
 	)
 	(label "AOUT_2N"
-		(at 502.92 151.13 0)
+		(at 502.92 148.59 0)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -14587,7 +14587,7 @@
 		)
 		(uuid "b67f5932-472d-4b91-bb3d-b8162a945a26")
 	)
-	(label "LRCLK_OUT0"
+	(label "LRCLK_OUT1"
 		(at 40.64 217.17 180)
 		(effects
 			(font
@@ -14688,7 +14688,7 @@
 		(uuid "c358919d-47e4-43f6-9ec0-a91881dd2c5d")
 	)
 	(label "AOUT_5P"
-		(at 544.83 153.67 0)
+		(at 544.83 156.21 0)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -14898,7 +14898,7 @@
 		(uuid "db99e728-7416-493d-8470-be4675484fd7")
 	)
 	(label "AOUT_4P"
-		(at 524.51 148.59 0)
+		(at 524.51 151.13 0)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -15008,7 +15008,7 @@
 		(uuid "e5c2b93f-68a1-4bf7-9532-a24e71516b3e")
 	)
 	(label "AOUT_6N"
-		(at 544.83 151.13 0)
+		(at 544.83 148.59 0)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -15068,7 +15068,7 @@
 		(uuid "ea531ac0-705a-4159-934b-ecf08ea0a7c6")
 	)
 	(label "AOUT_4N"
-		(at 524.51 151.13 0)
+		(at 524.51 148.59 0)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -15108,7 +15108,7 @@
 		(uuid "ed3293e8-3638-4d24-98c1-2da8ac15967b")
 	)
 	(label "AOUT_8N"
-		(at 565.15 151.13 0)
+		(at 565.15 148.59 0)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -15117,7 +15117,7 @@
 		)
 		(uuid "ee81c372-0a9d-4c17-b699-58401aa3fc49")
 	)
-	(label "SDATA_IN1"
+	(label "SDATA_IN0"
 		(at 58.42 261.62 180)
 		(effects
 			(font
@@ -15158,7 +15158,7 @@
 		(uuid "f0ddaacb-fad0-4e0b-b84d-db8e39ecc978")
 	)
 	(label "AOUT_2P"
-		(at 502.92 148.59 0)
+		(at 502.92 151.13 0)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -15258,7 +15258,7 @@
 		(uuid "fd07e00a-ca4d-4df1-af73-226d6cbb4449")
 	)
 	(label "AOUT_1P"
-		(at 502.92 153.67 0)
+		(at 502.92 156.21 0)
 		(effects
 			(font
 				(size 1.27 1.27)
