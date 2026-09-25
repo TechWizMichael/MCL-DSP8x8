@@ -3610,7 +3610,7 @@
 			)
 			(embedded_fonts no)
 		)
-		(symbol "Custom_Symbol:K7803-1000_C329334"
+		(symbol "Custom_Symbol:K7803-1000_C50396471"
 			(exclude_from_sim no)
 			(in_bom yes)
 			(on_board yes)
@@ -3630,7 +3630,7 @@
 					)
 				)
 			)
-			(property "Footprint" "K7803-1000:PWRM-TH_K7803-1000"
+			(property "Footprint" "Custom:K7803-1000_C50396471"
 				(at 0 0 0)
 				(effects
 					(font
@@ -3639,7 +3639,7 @@
 					(hide yes)
 				)
 			)
-			(property "Datasheet" "https://atta.szlcsc.com/upload/public/pdf/source/20181115/C329334_E51DC8C2B0324287BA079177D5C1389C.pdf"
+			(property "Datasheet" "https://item.szlcsc.com/datasheet/K7803-1000/53020879.html"
 				(at 0 0 0)
 				(effects
 					(font
@@ -3666,7 +3666,7 @@
 					(hide yes)
 				)
 			)
-			(property "Manufacturer" "HENIPER(恒浦)"
+			(property "Manufacturer" "EVISUN(易成)"
 				(at 0 0 0)
 				(effects
 					(font
@@ -3675,7 +3675,7 @@
 					(hide yes)
 				)
 			)
-			(property "Supplier Part" "C329334"
+			(property "Supplier Part" "C50396471"
 				(at 0 0 0)
 				(effects
 					(font
@@ -3693,7 +3693,7 @@
 					(hide yes)
 				)
 			)
-			(property "LCSC Part Name" "K7803-1000"
+			(property "LCSC Part Name" "DC-DC模块电源，宽电压输入，非隔离稳压单路输出"
 				(at 0 0 0)
 				(effects
 					(font
@@ -3702,22 +3702,10 @@
 					(hide yes)
 				)
 			)
-			(symbol "K7803-1000_C329334_1_0"
+			(symbol "K7803-1000_C50396471_1_0"
 				(rectangle
-					(start -5.08 5.08)
-					(end 5.08 -5.08)
-					(stroke
-						(width 0.254)
-						(type solid)
-						(color 160 0 0 1)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(circle
-					(center -3.81 3.81)
-					(radius 0.381)
+					(start -2.54 5.08)
+					(end 7.62 -5.08)
 					(stroke
 						(width 0.254)
 						(type solid)
@@ -3728,7 +3716,7 @@
 					)
 				)
 				(pin unspecified line
-					(at -7.62 2.54 0)
+					(at -5.08 2.54 0)
 					(length 2.54)
 					(name "VIN"
 						(effects
@@ -3746,7 +3734,7 @@
 					)
 				)
 				(pin unspecified line
-					(at -7.62 0 0)
+					(at -5.08 0 0)
 					(length 2.54)
 					(name "GND"
 						(effects
@@ -3764,7 +3752,7 @@
 					)
 				)
 				(pin unspecified line
-					(at -7.62 -2.54 0)
+					(at -5.08 -2.54 0)
 					(length 2.54)
 					(name "VOUT"
 						(effects
@@ -16765,6 +16753,124 @@
 		)
 	)
 	(symbol
+		(lib_id "Custom_Symbol:K7803-1000_C50396471")
+		(at 558.8 33.02 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "06b79e63-f984-40c1-89bf-825717a4b3f0")
+		(property "Reference" "U26"
+			(at 567.69 31.7499 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "~"
+			(at 567.69 34.2899 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "Custom:K7803-1000_C50396471"
+			(at 558.8 33.02 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "https://item.szlcsc.com/datasheet/K7803-1000/53020879.html"
+			(at 558.8 33.02 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" ""
+			(at 558.8 33.02 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer Part" "K7803-1000"
+			(at 558.8 33.02 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer" "EVISUN(易成)"
+			(at 558.8 33.02 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Supplier Part" "C50396471"
+			(at 558.8 33.02 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Supplier" "LCSC"
+			(at 558.8 33.02 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "LCSC Part Name" "DC-DC模块电源，宽电压输入，非隔离稳压单路输出"
+			(at 558.8 33.02 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "3"
+			(uuid "6652653a-2c79-4244-9237-99062f4a46a9")
+		)
+		(pin "1"
+			(uuid "2403b068-c423-4d12-9514-80e3c278f3a8")
+		)
+		(pin "2"
+			(uuid "13c04725-18cb-4aa1-bdfe-fb460824ec6f")
+		)
+		(instances
+			(project "DIYDSPv0.8"
+				(path "/b7ce3e82-c245-4515-bd69-0cf398c79f59"
+					(reference "U26")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "power:GND")
 		(at 495.3 243.84 0)
 		(unit 1)
@@ -18383,124 +18489,6 @@
 		)
 	)
 	(symbol
-		(lib_id "Custom_Symbol:K7803-1000_C329334")
-		(at 561.34 33.02 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "17846d4b-ca4b-418d-8bed-bbb8f9e2fa50")
-		(property "Reference" "U26"
-			(at 567.69 31.7499 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Value" "~"
-			(at 567.69 34.2899 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Footprint" "Custom:K7803-1000"
-			(at 561.34 33.02 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "https://atta.szlcsc.com/upload/public/pdf/source/20181115/C329334_E51DC8C2B0324287BA079177D5C1389C.pdf"
-			(at 561.34 33.02 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" ""
-			(at 561.34 33.02 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Manufacturer Part" "K7803-1000"
-			(at 561.34 33.02 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Manufacturer" "HENIPER(恒浦)"
-			(at 561.34 33.02 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Supplier Part" "C329334"
-			(at 561.34 33.02 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Supplier" "LCSC"
-			(at 561.34 33.02 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "LCSC Part Name" "K7803-1000"
-			(at 561.34 33.02 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "2"
-			(uuid "58ecd581-9601-4e61-86ce-75c027c35775")
-		)
-		(pin "1"
-			(uuid "ad8d03fd-34c7-4d9c-9494-54f9d47690ce")
-		)
-		(pin "3"
-			(uuid "c482870c-ae76-4908-a2a9-bfa9c660f5ed")
-		)
-		(instances
-			(project "DIYDSPv0.8"
-				(path "/b7ce3e82-c245-4515-bd69-0cf398c79f59"
-					(reference "U26")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
 		(lib_id "Device:R")
 		(at 283.21 251.46 270)
 		(unit 1)
@@ -19469,124 +19457,6 @@
 		)
 	)
 	(symbol
-		(lib_id "Custom_Symbol:K7803-1000_C329334")
-		(at 511.81 33.02 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "2086d1a5-3aae-4a24-a55a-24c6a65ffb4d")
-		(property "Reference" "U23"
-			(at 518.16 31.7499 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Value" "~"
-			(at 518.16 34.2899 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Footprint" "Custom:K7803-1000"
-			(at 511.81 33.02 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "https://atta.szlcsc.com/upload/public/pdf/source/20181115/C329334_E51DC8C2B0324287BA079177D5C1389C.pdf"
-			(at 511.81 33.02 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" ""
-			(at 511.81 33.02 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Manufacturer Part" "K7803-1000"
-			(at 511.81 33.02 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Manufacturer" "HENIPER(恒浦)"
-			(at 511.81 33.02 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Supplier Part" "C329334"
-			(at 511.81 33.02 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Supplier" "LCSC"
-			(at 511.81 33.02 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "LCSC Part Name" "K7803-1000"
-			(at 511.81 33.02 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "2"
-			(uuid "edda53c7-7d6b-4fb9-b142-db4c629322e3")
-		)
-		(pin "1"
-			(uuid "c8ffb0b8-4ba2-45c1-a7a7-832939b0e0c1")
-		)
-		(pin "3"
-			(uuid "6c0a1573-a11f-482e-adcb-96c61c15334f")
-		)
-		(instances
-			(project "DIYDSPv0.8"
-				(path "/b7ce3e82-c245-4515-bd69-0cf398c79f59"
-					(reference "U23")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
 		(lib_id "power:GND")
 		(at 570.23 63.5 0)
 		(unit 1)
@@ -20011,7 +19881,7 @@
 		(exclude_from_sim no)
 		(in_bom no)
 		(on_board yes)
-		(dnp no)
+		(dnp yes)
 		(fields_autoplaced yes)
 		(uuid "23b8c13c-3c54-4565-a6d0-67f10f465540")
 		(property "Reference" "J7"
@@ -20310,7 +20180,7 @@
 		(exclude_from_sim no)
 		(in_bom no)
 		(on_board yes)
-		(dnp no)
+		(dnp yes)
 		(fields_autoplaced yes)
 		(uuid "24ce2336-d739-466f-8b3b-6a5c5bb5a7b7")
 		(property "Reference" "J3"
@@ -20386,7 +20256,7 @@
 		(exclude_from_sim no)
 		(in_bom no)
 		(on_board yes)
-		(dnp no)
+		(dnp yes)
 		(fields_autoplaced yes)
 		(uuid "24f26f10-ead6-4749-9e71-673b2b9e1f28")
 		(property "Reference" "J6"
@@ -21318,7 +21188,7 @@
 		(exclude_from_sim no)
 		(in_bom no)
 		(on_board yes)
-		(dnp no)
+		(dnp yes)
 		(fields_autoplaced yes)
 		(uuid "2a85ac28-e57a-46df-9f7c-ad3be64485e2")
 		(property "Reference" "J2"
@@ -25821,7 +25691,7 @@
 		(exclude_from_sim no)
 		(in_bom no)
 		(on_board yes)
-		(dnp no)
+		(dnp yes)
 		(fields_autoplaced yes)
 		(uuid "4762b2f4-b614-4799-8d9a-28b9dec1c599")
 		(property "Reference" "J13"
@@ -27019,7 +26889,7 @@
 		(exclude_from_sim no)
 		(in_bom no)
 		(on_board yes)
-		(dnp no)
+		(dnp yes)
 		(fields_autoplaced yes)
 		(uuid "4e4b2da1-dbda-42a1-92d0-1ffd6ae41366")
 		(property "Reference" "J9"
@@ -34422,7 +34292,7 @@
 		(exclude_from_sim no)
 		(in_bom no)
 		(on_board yes)
-		(dnp no)
+		(dnp yes)
 		(uuid "79d5e7bd-25e9-4c09-919f-eddcb0fbb25a")
 		(property "Reference" "J1"
 			(at 81.026 142.748 90)
@@ -34569,7 +34439,7 @@
 		(exclude_from_sim no)
 		(in_bom no)
 		(on_board yes)
-		(dnp no)
+		(dnp yes)
 		(fields_autoplaced yes)
 		(uuid "7ba0ee82-ec4f-4596-955d-58b2b3797887")
 		(property "Reference" "J11"
@@ -40460,7 +40330,7 @@
 		(exclude_from_sim no)
 		(in_bom no)
 		(on_board yes)
-		(dnp no)
+		(dnp yes)
 		(fields_autoplaced yes)
 		(uuid "a3eb9b61-1ddb-4f65-ad03-5b8af2115fae")
 		(property "Reference" "J10"
@@ -40879,7 +40749,7 @@
 		(exclude_from_sim no)
 		(in_bom no)
 		(on_board yes)
-		(dnp no)
+		(dnp yes)
 		(uuid "a71fc8ad-301c-4853-85e1-7711d216099f")
 		(property "Reference" "J5"
 			(at 283.972 49.022 90)
@@ -47939,6 +47809,124 @@
 		)
 	)
 	(symbol
+		(lib_id "Custom_Symbol:K7803-1000_C50396471")
+		(at 509.27 33.02 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "dbabbe99-042a-4342-9056-c57e939d63c1")
+		(property "Reference" "U23"
+			(at 518.16 31.7499 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "~"
+			(at 518.16 34.2899 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "Custom:K7803-1000_C50396471"
+			(at 509.27 33.02 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "https://item.szlcsc.com/datasheet/K7803-1000/53020879.html"
+			(at 509.27 33.02 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" ""
+			(at 509.27 33.02 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer Part" "K7803-1000"
+			(at 509.27 33.02 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer" "EVISUN(易成)"
+			(at 509.27 33.02 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Supplier Part" "C50396471"
+			(at 509.27 33.02 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Supplier" "LCSC"
+			(at 509.27 33.02 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "LCSC Part Name" "DC-DC模块电源，宽电压输入，非隔离稳压单路输出"
+			(at 509.27 33.02 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "3"
+			(uuid "d2051130-92d1-4b0d-9956-c5d3f2a0fbaa")
+		)
+		(pin "1"
+			(uuid "21531c6a-2a4b-49e0-b863-fd1561554a35")
+		)
+		(pin "2"
+			(uuid "bd4b709d-13b3-4dc2-bd3c-c55f917021eb")
+		)
+		(instances
+			(project ""
+				(path "/b7ce3e82-c245-4515-bd69-0cf398c79f59"
+					(reference "U23")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "power:GND")
 		(at 524.51 158.75 90)
 		(unit 1)
@@ -49445,7 +49433,7 @@
 		(exclude_from_sim no)
 		(in_bom no)
 		(on_board yes)
-		(dnp no)
+		(dnp yes)
 		(fields_autoplaced yes)
 		(uuid "e37c5652-9e37-4401-92fa-a1a3e98edb9e")
 		(property "Reference" "J12"
@@ -49887,7 +49875,7 @@
 		(exclude_from_sim no)
 		(in_bom no)
 		(on_board yes)
-		(dnp no)
+		(dnp yes)
 		(fields_autoplaced yes)
 		(uuid "e770e476-7f94-48c8-b3aa-26f6e67c7afb")
 		(property "Reference" "J4"
@@ -53430,7 +53418,7 @@
 		(exclude_from_sim no)
 		(in_bom no)
 		(on_board yes)
-		(dnp no)
+		(dnp yes)
 		(fields_autoplaced yes)
 		(uuid "f882ccef-6cea-433c-93b2-0b75f590dbcf")
 		(property "Reference" "J8"
