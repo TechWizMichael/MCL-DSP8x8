@@ -1,7 +1,7 @@
 # MCL-DSP8x8
 ## Description
 Audio Signal Processor based on ESP32-S3 and ADAU1452. 
-Description last updated September 17, 2026
+Description last updated September 29, 2026
 
 ## Goals
 + Eight channels of analog audio input and output
