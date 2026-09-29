@@ -22,7 +22,22 @@ Description last updated September 17, 2026
 - In practice, there are many issues that make it problematic for use with actual audio systems.
 - View issues tab for current issues and progress/solutions
 
+
 ### v0.8 (In Progress)
+- Goal to address many of the issues seen in v0.7.
+- The primary issue is the noise in the analog signal, which is addressed by a second 3.3V rail for analog components.
+- This means the main board has a maximum input and output of around +2.2dBu.
+- There is also additional options for input connectors, but they must be added separately.
+- The following connectors have complete v1 designs:
+  - Stereo XLR
+  - Stereo RCA
+  - Eight-channel RCA
+- Current designs for input boards passively attenuate signal -20dB, so a maximum input signal of +22dBu is acceptable.
+- Maximum output is still around +2.2 dBu.
+- If the maximum input signal will be under +2.2 dBu, the output boards can be used as input boards.
+  - This is because they are direct connections to the main board.
+
+#### v0.8 To-do:
 - [x] New analog rail
 - [x] Reset IC for ESP32
 - [x] Upgrade buttons
@@ -35,7 +50,8 @@ Description last updated September 17, 2026
 - [x] add capacitors on power rails of opamps
 - [x] ESP32 controls PDN of AK4619VN
 - [x] Updated layout of main board
-- [ ] Connector boards
+- [x] Connector boards
+- [ ] Validation of assembled design
 
 ### Preview of v0.8 from JLCPCB
 <img width="760" height="513" alt="image" src="https://github.com/user-attachments/assets/3d379e2b-e514-4c6f-8108-fa303ee4f4f1" />
