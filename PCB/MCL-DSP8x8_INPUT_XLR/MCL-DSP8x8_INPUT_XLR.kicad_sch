@@ -1078,7 +1078,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P10.16mm_Horizontal"
+		(property "Footprint" "Resistor_SMD:R_0805_2012Metric_Pad1.20x1.40mm_HandSolder"
 			(at 51.562 59.69 90)
 			(effects
 				(font
@@ -1097,6 +1097,15 @@
 			)
 		)
 		(property "Description" "Resistor"
+			(at 53.34 59.69 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "LCSC Part #" "C22356755"
 			(at 53.34 59.69 0)
 			(effects
 				(font
@@ -1125,9 +1134,9 @@
 		(at 26.67 38.1 180)
 		(unit 1)
 		(exclude_from_sim no)
-		(in_bom yes)
+		(in_bom no)
 		(on_board yes)
-		(dnp no)
+		(dnp yes)
 		(fields_autoplaced yes)
 		(uuid "30d95e0c-27e3-4083-91b4-21d6c76e9013")
 		(property "Reference" "J1"
@@ -1225,7 +1234,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P10.16mm_Horizontal"
+		(property "Footprint" "Resistor_SMD:R_0805_2012Metric_Pad1.20x1.40mm_HandSolder"
 			(at 94.742 22.86 90)
 			(effects
 				(font
@@ -1244,6 +1253,15 @@
 			)
 		)
 		(property "Description" "Resistor"
+			(at 96.52 22.86 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "LCSC Part #" "C22356755"
 			(at 96.52 22.86 0)
 			(effects
 				(font
@@ -1295,7 +1313,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P10.16mm_Horizontal"
+		(property "Footprint" "Resistor_SMD:R_0805_2012Metric_Pad1.20x1.40mm_HandSolder"
 			(at 94.742 59.69 90)
 			(effects
 				(font
@@ -1314,6 +1332,15 @@
 			)
 		)
 		(property "Description" "Resistor"
+			(at 96.52 59.69 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "LCSC Part #" "C22356755"
 			(at 96.52 59.69 0)
 			(effects
 				(font
@@ -1431,7 +1458,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P10.16mm_Horizontal"
+		(property "Footprint" "Resistor_SMD:R_0805_2012Metric_Pad1.20x1.40mm_HandSolder"
 			(at 94.742 67.31 90)
 			(effects
 				(font
@@ -1450,6 +1477,15 @@
 			)
 		)
 		(property "Description" "Resistor"
+			(at 96.52 67.31 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "LCSC Part #" "C3152175"
 			(at 96.52 67.31 0)
 			(effects
 				(font
@@ -1567,7 +1603,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P10.16mm_Horizontal"
+		(property "Footprint" "Resistor_SMD:R_0805_2012Metric_Pad1.20x1.40mm_HandSolder"
 			(at 51.562 22.86 90)
 			(effects
 				(font
@@ -1586,6 +1622,15 @@
 			)
 		)
 		(property "Description" "Resistor"
+			(at 53.34 22.86 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "LCSC Part #" "C22356755"
 			(at 53.34 22.86 0)
 			(effects
 				(font
@@ -1637,7 +1682,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P10.16mm_Horizontal"
+		(property "Footprint" "Resistor_SMD:R_0805_2012Metric_Pad1.20x1.40mm_HandSolder"
 			(at 94.742 30.48 90)
 			(effects
 				(font
@@ -1656,6 +1701,15 @@
 			)
 		)
 		(property "Description" "Resistor"
+			(at 96.52 30.48 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "LCSC Part #" "C3152175"
 			(at 96.52 30.48 0)
 			(effects
 				(font
@@ -1912,6 +1966,15 @@
 				(hide yes)
 			)
 		)
+		(property "LCSC Part #" "C368464"
+			(at 138.43 41.91 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "1"
 			(uuid "1a18e235-21a9-48ab-860d-fc6e2c61e618")
 		)
@@ -2024,7 +2087,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P10.16mm_Horizontal"
+		(property "Footprint" "Resistor_SMD:R_0805_2012Metric_Pad1.20x1.40mm_HandSolder"
 			(at 51.562 30.48 90)
 			(effects
 				(font
@@ -2043,6 +2106,15 @@
 			)
 		)
 		(property "Description" "Resistor"
+			(at 53.34 30.48 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "LCSC Part #" "C3152175"
 			(at 53.34 30.48 0)
 			(effects
 				(font
@@ -2094,7 +2166,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P10.16mm_Horizontal"
+		(property "Footprint" "Resistor_SMD:R_0805_2012Metric_Pad1.20x1.40mm_HandSolder"
 			(at 51.562 67.31 90)
 			(effects
 				(font
@@ -2113,6 +2185,15 @@
 			)
 		)
 		(property "Description" "Resistor"
+			(at 53.34 67.31 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "LCSC Part #" "C3152175"
 			(at 53.34 67.31 0)
 			(effects
 				(font
@@ -2294,6 +2375,15 @@
 			)
 		)
 		(property "LCSC Part Name" "NC3FAAH1"
+			(at 138.43 29.21 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "LCSC Part #" "C368464"
 			(at 138.43 29.21 0)
 			(effects
 				(font
