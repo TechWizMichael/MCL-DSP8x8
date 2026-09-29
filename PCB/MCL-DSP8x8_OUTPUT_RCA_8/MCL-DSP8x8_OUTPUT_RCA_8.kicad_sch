@@ -733,58 +733,10 @@
 		)
 	)
 	(junction
-		(at 55.88 85.09)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "0662844a-ea8d-4212-8bff-f70fbb358ac7")
-	)
-	(junction
-		(at 156.21 85.09)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "0eb4324a-7ca4-45f2-a662-705bcc853471")
-	)
-	(junction
 		(at 31.75 96.52)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "0fb2914b-e247-4aa3-9679-8a6056ba318d")
-	)
-	(junction
-		(at 156.21 109.22)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "396a09c7-af2b-4f0a-8f9f-ddab4c989de1")
-	)
-	(junction
-		(at 55.88 109.22)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "3d29d3b7-3bba-44c6-9555-8fe151125413")
-	)
-	(junction
-		(at 55.88 58.42)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "636636d9-cca2-438b-9ab7-d30ef1d3cd15")
-	)
-	(junction
-		(at 156.21 58.42)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "6e108c86-f0db-43a3-877a-864c9e3136c9")
-	)
-	(junction
-		(at 156.21 34.29)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "a5141c59-888a-4424-b9c9-cb2244f10a95")
-	)
-	(junction
-		(at 55.88 34.29)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "b3152e17-ddaa-4558-aca1-390e6f63dbe8")
 	)
 	(junction
 		(at 133.35 45.72)
@@ -823,26 +775,6 @@
 			(type default)
 		)
 		(uuid "0721d2a6-10e1-43e8-8c5a-fa5c046aa4d2")
-	)
-	(wire
-		(pts
-			(xy 53.34 85.09) (xy 55.88 85.09)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "0ebc2c19-f74e-41e5-97fb-53ec15e40341")
-	)
-	(wire
-		(pts
-			(xy 53.34 34.29) (xy 55.88 34.29)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "19f1c280-4d08-453f-8ece-1451e8a44b89")
 	)
 	(wire
 		(pts
@@ -896,46 +828,6 @@
 	)
 	(wire
 		(pts
-			(xy 153.67 34.29) (xy 156.21 34.29)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "569ac59c-d9ac-4236-817c-9c8bad3db710")
-	)
-	(wire
-		(pts
-			(xy 153.67 85.09) (xy 156.21 85.09)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "5b3ca26a-be6b-467d-b934-d057bb98ca34")
-	)
-	(wire
-		(pts
-			(xy 153.67 58.42) (xy 156.21 58.42)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "6a7e276d-3ada-43e5-92dc-b8058eccc113")
-	)
-	(wire
-		(pts
-			(xy 153.67 109.22) (xy 156.21 109.22)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "6ead45fe-0885-48fc-ad07-d848b209e72f")
-	)
-	(wire
-		(pts
 			(xy 68.58 101.6) (xy 71.12 101.6)
 		)
 		(stroke
@@ -943,16 +835,6 @@
 			(type default)
 		)
 		(uuid "6ec27295-36d6-4d80-b1e9-806c7626a47d")
-	)
-	(wire
-		(pts
-			(xy 53.34 58.42) (xy 55.88 58.42)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "7092f7b3-9541-4214-a6b7-a45c106e575a")
 	)
 	(wire
 		(pts
@@ -973,16 +855,6 @@
 			(type default)
 		)
 		(uuid "8f00392c-d2d1-4916-a8bb-6e1e455ff3c0")
-	)
-	(wire
-		(pts
-			(xy 53.34 109.22) (xy 55.88 109.22)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "a8955476-dfec-4e8f-a734-94a39122f597")
 	)
 	(wire
 		(pts
@@ -1044,7 +916,7 @@
 		)
 		(uuid "e5dcf430-7e52-45af-9e37-38450735b500")
 	)
-	(label "RCA_A2+"
+	(label "A2+"
 		(at 90.17 40.64 180)
 		(effects
 			(font
@@ -1053,16 +925,6 @@
 			(justify right bottom)
 		)
 		(uuid "003b1371-bda2-426c-a834-fe625ca9b2d4")
-	)
-	(label "RCA_C2+"
-		(at 191.77 40.64 180)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify right bottom)
-		)
-		(uuid "00f9dbd1-3642-4783-b2c1-c76e8c27aec8")
 	)
 	(label "B1+"
 		(at 31.75 91.44 0)
@@ -1074,26 +936,6 @@
 		)
 		(uuid "0b55f5f5-1b0d-437f-9129-220dd338cd68")
 	)
-	(label "RCA_B2+"
-		(at 55.88 101.6 180)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify right bottom)
-		)
-		(uuid "162af516-de34-4d4d-b058-67baed6fbe11")
-	)
-	(label "D1+"
-		(at 153.67 85.09 180)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify right bottom)
-		)
-		(uuid "17f0b60a-b7e4-4c59-82d0-87d9bfb9e7db")
-	)
 	(label "A2-"
 		(at 31.75 33.02 0)
 		(effects
@@ -1103,16 +945,6 @@
 			(justify left bottom)
 		)
 		(uuid "1cd754dc-36d1-4ab5-b395-137085710270")
-	)
-	(label "A2+"
-		(at 53.34 58.42 180)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify right bottom)
-		)
-		(uuid "1eba070f-40ae-46c2-9f50-231959c30cce")
 	)
 	(label "A1-"
 		(at 68.58 26.67 180)
@@ -1134,16 +966,6 @@
 		)
 		(uuid "277fa884-bdad-498c-ab91-59c0bd4cb917")
 	)
-	(label "RCA_B1+"
-		(at 55.88 77.47 180)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify right bottom)
-		)
-		(uuid "3b93ebf9-4aa1-4bda-ba55-5158c2976213")
-	)
 	(label "B2+"
 		(at 31.75 86.36 0)
 		(effects
@@ -1164,16 +986,6 @@
 		)
 		(uuid "400f6950-6847-44f6-9de2-0e04d283e9f4")
 	)
-	(label "RCA_C2+"
-		(at 156.21 50.8 180)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify right bottom)
-		)
-		(uuid "4f65dbf3-6479-4cca-a7c0-4ff4e8024557")
-	)
 	(label "D2-"
 		(at 133.35 83.82 0)
 		(effects
@@ -1184,37 +996,17 @@
 		)
 		(uuid "578736dd-3883-49d9-a000-cd775e62c4c2")
 	)
-	(label "C2+"
-		(at 153.67 58.42 180)
+	(label "C1+"
+		(at 191.77 46.99 180)
 		(effects
 			(font
 				(size 1.27 1.27)
 			)
 			(justify right bottom)
 		)
-		(uuid "58b96650-8175-48c8-a854-1c32f65332bc")
+		(uuid "67698260-ab4a-4550-84bd-a423f5ffaf2c")
 	)
-	(label "B2+"
-		(at 53.34 109.22 180)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify right bottom)
-		)
-		(uuid "593dfa84-71a9-4954-88af-3487d67be91b")
-	)
-	(label "RCA_B2+"
-		(at 90.17 91.44 180)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify right bottom)
-		)
-		(uuid "5b4fb938-b10f-449f-8be1-62efe1e14fa7")
-	)
-	(label "RCA_D2+"
+	(label "D2+"
 		(at 191.77 91.44 180)
 		(effects
 			(font
@@ -1222,47 +1014,7 @@
 			)
 			(justify right bottom)
 		)
-		(uuid "5c26da7d-5d68-4ea9-ae0a-732068b8b22d")
-	)
-	(label "RCA_A1+"
-		(at 55.88 26.67 180)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify right bottom)
-		)
-		(uuid "601a2398-afd6-4522-806a-cb04e01934db")
-	)
-	(label "RCA_D2+"
-		(at 156.21 101.6 180)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify right bottom)
-		)
-		(uuid "63367241-4f2d-407e-949b-c759be030e59")
-	)
-	(label "RCA_D1+"
-		(at 156.21 77.47 180)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify right bottom)
-		)
-		(uuid "6f7e3673-1df3-4f2c-96be-4617069a7f31")
-	)
-	(label "B1+"
-		(at 53.34 85.09 180)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify right bottom)
-		)
-		(uuid "72e72ebe-410b-48f1-b4f2-8fad2b4e1474")
+		(uuid "720123e2-4460-4a2f-be5e-6bf97ad44993")
 	)
 	(label "D1+"
 		(at 133.35 91.44 0)
@@ -1294,26 +1046,6 @@
 		)
 		(uuid "80a8dcbc-9b67-4688-bfe6-8b373ef11e71")
 	)
-	(label "A1+"
-		(at 53.34 34.29 180)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify right bottom)
-		)
-		(uuid "87534d64-b9eb-45ea-8b0a-1b329626c337")
-	)
-	(label "RCA_C1+"
-		(at 156.21 26.67 180)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify right bottom)
-		)
-		(uuid "8760125f-88ec-4f0a-9508-7010c1af4337")
-	)
 	(label "B2-"
 		(at 31.75 83.82 0)
 		(effects
@@ -1323,6 +1055,16 @@
 			(justify left bottom)
 		)
 		(uuid "89c13fc0-2a00-4038-b552-4ee82c02f6d0")
+	)
+	(label "C2+"
+		(at 191.77 40.64 180)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right bottom)
+		)
+		(uuid "95a28c43-7cbe-432d-aef2-ff67700a28b5")
 	)
 	(label "A1+"
 		(at 31.75 40.64 0)
@@ -1344,6 +1086,16 @@
 		)
 		(uuid "b112a7f9-6d22-4c32-abfc-df85b2f5dc0c")
 	)
+	(label "B2+"
+		(at 90.17 91.44 180)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right bottom)
+		)
+		(uuid "b1cf6122-e139-4c26-8551-5f406f22c6cc")
+	)
 	(label "B2-"
 		(at 68.58 101.6 180)
 		(effects
@@ -1363,16 +1115,6 @@
 			(justify right bottom)
 		)
 		(uuid "b6ffdce7-0d9c-434f-a3ea-ddf4a3477893")
-	)
-	(label "RCA_C1+"
-		(at 191.77 46.99 180)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify right bottom)
-		)
-		(uuid "b7402202-ba21-4cde-a176-4cc66f1254d9")
 	)
 	(label "A2-"
 		(at 68.58 50.8 180)
@@ -1394,16 +1136,6 @@
 		)
 		(uuid "bd0c38e6-70e7-49b8-93f8-d84206d09dfe")
 	)
-	(label "RCA_A2+"
-		(at 55.88 50.8 180)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify right bottom)
-		)
-		(uuid "c0a11cac-a5e7-4f17-b14d-4c588be4f46e")
-	)
 	(label "A2+"
 		(at 31.75 35.56 0)
 		(effects
@@ -1424,27 +1156,7 @@
 		)
 		(uuid "c3bb2de9-21fa-41ff-9e6c-ce7ec58489df")
 	)
-	(label "RCA_B1+"
-		(at 90.17 97.79 180)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify right bottom)
-		)
-		(uuid "c6b891a7-fad0-4d29-b8f8-8e2628d0923f")
-	)
-	(label "RCA_D1+"
-		(at 191.77 97.79 180)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify right bottom)
-		)
-		(uuid "caa0d82b-acde-4e1d-bbe3-552ad040883a")
-	)
-	(label "RCA_A1+"
+	(label "A1+"
 		(at 90.17 46.99 180)
 		(effects
 			(font
@@ -1474,15 +1186,15 @@
 		)
 		(uuid "d80f1d89-6736-4929-bef0-f61d67d9cdae")
 	)
-	(label "C1+"
-		(at 153.67 34.29 180)
+	(label "B1+"
+		(at 90.17 97.79 180)
 		(effects
 			(font
 				(size 1.27 1.27)
 			)
 			(justify right bottom)
 		)
-		(uuid "daaa4a3f-d404-46f2-b490-d767326998e1")
+		(uuid "e00eed94-d11a-4f4c-a25b-5b80fbc65d00")
 	)
 	(label "B1-"
 		(at 31.75 88.9 0)
@@ -1504,16 +1216,6 @@
 		)
 		(uuid "e1320d15-c496-4ed6-aa41-494dbf7eae90")
 	)
-	(label "D2+"
-		(at 153.67 109.22 180)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify right bottom)
-		)
-		(uuid "ed57dd22-f71e-492b-8ac7-f423af147d8b")
-	)
 	(label "A1-"
 		(at 31.75 38.1 0)
 		(effects
@@ -1523,6 +1225,16 @@
 			(justify left bottom)
 		)
 		(uuid "f04a1c27-77d7-4120-9d0b-fbd4ddeb27cb")
+	)
+	(label "D1+"
+		(at 191.77 97.79 180)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right bottom)
+		)
+		(uuid "f970d1d9-6d2a-4706-af92-10de766dc868")
 	)
 	(symbol
 		(lib_id "power:GND")
@@ -1534,7 +1246,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "0089a8a3-d24c-41c1-8e05-5d6fc5cd4cbc")
-		(property "Reference" "#PWR013"
+		(property "Reference" "#PWR09"
 			(at 133.35 53.34 0)
 			(effects
 				(font
@@ -1584,86 +1296,7 @@
 		(instances
 			(project "MCL-DSP8x8_INPUT_RCA_8"
 				(path "/1a90dca8-081b-48b4-8e7d-276bfc745013"
-					(reference "#PWR013")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "Device:R")
-		(at 55.88 38.1 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "01df8aa3-3ef2-438d-82c2-27088726893a")
-		(property "Reference" "R2"
-			(at 58.42 36.8299 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Value" "10k"
-			(at 58.42 39.3699 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Footprint" "Resistor_SMD:R_0805_2012Metric_Pad1.20x1.40mm_HandSolder"
-			(at 54.102 38.1 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "~"
-			(at 55.88 38.1 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Resistor"
-			(at 55.88 38.1 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "LCSC Part #" "C3152175"
-			(at 55.88 38.1 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "76684af1-1ccc-4d83-aba7-2d64dd03a07f")
-		)
-		(pin "2"
-			(uuid "01ebd8f8-d3c7-447f-93fe-bea7d7aa51c3")
-		)
-		(instances
-			(project "MCL-DSP8x8_INPUT_RCA_8"
-				(path "/1a90dca8-081b-48b4-8e7d-276bfc745013"
-					(reference "R2")
+					(reference "#PWR09")
 					(unit 1)
 				)
 			)
@@ -1731,72 +1364,6 @@
 			(project "MCL-DSP8x8_INPUT_RCA_8"
 				(path "/1a90dca8-081b-48b4-8e7d-276bfc745013"
 					(reference "#FLG02")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "power:GND")
-		(at 55.88 41.91 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "10f96dc1-f749-4152-85a0-3d5d87b0107c")
-		(property "Reference" "#PWR03"
-			(at 55.88 48.26 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Value" "GND"
-			(at 55.88 46.99 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" ""
-			(at 55.88 41.91 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" ""
-			(at 55.88 41.91 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
-			(at 55.88 41.91 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "5d04bd98-a784-4cfa-8ae7-9befb647c4d9")
-		)
-		(instances
-			(project "MCL-DSP8x8_INPUT_RCA_8"
-				(path "/1a90dca8-081b-48b4-8e7d-276bfc745013"
-					(reference "#PWR03")
 					(unit 1)
 				)
 			)
@@ -1879,7 +1446,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "1422352a-9c1d-46cf-8a1b-7485f7b3eec7")
-		(property "Reference" "#PWR023"
+		(property "Reference" "#PWR015"
 			(at 208.28 44.45 0)
 			(effects
 				(font
@@ -1930,73 +1497,7 @@
 		(instances
 			(project "MCL-DSP8x8_INPUT_RCA_8"
 				(path "/1a90dca8-081b-48b4-8e7d-276bfc745013"
-					(reference "#PWR023")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "power:GND")
-		(at 156.21 92.71 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "18463c51-7005-427b-ba7a-c036bd625f05")
-		(property "Reference" "#PWR017"
-			(at 156.21 99.06 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Value" "GND"
-			(at 156.21 97.79 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" ""
-			(at 156.21 92.71 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" ""
-			(at 156.21 92.71 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
-			(at 156.21 92.71 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "c3d0f7b3-2cd6-4232-83bf-98e8c88a3f45")
-		)
-		(instances
-			(project "MCL-DSP8x8_INPUT_RCA_8"
-				(path "/1a90dca8-081b-48b4-8e7d-276bfc745013"
-					(reference "#PWR017")
+					(reference "#PWR015")
 					(unit 1)
 				)
 			)
@@ -2078,7 +1579,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "2266711f-3015-48a7-adb8-0ba36f5be0eb")
-		(property "Reference" "#PWR022"
+		(property "Reference" "#PWR014"
 			(at 172.72 115.57 0)
 			(effects
 				(font
@@ -2128,73 +1629,7 @@
 		(instances
 			(project "MCL-DSP8x8_INPUT_RCA_8"
 				(path "/1a90dca8-081b-48b4-8e7d-276bfc745013"
-					(reference "#PWR022")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "power:GND")
-		(at 55.88 92.71 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "2376fce5-d8ef-42b5-9c51-937275ef7bdb")
-		(property "Reference" "#PWR05"
-			(at 55.88 99.06 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Value" "GND"
-			(at 55.88 97.79 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" ""
-			(at 55.88 92.71 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" ""
-			(at 55.88 92.71 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
-			(at 55.88 92.71 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "0653362c-d200-4c94-844e-d2b5ea47e39c")
-		)
-		(instances
-			(project "MCL-DSP8x8_INPUT_RCA_8"
-				(path "/1a90dca8-081b-48b4-8e7d-276bfc745013"
-					(reference "#PWR05")
+					(reference "#PWR014")
 					(unit 1)
 				)
 			)
@@ -2335,7 +1770,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "27c2f434-e940-4cba-9fdd-7b595da5f55a")
-		(property "Reference" "#PWR010"
+		(property "Reference" "#PWR04"
 			(at 71.12 115.57 0)
 			(effects
 				(font
@@ -2385,86 +1820,7 @@
 		(instances
 			(project "MCL-DSP8x8_INPUT_RCA_8"
 				(path "/1a90dca8-081b-48b4-8e7d-276bfc745013"
-					(reference "#PWR010")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "Device:R")
-		(at 156.21 38.1 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "2801070c-6615-4246-b239-6aeb47664ab9")
-		(property "Reference" "R14"
-			(at 158.75 36.8299 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Value" "10k"
-			(at 158.75 39.3699 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Footprint" "Resistor_SMD:R_0805_2012Metric_Pad1.20x1.40mm_HandSolder"
-			(at 154.432 38.1 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "~"
-			(at 156.21 38.1 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Resistor"
-			(at 156.21 38.1 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "LCSC Part #" "C3152175"
-			(at 156.21 38.1 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "7f3a244e-c7b5-4ec7-b7ee-c64f8cfc0eaa")
-		)
-		(pin "2"
-			(uuid "d7d5e696-2eff-41a2-8fc3-ee003ebb41f6")
-		)
-		(instances
-			(project "MCL-DSP8x8_INPUT_RCA_8"
-				(path "/1a90dca8-081b-48b4-8e7d-276bfc745013"
-					(reference "R14")
+					(reference "#PWR04")
 					(unit 1)
 				)
 			)
@@ -2682,7 +2038,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "38ee17c5-c008-4499-bdb5-5a190eeeea98")
-		(property "Reference" "#PWR019"
+		(property "Reference" "#PWR011"
 			(at 172.72 40.64 0)
 			(effects
 				(font
@@ -2732,7 +2088,7 @@
 		(instances
 			(project "MCL-DSP8x8_INPUT_RCA_8"
 				(path "/1a90dca8-081b-48b4-8e7d-276bfc745013"
-					(reference "#PWR019")
+					(reference "#PWR011")
 					(unit 1)
 				)
 			)
@@ -2748,7 +2104,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "3dad3552-aa86-4004-ba2f-1d611260acf2")
-		(property "Reference" "#PWR011"
+		(property "Reference" "#PWR08"
 			(at 106.68 44.45 0)
 			(effects
 				(font
@@ -2799,7 +2155,7 @@
 		(instances
 			(project "MCL-DSP8x8_INPUT_RCA"
 				(path "/1a90dca8-081b-48b4-8e7d-276bfc745013"
-					(reference "#PWR011")
+					(reference "#PWR08")
 					(unit 1)
 				)
 			)
@@ -2815,7 +2171,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "3edc0534-36f7-4e57-a34d-a3271868f11f")
-		(property "Reference" "#PWR024"
+		(property "Reference" "#PWR016"
 			(at 208.28 95.25 0)
 			(effects
 				(font
@@ -2866,152 +2222,7 @@
 		(instances
 			(project "MCL-DSP8x8_INPUT_RCA_8"
 				(path "/1a90dca8-081b-48b4-8e7d-276bfc745013"
-					(reference "#PWR024")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "power:GND")
-		(at 156.21 116.84 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "422b5090-73bc-4bdf-a09e-bc6d8cf9c52f")
-		(property "Reference" "#PWR018"
-			(at 156.21 123.19 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Value" "GND"
-			(at 156.21 121.92 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" ""
-			(at 156.21 116.84 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" ""
-			(at 156.21 116.84 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
-			(at 156.21 116.84 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "b86ec15b-7c0f-4cba-9eeb-69506eac6e4f")
-		)
-		(instances
-			(project "MCL-DSP8x8_INPUT_RCA_8"
-				(path "/1a90dca8-081b-48b4-8e7d-276bfc745013"
-					(reference "#PWR018")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "Device:R")
-		(at 55.88 113.03 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "42959939-a5bd-4911-915b-a5e9d0fdf8d0")
-		(property "Reference" "R8"
-			(at 58.42 111.7599 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Value" "10k"
-			(at 58.42 114.2999 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Footprint" "Resistor_SMD:R_0805_2012Metric_Pad1.20x1.40mm_HandSolder"
-			(at 54.102 113.03 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "~"
-			(at 55.88 113.03 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Resistor"
-			(at 55.88 113.03 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "LCSC Part #" "C3152175"
-			(at 55.88 113.03 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "eb409131-055e-430f-9952-f287b5e1707a")
-		)
-		(pin "2"
-			(uuid "c87ec241-650d-437c-bba4-243c255678f4")
-		)
-		(instances
-			(project "MCL-DSP8x8_INPUT_RCA_8"
-				(path "/1a90dca8-081b-48b4-8e7d-276bfc745013"
-					(reference "R8")
+					(reference "#PWR016")
 					(unit 1)
 				)
 			)
@@ -3027,7 +2238,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "469d9a75-441e-42e2-a51e-b5c3b06b2480")
-		(property "Reference" "R11"
+		(property "Reference" "R1"
 			(at 73.66 80.0099 0)
 			(effects
 				(font
@@ -3090,86 +2301,7 @@
 		(instances
 			(project "MCL-DSP8x8_INPUT_RCA_8"
 				(path "/1a90dca8-081b-48b4-8e7d-276bfc745013"
-					(reference "R11")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "Device:R")
-		(at 55.88 81.28 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "46b2721a-e00c-4997-ac99-476f953a8950")
-		(property "Reference" "R5"
-			(at 58.42 80.0099 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Value" "82k"
-			(at 58.42 82.5499 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Footprint" "Resistor_SMD:R_0805_2012Metric_Pad1.20x1.40mm_HandSolder"
-			(at 54.102 81.28 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "~"
-			(at 55.88 81.28 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Resistor"
-			(at 55.88 81.28 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "LCSC Part #" "C22356755"
-			(at 55.88 81.28 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "115ae460-1f7f-4f1c-8395-23107abdd4c7")
-		)
-		(pin "2"
-			(uuid "35fbaf0b-0e04-46f7-8ff7-1be557b632ab")
-		)
-		(instances
-			(project "MCL-DSP8x8_INPUT_RCA_8"
-				(path "/1a90dca8-081b-48b4-8e7d-276bfc745013"
-					(reference "R5")
+					(reference "R1")
 					(unit 1)
 				)
 			)
@@ -3185,7 +2317,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "46e6f8b7-0682-44e2-ac14-2a47468c7838")
-		(property "Reference" "#PWR08"
+		(property "Reference" "#PWR07"
 			(at 71.12 64.77 0)
 			(effects
 				(font
@@ -3235,244 +2367,7 @@
 		(instances
 			(project "MCL-DSP8x8_INPUT_XLR"
 				(path "/1a90dca8-081b-48b4-8e7d-276bfc745013"
-					(reference "#PWR08")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "Device:R")
-		(at 156.21 88.9 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "497e77c9-aace-4d92-868c-bc524826e278")
-		(property "Reference" "R18"
-			(at 158.75 87.6299 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Value" "10k"
-			(at 158.75 90.1699 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Footprint" "Resistor_SMD:R_0805_2012Metric_Pad1.20x1.40mm_HandSolder"
-			(at 154.432 88.9 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "~"
-			(at 156.21 88.9 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Resistor"
-			(at 156.21 88.9 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "LCSC Part #" "C3152175"
-			(at 156.21 88.9 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "5420451c-ce29-44e1-ac9e-59af12276590")
-		)
-		(pin "2"
-			(uuid "77b21b08-28f7-49d9-9b41-43a2a24aefb9")
-		)
-		(instances
-			(project "MCL-DSP8x8_INPUT_RCA_8"
-				(path "/1a90dca8-081b-48b4-8e7d-276bfc745013"
-					(reference "R18")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "Device:R")
-		(at 156.21 62.23 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "4c1a9f72-323a-432a-ba6e-8368e09fbdc0")
-		(property "Reference" "R16"
-			(at 158.75 60.9599 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Value" "10k"
-			(at 158.75 63.4999 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Footprint" "Resistor_SMD:R_0805_2012Metric_Pad1.20x1.40mm_HandSolder"
-			(at 154.432 62.23 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "~"
-			(at 156.21 62.23 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Resistor"
-			(at 156.21 62.23 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "LCSC Part #" "C3152175"
-			(at 156.21 62.23 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "b7736ca7-60e1-4bca-92f8-634149fb6558")
-		)
-		(pin "2"
-			(uuid "128a9625-62b0-41c8-b0d7-3f192bf88442")
-		)
-		(instances
-			(project "MCL-DSP8x8_INPUT_RCA_8"
-				(path "/1a90dca8-081b-48b4-8e7d-276bfc745013"
-					(reference "R16")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "Device:R")
-		(at 156.21 105.41 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "5155d6a2-19f0-4bc7-91fe-c31e33c1f55c")
-		(property "Reference" "R19"
-			(at 158.75 104.1399 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Value" "82k"
-			(at 158.75 106.6799 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Footprint" "Resistor_SMD:R_0805_2012Metric_Pad1.20x1.40mm_HandSolder"
-			(at 154.432 105.41 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "~"
-			(at 156.21 105.41 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Resistor"
-			(at 156.21 105.41 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "LCSC Part #" "C22356755"
-			(at 156.21 105.41 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "22cbe90d-6262-4c97-930d-2f262e680960")
-		)
-		(pin "2"
-			(uuid "72175b1b-d7e9-415d-80cb-974ef82645ec")
-		)
-		(instances
-			(project "MCL-DSP8x8_INPUT_RCA_8"
-				(path "/1a90dca8-081b-48b4-8e7d-276bfc745013"
-					(reference "R19")
+					(reference "#PWR07")
 					(unit 1)
 				)
 			)
@@ -3488,7 +2383,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "5abef156-0525-4e5a-8081-e9703eea1fd0")
-		(property "Reference" "#PWR020"
+		(property "Reference" "#PWR012"
 			(at 172.72 64.77 0)
 			(effects
 				(font
@@ -3538,323 +2433,7 @@
 		(instances
 			(project "MCL-DSP8x8_INPUT_RCA_8"
 				(path "/1a90dca8-081b-48b4-8e7d-276bfc745013"
-					(reference "#PWR020")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "Device:R")
-		(at 156.21 30.48 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "66ca3e83-fdd7-486b-8d12-1aab9334aee8")
-		(property "Reference" "R13"
-			(at 158.75 29.2099 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Value" "82k"
-			(at 158.75 31.7499 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Footprint" "Resistor_SMD:R_0805_2012Metric_Pad1.20x1.40mm_HandSolder"
-			(at 154.432 30.48 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "~"
-			(at 156.21 30.48 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Resistor"
-			(at 156.21 30.48 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "LCSC Part #" "C22356755"
-			(at 156.21 30.48 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "556bd27b-daf9-413b-b552-bddcadbc56b0")
-		)
-		(pin "2"
-			(uuid "a382743a-58e9-4807-9850-aea861003fbe")
-		)
-		(instances
-			(project "MCL-DSP8x8_INPUT_RCA_8"
-				(path "/1a90dca8-081b-48b4-8e7d-276bfc745013"
-					(reference "R13")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "Device:R")
-		(at 156.21 81.28 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "6a4e6047-5b14-4926-ace4-6a0736862f54")
-		(property "Reference" "R17"
-			(at 158.75 80.0099 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Value" "82k"
-			(at 158.75 82.5499 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Footprint" "Resistor_SMD:R_0805_2012Metric_Pad1.20x1.40mm_HandSolder"
-			(at 154.432 81.28 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "~"
-			(at 156.21 81.28 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Resistor"
-			(at 156.21 81.28 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "LCSC Part #" "C22356755"
-			(at 156.21 81.28 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "bed5eb87-03cc-48e2-87e0-10cd8f26c0c3")
-		)
-		(pin "2"
-			(uuid "e1b41f09-ffe9-4a7c-b0b3-62ef0d9988a7")
-		)
-		(instances
-			(project "MCL-DSP8x8_INPUT_RCA_8"
-				(path "/1a90dca8-081b-48b4-8e7d-276bfc745013"
-					(reference "R17")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "Device:R")
-		(at 55.88 105.41 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "6aa4157b-3c7a-4c2f-96e0-b480f56ae0ae")
-		(property "Reference" "R7"
-			(at 58.42 104.1399 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Value" "82k"
-			(at 58.42 106.6799 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Footprint" "Resistor_SMD:R_0805_2012Metric_Pad1.20x1.40mm_HandSolder"
-			(at 54.102 105.41 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "~"
-			(at 55.88 105.41 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Resistor"
-			(at 55.88 105.41 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "LCSC Part #" "C22356755"
-			(at 55.88 105.41 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "80ca701b-d7ae-4933-910f-8c222e4b498d")
-		)
-		(pin "2"
-			(uuid "7e8691b8-20dd-4940-a5d1-b15b3fbdfa4b")
-		)
-		(instances
-			(project "MCL-DSP8x8_INPUT_RCA_8"
-				(path "/1a90dca8-081b-48b4-8e7d-276bfc745013"
-					(reference "R7")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "Device:R")
-		(at 55.88 88.9 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "6e66b799-ad3d-4b01-950d-e5a5dea7d78e")
-		(property "Reference" "R6"
-			(at 58.42 87.6299 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Value" "10k"
-			(at 58.42 90.1699 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Footprint" "Resistor_SMD:R_0805_2012Metric_Pad1.20x1.40mm_HandSolder"
-			(at 54.102 88.9 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "~"
-			(at 55.88 88.9 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Resistor"
-			(at 55.88 88.9 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "LCSC Part #" "C3152175"
-			(at 55.88 88.9 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "d4e0a4be-e70d-40ef-b1f7-afbd250cb234")
-		)
-		(pin "2"
-			(uuid "22ffe11e-d0a6-4262-b86c-3e5f24d6217a")
-		)
-		(instances
-			(project "MCL-DSP8x8_INPUT_RCA_8"
-				(path "/1a90dca8-081b-48b4-8e7d-276bfc745013"
-					(reference "R6")
+					(reference "#PWR012")
 					(unit 1)
 				)
 			)
@@ -3947,7 +2526,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "8175c379-d5d7-4cd3-9b8e-65d1b27d87e4")
-		(property "Reference" "#PWR021"
+		(property "Reference" "#PWR013"
 			(at 172.72 91.44 0)
 			(effects
 				(font
@@ -3997,165 +2576,7 @@
 		(instances
 			(project "MCL-DSP8x8_INPUT_RCA_8"
 				(path "/1a90dca8-081b-48b4-8e7d-276bfc745013"
-					(reference "#PWR021")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "Device:R")
-		(at 55.88 54.61 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "8386a474-efa2-4f92-bd57-26bf5365495a")
-		(property "Reference" "R3"
-			(at 58.42 53.3399 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Value" "82k"
-			(at 58.42 55.8799 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Footprint" "Resistor_SMD:R_0805_2012Metric_Pad1.20x1.40mm_HandSolder"
-			(at 54.102 54.61 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "~"
-			(at 55.88 54.61 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Resistor"
-			(at 55.88 54.61 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "LCSC Part #" "C22356755"
-			(at 55.88 54.61 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "725d2bca-4abe-45a2-9f63-77736cec5687")
-		)
-		(pin "2"
-			(uuid "59505525-0032-4ff5-ac57-189550b44b25")
-		)
-		(instances
-			(project "MCL-DSP8x8_INPUT_RCA_8"
-				(path "/1a90dca8-081b-48b4-8e7d-276bfc745013"
-					(reference "R3")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "Device:R")
-		(at 55.88 30.48 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "8567df71-c71a-4ad9-bb1c-5131afff88c4")
-		(property "Reference" "R1"
-			(at 58.42 29.2099 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Value" "82k"
-			(at 58.42 31.7499 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Footprint" "Resistor_SMD:R_0805_2012Metric_Pad1.20x1.40mm_HandSolder"
-			(at 54.102 30.48 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "~"
-			(at 55.88 30.48 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Resistor"
-			(at 55.88 30.48 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "LCSC Part #" "C22356755"
-			(at 55.88 30.48 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "2b36fb39-ea8a-471b-b889-072f18555f85")
-		)
-		(pin "2"
-			(uuid "ff38aaa7-ba69-4c13-aee2-984d4731776b")
-		)
-		(instances
-			(project "MCL-DSP8x8_INPUT_RCA_8"
-				(path "/1a90dca8-081b-48b4-8e7d-276bfc745013"
-					(reference "R1")
+					(reference "#PWR013")
 					(unit 1)
 				)
 			)
@@ -4171,7 +2592,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "880441ff-7409-4745-a6e5-15ac5d28eef9")
-		(property "Reference" "R10"
+		(property "Reference" "R8"
 			(at 73.66 53.3399 0)
 			(effects
 				(font
@@ -4234,165 +2655,7 @@
 		(instances
 			(project "MCL-DSP8x8_INPUT_XLR"
 				(path "/1a90dca8-081b-48b4-8e7d-276bfc745013"
-					(reference "R10")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "Device:R")
-		(at 156.21 113.03 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "8f0b5d66-bbc4-46ae-ae3c-cdcc6165af93")
-		(property "Reference" "R20"
-			(at 158.75 111.7599 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Value" "10k"
-			(at 158.75 114.2999 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Footprint" "Resistor_SMD:R_0805_2012Metric_Pad1.20x1.40mm_HandSolder"
-			(at 154.432 113.03 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "~"
-			(at 156.21 113.03 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Resistor"
-			(at 156.21 113.03 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "LCSC Part #" "C3152175"
-			(at 156.21 113.03 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "a9347209-5f96-4279-a041-363da0b48d9a")
-		)
-		(pin "2"
-			(uuid "b7e5770f-fce1-45a5-8de2-415ad9c7d258")
-		)
-		(instances
-			(project "MCL-DSP8x8_INPUT_RCA_8"
-				(path "/1a90dca8-081b-48b4-8e7d-276bfc745013"
-					(reference "R20")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "Device:R")
-		(at 55.88 62.23 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "9531259a-fc9a-45f6-b027-bccc562dd17c")
-		(property "Reference" "R4"
-			(at 58.42 60.9599 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Value" "10k"
-			(at 58.42 63.4999 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Footprint" "Resistor_SMD:R_0805_2012Metric_Pad1.20x1.40mm_HandSolder"
-			(at 54.102 62.23 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "~"
-			(at 55.88 62.23 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Resistor"
-			(at 55.88 62.23 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "LCSC Part #" "C3152175"
-			(at 55.88 62.23 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "bacb721c-f013-4e97-9882-81e950a9ef6a")
-		)
-		(pin "2"
-			(uuid "473a9b76-0ddd-4435-aa22-25c457746f75")
-		)
-		(instances
-			(project "MCL-DSP8x8_INPUT_RCA_8"
-				(path "/1a90dca8-081b-48b4-8e7d-276bfc745013"
-					(reference "R4")
+					(reference "R8")
 					(unit 1)
 				)
 			)
@@ -4474,7 +2737,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "9978d8b5-dbe8-4206-965e-f20afd732009")
-		(property "Reference" "R9"
+		(property "Reference" "R6"
 			(at 73.66 29.2099 0)
 			(effects
 				(font
@@ -4537,7 +2800,7 @@
 		(instances
 			(project "MCL-DSP8x8_INPUT_XLR"
 				(path "/1a90dca8-081b-48b4-8e7d-276bfc745013"
-					(reference "R9")
+					(reference "R6")
 					(unit 1)
 				)
 			)
@@ -4553,7 +2816,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "a621b65a-4436-4dba-bab9-94bba6a392b1")
-		(property "Reference" "R22"
+		(property "Reference" "R4"
 			(at 175.26 53.3399 0)
 			(effects
 				(font
@@ -4616,7 +2879,7 @@
 		(instances
 			(project "MCL-DSP8x8_INPUT_RCA_8"
 				(path "/1a90dca8-081b-48b4-8e7d-276bfc745013"
-					(reference "R22")
+					(reference "R4")
 					(unit 1)
 				)
 			)
@@ -4776,7 +3039,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "af7f0448-7929-4f95-a423-7faa9e5dc31f")
-		(property "Reference" "R24"
+		(property "Reference" "R7"
 			(at 175.26 104.1399 0)
 			(effects
 				(font
@@ -4839,7 +3102,7 @@
 		(instances
 			(project "MCL-DSP8x8_INPUT_RCA_8"
 				(path "/1a90dca8-081b-48b4-8e7d-276bfc745013"
-					(reference "R24")
+					(reference "R7")
 					(unit 1)
 				)
 			)
@@ -4855,7 +3118,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "b704844f-c286-46f4-94e5-f37e60a3fd74")
-		(property "Reference" "R23"
+		(property "Reference" "R5"
 			(at 175.26 80.0099 0)
 			(effects
 				(font
@@ -4918,7 +3181,7 @@
 		(instances
 			(project "MCL-DSP8x8_INPUT_RCA_8"
 				(path "/1a90dca8-081b-48b4-8e7d-276bfc745013"
-					(reference "R23")
+					(reference "R5")
 					(unit 1)
 				)
 			)
@@ -5136,7 +3399,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "b8d10d94-33e0-4490-835c-5c6aab2413a4")
-		(property "Reference" "#PWR09"
+		(property "Reference" "#PWR03"
 			(at 71.12 91.44 0)
 			(effects
 				(font
@@ -5186,139 +3449,7 @@
 		(instances
 			(project "MCL-DSP8x8_INPUT_RCA_8"
 				(path "/1a90dca8-081b-48b4-8e7d-276bfc745013"
-					(reference "#PWR09")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "power:GND")
-		(at 55.88 116.84 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "c08f8be5-4e49-4702-8f56-20312953d850")
-		(property "Reference" "#PWR06"
-			(at 55.88 123.19 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Value" "GND"
-			(at 55.88 121.92 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" ""
-			(at 55.88 116.84 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" ""
-			(at 55.88 116.84 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
-			(at 55.88 116.84 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "7bcbd18c-1942-48e6-94a4-a7917103cd4a")
-		)
-		(instances
-			(project "MCL-DSP8x8_INPUT_RCA_8"
-				(path "/1a90dca8-081b-48b4-8e7d-276bfc745013"
-					(reference "#PWR06")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "power:GND")
-		(at 156.21 66.04 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "c346d678-b739-4f4a-bb65-518c48b6a999")
-		(property "Reference" "#PWR016"
-			(at 156.21 72.39 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Value" "GND"
-			(at 156.21 71.12 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" ""
-			(at 156.21 66.04 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" ""
-			(at 156.21 66.04 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
-			(at 156.21 66.04 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "c1c4b85e-f055-4d28-bf9e-da94d7d51383")
-		)
-		(instances
-			(project "MCL-DSP8x8_INPUT_RCA_8"
-				(path "/1a90dca8-081b-48b4-8e7d-276bfc745013"
-					(reference "#PWR016")
+					(reference "#PWR03")
 					(unit 1)
 				)
 			)
@@ -5451,85 +3582,6 @@
 	)
 	(symbol
 		(lib_id "Device:R")
-		(at 156.21 54.61 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "ccaaea92-adfd-4318-a7b0-f5493a72b3bb")
-		(property "Reference" "R15"
-			(at 158.75 53.3399 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Value" "82k"
-			(at 158.75 55.8799 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Footprint" "Resistor_SMD:R_0805_2012Metric_Pad1.20x1.40mm_HandSolder"
-			(at 154.432 54.61 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "~"
-			(at 156.21 54.61 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Resistor"
-			(at 156.21 54.61 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "LCSC Part #" "C22356755"
-			(at 156.21 54.61 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "8643bb41-791a-4aa1-85c8-175f509ddc84")
-		)
-		(pin "2"
-			(uuid "53f12096-d84d-4b5a-8adc-7facf9c14c6f")
-		)
-		(instances
-			(project "MCL-DSP8x8_INPUT_RCA_8"
-				(path "/1a90dca8-081b-48b4-8e7d-276bfc745013"
-					(reference "R15")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "Device:R")
 		(at 172.72 30.48 0)
 		(unit 1)
 		(exclude_from_sim no)
@@ -5538,7 +3590,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "d8a0b4d3-484b-4cad-a0ec-d632f3b21c4e")
-		(property "Reference" "R21"
+		(property "Reference" "R3"
 			(at 175.26 29.2099 0)
 			(effects
 				(font
@@ -5601,7 +3653,7 @@
 		(instances
 			(project "MCL-DSP8x8_INPUT_RCA_8"
 				(path "/1a90dca8-081b-48b4-8e7d-276bfc745013"
-					(reference "R21")
+					(reference "R3")
 					(unit 1)
 				)
 			)
@@ -5684,7 +3736,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "e64f664e-3c80-466b-90a7-fd4ddaca0328")
-		(property "Reference" "R12"
+		(property "Reference" "R2"
 			(at 73.66 104.1399 0)
 			(effects
 				(font
@@ -5747,73 +3799,7 @@
 		(instances
 			(project "MCL-DSP8x8_INPUT_RCA_8"
 				(path "/1a90dca8-081b-48b4-8e7d-276bfc745013"
-					(reference "R12")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "power:GND")
-		(at 156.21 41.91 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "e8322b42-7323-4d9f-abd2-b9c213e01fbf")
-		(property "Reference" "#PWR015"
-			(at 156.21 48.26 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Value" "GND"
-			(at 156.21 46.99 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" ""
-			(at 156.21 41.91 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" ""
-			(at 156.21 41.91 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
-			(at 156.21 41.91 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "4783474a-d62b-40f1-bd20-fb64e6cf3cee")
-		)
-		(instances
-			(project "MCL-DSP8x8_INPUT_RCA_8"
-				(path "/1a90dca8-081b-48b4-8e7d-276bfc745013"
-					(reference "#PWR015")
+					(reference "R2")
 					(unit 1)
 				)
 			)
@@ -5829,7 +3815,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "ec2cccca-4900-411b-9d0e-d1114e144ef0")
-		(property "Reference" "#PWR07"
+		(property "Reference" "#PWR06"
 			(at 71.12 40.64 0)
 			(effects
 				(font
@@ -5879,7 +3865,7 @@
 		(instances
 			(project "MCL-DSP8x8_INPUT_XLR"
 				(path "/1a90dca8-081b-48b4-8e7d-276bfc745013"
-					(reference "#PWR07")
+					(reference "#PWR06")
 					(unit 1)
 				)
 			)
@@ -5895,7 +3881,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "ede6ad56-1017-496e-b146-d8e068ed3659")
-		(property "Reference" "#PWR014"
+		(property "Reference" "#PWR010"
 			(at 133.35 104.14 0)
 			(effects
 				(font
@@ -5945,7 +3931,7 @@
 		(instances
 			(project "MCL-DSP8x8_INPUT_RCA_8"
 				(path "/1a90dca8-081b-48b4-8e7d-276bfc745013"
-					(reference "#PWR014")
+					(reference "#PWR010")
 					(unit 1)
 				)
 			)
@@ -5961,7 +3947,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "f30e86b6-f18f-4310-8017-a41719f48294")
-		(property "Reference" "#PWR012"
+		(property "Reference" "#PWR05"
 			(at 106.68 95.25 0)
 			(effects
 				(font
@@ -6012,73 +3998,7 @@
 		(instances
 			(project "MCL-DSP8x8_INPUT_RCA_8"
 				(path "/1a90dca8-081b-48b4-8e7d-276bfc745013"
-					(reference "#PWR012")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "power:GND")
-		(at 55.88 66.04 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "f39ad325-ec78-4d66-81e5-74070a22d518")
-		(property "Reference" "#PWR04"
-			(at 55.88 72.39 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Value" "GND"
-			(at 55.88 71.12 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" ""
-			(at 55.88 66.04 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" ""
-			(at 55.88 66.04 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
-			(at 55.88 66.04 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "14a3b27c-58b3-4807-bf90-7960eed3b492")
-		)
-		(instances
-			(project "MCL-DSP8x8_INPUT_RCA_8"
-				(path "/1a90dca8-081b-48b4-8e7d-276bfc745013"
-					(reference "#PWR04")
+					(reference "#PWR05")
 					(unit 1)
 				)
 			)
