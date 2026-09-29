@@ -1,6 +1,6 @@
 {
   "board": {
-    "active_layer": 7,
+    "active_layer": 0,
     "active_layer_preset": "",
     "auto_track_width": true,
     "hidden_netclasses": [],
@@ -59,7 +59,7 @@
     "ssh_key": ""
   },
   "meta": {
-    "filename": "DIYDSPv0.8.kicad_prl",
+    "filename": "MCL-DSP8x8_INPUT_RCA_8.kicad_prl",
     "version": 5
   },
   "net_inspector_panel": {

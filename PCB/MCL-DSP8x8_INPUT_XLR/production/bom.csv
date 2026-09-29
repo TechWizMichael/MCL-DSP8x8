@@ -1,0 +1,4 @@
+﻿Designator,Footprint,Quantity,Value,LCSC Part #
+"PS1, PS2",NC3FAAH1,2,~,C368464
+"R1, R3, R5, R7",0805,4,82k,C22356755
+"R2, R4, R6, R8",0805,4,10k,C3152175
