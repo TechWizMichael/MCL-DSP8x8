@@ -1,3 +1,8 @@
+// Values and functions for interfacing with ADAU1452
+// Note: largely copied from example Analog Devices code found here: https://wiki.analog.com/resources/tools-software/sigmastudio/tutorials/microcontroller
+// Modified to remove code for I2C. Device is controlled solely through SPI.
+// Last updated September 29, 2026
+
 #ifndef ADAU1452
 #define ADAU1452
 
@@ -6,17 +11,15 @@
 #include "ADAU1452\SigmaStudioFW.h"
 #include "ADAU1452\USER_SETTINGS.h"
 
-#ifdef ADAU1452_VERIFY
-#include "ADAU1452\MCL-DSP8x8Test_IC_1.h"
-#include "ADAU1452\MCL-DSP8x8Test_IC_1_PARAM.h"
+#ifdef CUSTOM_DSP
+#include "ADAU1452\MCL-DSP8x8_CUSTOM_IC_1.h"
+#include "ADAU1452\MCL-DSP8x8CUSTOM_IC_1_PARAM.h"
 #else
 #include "ADAU1452\MCL-DSP8x8_IC_1.h"
 #include "ADAU1452\MCL-DSP8x8_IC_1_PARAM.h"
 #endif
 
 // Reset ADAU1452 and prepare for programming
-// Note: Copied from example Analog Devices code found here: https://wiki.analog.com/resources/tools-software/sigmastudio/tutorials/microcontroller
-// Modified to remove code for I2C. Device is controlled solely through SPI.
 void DSP_HARD_RESET() {
     pinMode(DSP_RESET_PIN, OUTPUT);
     digitalWrite(DSP_RESET_PIN, LOW);
