@@ -53,5 +53,4 @@ Audio Signal Processor based on ESP32-S3 and ADAU1452.
 - [ ] Validation of assembled design
 
 ### Preview of v0.8 from JLCPCB
-<img width="760" height="513" alt="image" src="https://github.com/user-attachments/assets/3d379e2b-e514-4c6f-8108-fa303ee4f4f1" />
-
+<img width="674" height="442" alt="MCL-DSP8x8 v0 8 Preview" src="https://github.com/user-attachments/assets/f40b6a92-9971-4932-a340-858c563d7075" />
