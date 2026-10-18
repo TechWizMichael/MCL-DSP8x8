@@ -1,4 +1,4 @@
-27279462671626607
+27295621053025472
 Audio_Module
 Reverb_BTDR-1H
 Digital Reverberation Unit, http://www.belton.co.kr/inc/downfile.php?seq=17&file=pdf (footprint from http://www.uk-electronic.de/PDF/BTDR-1.pdf)
@@ -60221,6 +60221,20 @@ AMS1117-1.8
 4
 4
 Custom
+AMS1117-3.3
+
+
+0
+4
+4
+Custom
+AV-210-WR
+
+
+0
+4
+4
+Custom
 CUS08F30,H3F
 
 
@@ -60241,6 +60255,20 @@ DC-050-25A
 0
 4
 3
+Custom
+DDZ5V6CSF-7
+
+
+0
+2
+2
+Custom
+ESP32-C6-MINI-1U-H4
+
+
+0
+61
+53
 Custom
 ESP32-S3-WROOM-1
 
@@ -60298,6 +60326,13 @@ K7803M-1000R3
 3
 3
 Custom
+LCK-DSIC02LHGET-A2
+
+
+0
+4
+4
+Custom
 LM324DT
 
 
@@ -60305,12 +60340,40 @@ LM324DT
 14
 14
 Custom
+MSS-22D18G3 051
+
+
+0
+6
+6
+Custom
 MX126-5.0-02P-GN01-Cu-S-A
 
 
 0
 2
 2
+Custom
+NC3FAAH1
+
+
+0
+3
+3
+Custom
+NC3MAAH-0
+
+
+0
+4
+4
+Custom
+NCJ6FA-H
+
+
+0
+8
+8
 Custom
 PJ-320D
 
@@ -60332,6 +60395,13 @@ S47SMD12.288M20PF20R30B3
 0
 2
 2
+Custom
+SGM2039A-3.3XXEV8G_TR
+
+
+0
+9
+9
 Custom
 SL1265-100M
 
@@ -60389,19 +60459,12 @@ TS110916043
 4
 4
 Custom
-Untitled
+XDJK-0271-1650
 
 
 0
-0
-0
-Custom
-Untitled_1
-
-
-0
-0
-0
+3
+3
 Custom
 YTS1C0033BBG01
 
