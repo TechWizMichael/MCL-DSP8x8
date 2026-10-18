@@ -1,3 +1,6 @@
+// values and functions for interacting with AK4619VN
+// Last updated September 29, 2026
+
 #ifndef AK4619VN
 #define AK4619VN
 
@@ -7,6 +10,7 @@
 // Device Addresses
 #define AK4619VN_1_ADDRESS 0x10
 #define AK4619VN_2_ADDRESS 0x11
+
 
 // I2C Pins
 #define I2C_SDA 4
