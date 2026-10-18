@@ -5,6 +5,7 @@ Audio Signal Processor based on ESP32-S3 and ADAU1452.
 ## Goals
 + Eight channels of analog audio input and output
 + Compatibility with "12V" automotive systems
+  + As of v0.8 PCB, the device is powered using USB, so 12V operation will require an external USB or 5V power converter.
 + Remote control through ESP32
 + download and upload of settings to restore after flashing new firmware
 
@@ -42,7 +43,7 @@ Audio Signal Processor based on ESP32-S3 and ADAU1452.
 - [x] Upgrade buttons
 - [x] Upgrade/Replace audio connectors
 - [x] swap I2S connections for AK4619VN
-- [x] \(optional) Ability to power from USB 5V rail
+- [x] Swapped power source to USB
 - [x] Update output gain stage
 - [x] Add Schottky diode(s) for power input
 - [x] Upgrade capacitors on input
