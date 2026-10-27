@@ -6,52 +6,34 @@ Audio Signal Processor based on ESP32-S3 and ADAU1452.
 + Eight channels of analog audio input and output
 + Compatibility with "12V" automotive systems
   + As of v0.8 PCB, the device is powered using USB, so 12V operation will require an external USB or 5V power converter.
-+ Remote control through ESP32
-+ download and upload of settings to restore after flashing new firmware
++ WIP: Remote control through ESP32 (Serial and basic controls through BLE).
++ WIP: Download and upload of settings to restore after flashing new firmware.
 
 ## Current State of Firmware
 + Bit of a mess. It's been changing as I've been messing with testing.
 + USB programming of ESP32 is functional.
 + ESP32 successfully programs ADAU1452 and AK4619VN.
 + Bluetooth functionality was briefly tested, with a generic BLE app on android controlling output gain.
-+ Recommended to edit SigmaStudio project for own needs before programming.
++ Can choose between default and custom DSP program by commenting/uncommenting a line in the main .INO file.
+  + Default DSP is linear mapping (pass-through) of input to output until ESP32 updates settings after flashing.
+    + Defualt will be guaranteed to be compatible with remote control.
+      + For this reason, it is highly recommended that the default DSP project, code, and headers remain unchanged.
+  + Custom DSP is provided example with registers and input/outputs correctly mapped to physical connections.
+    + The Custom DSP program can be modified, but will not offer remote control through the ESP32.
+    + The Custom DSP "example" in this repository will likely be whatever I programmed last with it.
 
 ## Current state of hardware
-### V0.7 PCB (latest complete version)
-- On paper, everything works. The ESP32-S3 may need to be flashed using UART pins for the first time, but it is otherwise functional.
-- In practice, there are many issues that make it problematic for use with actual audio systems.
-- View issues tab for current issues and progress/solutions
-
-
-### v0.8 (In Progress)
-- Goal to address many of the issues seen in v0.7.
-- The primary issue is the noise in the analog signal, which is addressed by a second 3.3V rail for analog components.
-- This means the main board has a maximum input and output of around +2.2dBu.
-- There is also additional options for input connectors, but they must be added separately.
-- The following connectors have complete v1 designs:
-  - Stereo XLR
-  - Stereo RCA
-  - Eight-channel RCA
-- Current designs for input boards passively attenuate signal -20dB, so a maximum input signal of +22dBu is acceptable.
-- Maximum output is still around +2.2 dBu.
-- If the maximum input signal will be under +2.2 dBu, the output boards can be used as input boards.
-  - This is because they are direct connections to the main board.
-
-#### v0.8 To-do:
-- [x] New analog rail
-- [x] Reset IC for ESP32
-- [x] Upgrade buttons
-- [x] Upgrade/Replace audio connectors
-- [x] swap I2S connections for AK4619VN
-- [x] Swapped power source to USB
-- [x] Update output gain stage
-- [x] Add Schottky diode(s) for power input
-- [x] Upgrade capacitors on input
-- [x] add capacitors on power rails of opamps
-- [x] ESP32 controls PDN of AK4619VN
-- [x] Updated layout of main board
-- [x] Connector boards
-- [ ] Validation of assembled design
+### v0.8 (In Testing)
+- Important: Buttons are connected incorrectly so they behave as though they are permanently pressed.
+  - Removing the buttons or not getting them placed will fix the issue, but the relevant pins may need to be shorted for first-time flashing firmware.
+- Maximum input and output of around +2.2dBu (to be verified).
+- Using passive attenuation, input range can be expanded.
+  - For example, a voltage divider consisting of 47k and 5.6k can be used to achieve 20dB attenuation.
+- Analog inputs and outputs use pinheaders with 5 pins with 2.54mm pitch.
+  - Each connector carries a differential/balanced connection for two channels.
+  - GND, A+, A-, B+, B-
+- Similar connectors offer connection to Multi-purpose and AUXADC pins on ADAU1452.
+- All appears to be functional with minimal noise
 
 ### Preview of v0.8 from JLCPCB
 <img width="674" height="442" alt="MCL-DSP8x8 v0 8 Preview" src="https://github.com/user-attachments/assets/f40b6a92-9971-4932-a340-858c563d7075" />
