@@ -26,7 +26,7 @@ Audio Signal Processor based on ESP32-S3 and ADAU1452.
 ### v0.8 (In Testing)
 - Important: Buttons are connected incorrectly so they behave as though they are permanently pressed.
   - Removing the buttons or not getting them placed will fix the issue, but the relevant pins may need to be shorted for first-time flashing firmware.
-- Maximum input and output of around +2.2dBu (to be verified).
+- Maximum input and output around 3.2V peak-peak (+3.3dBu) (to be verified).
 - Using passive attenuation, input range can be expanded.
   - For example, a voltage divider consisting of 47k and 5.6k can be used to achieve 20dB attenuation.
 - Analog inputs and outputs use pinheaders with 5 pins with 2.54mm pitch.
