@@ -26,7 +26,6 @@ Audio Signal Processor based on ESP32-S3 and ADAU1452.
 ### v0.8 (In Testing)
 - Important: Buttons are connected incorrectly so they behave as though they are permanently pressed.
   - Removing the buttons or not getting them placed will fix the issue, but the relevant pins may need to be shorted for first-time flashing firmware.
-- Maximum input and output around 3.2V peak-peak (+3.3dBu) (to be verified).
 - Using passive attenuation, input range can be expanded.
   - For example, a voltage divider consisting of 47k and 5.6k can be used to achieve 20dB attenuation.
 - Analog inputs and outputs use pinheaders with 5 pins with 2.54mm pitch.
@@ -34,6 +33,11 @@ Audio Signal Processor based on ESP32-S3 and ADAU1452.
   - GND, A+, A-, B+, B-
 - Similar connectors offer connection to Multi-purpose and AUXADC pins on ADAU1452.
 - All appears to be functional with minimal noise
+- Measurements:
+  - Measured Maximum output (10% THD): 0.939 Vrms (+1.7 dBu)
+  - Measured Maximum output (1% THD): 0.814 Vrms (+0.4 dBu)
+  - Measured Maximum Input (10% THD): 1.27 Vrms (+4.3 dBu) - Note: potentially my USB interface clipping at 1.28V
+  - Measured maximum input (1% THD): 1 Vrms (+2.2dBu)
 
 ### Preview of v0.8 from JLCPCB
 <img width="674" height="442" alt="MCL-DSP8x8 v0 8 Preview" src="https://github.com/user-attachments/assets/f40b6a92-9971-4932-a340-858c563d7075" />
