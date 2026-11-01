@@ -1,7 +1,7 @@
 // Values and functions for interfacing with ADAU1452
 // Note: largely copied from example Analog Devices code found here: https://wiki.analog.com/resources/tools-software/sigmastudio/tutorials/microcontroller
 // Modified to remove code for I2C. Device is controlled solely through SPI.
-// Last updated September 29, 2026
+// Last updated October 28, 2026
 
 #ifndef ADAU1452
 #define ADAU1452
@@ -13,7 +13,7 @@
 
 #ifdef CUSTOM_DSP
 #include "ADAU1452\MCL-DSP8x8_CUSTOM_IC_1.h"
-#include "ADAU1452\MCL-DSP8x8CUSTOM_IC_1_PARAM.h"
+#include "ADAU1452\MCL-DSP8x8_CUSTOM_IC_1_PARAM.h"
 #else
 #include "ADAU1452\MCL-DSP8x8_IC_1.h"
 #include "ADAU1452\MCL-DSP8x8_IC_1_PARAM.h"
@@ -46,9 +46,9 @@ void DSP_HARD_RESET() {
 //      IO11 -> MOSI
 //      IO12 -> SCLK
 //      IO13 -> MISO
-void init_ADAU1452() {
-    digitalWrite(DSP_SS_PIN, HIGH);
+void setup_ADAU1452() {
     pinMode(DSP_SS_PIN, OUTPUT);
+    digitalWrite(DSP_SS_PIN, HIGH);
     SPI.begin();
     DSP_HARD_RESET();
     default_download_IC_1();

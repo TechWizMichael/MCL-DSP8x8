@@ -1,22 +1,21 @@
 // Values and functions for using BLE
 // Largely copied from https://randomnerdtutorials.com/esp32-web-bluetooth/
-// Last updated September 29, 2026
+// Last updated October 28, 2026
 
 #include <BLEDevice.h>
 #include <BLEUtils.h>
 #include <BLEServer.h>
 
-// BLE constants, variables, and objects
-// https://www.uuidgenerator.net/
-#define SERVICE_UUID "13ddec86-d2ca-4c9f-b360-20804ca3f1b4"
-#define CHARACTERISTIC_UUID "13ddec86-d2ca-4c9f-b360-20804ca3f1b4"
+#define BLE_HANDSHAKE_QUERY "secret"
+#define BLE_HANDSHAKE_RESPONSE "hush hush"
+
 BLEServer *pServer;
 BLEService *pService;
 BLEAdvertising *pAdvertising;
 BLECharacteristic *pCharacteristic;
+String latest_response = "READY";
 
-
-void init_BLE() {
+void setup_BLE() {
   if (!BLEDevice::init("MCL-DSP8x8")) {
     Serial.println("BLE initialization failed!");
     return;
@@ -27,7 +26,7 @@ void init_BLE() {
   pServer->advertiseOnDisconnect(true);
   pCharacteristic = pService->createCharacteristic(CHARACTERISTIC_UUID, BLECharacteristic::PROPERTY_READ | BLECharacteristic::PROPERTY_WRITE);
 
-  pCharacteristic->setValue("8");
+  pCharacteristic->setValue(latest_response);
   pService->start();
 
   pAdvertising = BLEDevice::getAdvertising();
@@ -37,5 +36,24 @@ void init_BLE() {
   pAdvertising->setMaxPreferred(0x12);
   BLEDevice::startAdvertising();
   Serial.println("BLE Started");
+  return;
+}
+
+String read_BLE(void){
+  String temp_string = pCharacteristic->getValue();
+
+  if(!latest_response.equals(temp_string)){
+    return temp_string;
+  }
+
+  return "";
+}
+
+void ble_respond(String response){
+  if(!response.equals("NOCOMMAND")){
+    latest_response = response;
+    pCharacteristic->setValue("");
+  }
+
   return;
 }

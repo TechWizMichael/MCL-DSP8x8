@@ -1,11 +1,14 @@
 // values and functions for interacting with AK4619VN
-// Last updated September 29, 2026
+// Last updated October 26, 2026
 
 #ifndef AK4619VN
 #define AK4619VN
 
 #include <Arduino.h>
 #include <Wire.h>
+
+// AK4619VN PDN/enable pin
+#define CODEC_EN 14
 
 // Device Addresses
 #define AK4619VN_1_ADDRESS 0x10
@@ -49,7 +52,7 @@ uint8_t write_AK4619VN(uint8_t device_address, byte register_address, byte regis
     if(transmission_result != 0){
         String message = "transmitting 0x" + String(int(register_value), HEX) + " to register 0x" + String(int(register_address), HEX);
         Serial.println(message);
-        Serial.println("0x" + String(int(transmission_result), HEX));
+        Serial.println("Write Message: 0x" + String(int(transmission_result), HEX));
     }
 
     return transmission_result;
@@ -71,7 +74,7 @@ uint8_t read_AK4619VN(uint8_t device_address, byte register_address, uint8_t * r
     uint8_t transmission_result = Wire.endTransmission(true); //Send STOP
 
     if(transmission_result != 0) {
-        Serial.println("0x" + String(int(transmission_result), HEX));
+        Serial.println("READ: 0x" + String(int(transmission_result), HEX));
     }
 
     return transmission_result;
@@ -106,11 +109,9 @@ void mute_AK4619VN() {
 // Initialize AK4619VN over I2C
 // NOTE: many settings maintain their default values, but having them here already makes changes easier
 void init_AK4619VN() {
-    Wire.begin(I2C_SDA, I2C_SCL); // SDA, SCL
-    Wire.setClock(400000); // 400 kHz (Fast Mode)
     byte temp_data = 0x00;
     byte temp_address = 0x00;
-    
+
     // ADC/DAC Power
     // Set bits for ADC and DAC power (PMAD2, PMAD1, PMDA2, PMDA1)
     // HIGH (1) means enabled
@@ -120,6 +121,7 @@ void init_AK4619VN() {
     write_AK4619VN(AK4619VN_1_ADDRESS, temp_address, temp_data);
     write_AK4619VN(AK4619VN_2_ADDRESS, temp_address, temp_data);
 
+    // Mte during programming to prevent snapping.
     mute_AK4619VN();
 
     // Audio Format Registers
@@ -202,7 +204,7 @@ void init_AK4619VN() {
     // Set ADC input mode
 
     temp_address = ADCAIN; // {ADC1LSEL[1], ADC1LSEL[0], ADC1RSEL[1], ADC1RSEL[0], ADC2LSEL[1], ADC2LSEL[0], ADC2RSEL[1], ADC2RSEL[0]}
-    temp_data = 0x55; // differential on all ADC inputs
+    temp_data = 0x00; // differential on all ADC inputs
     write_AK4619VN(AK4619VN_1_ADDRESS, temp_address, temp_data);
     write_AK4619VN(AK4619VN_2_ADDRESS, temp_address, temp_data);
 
@@ -269,8 +271,25 @@ void init_AK4619VN() {
     temp_data = temp_data | 0x01;
     write_AK4619VN(AK4619VN_2_ADDRESS, temp_address, temp_data);
 
-    // unmute_AK4619VN();
+    unmute_AK4619VN();
 
+    return;
+}
+
+void setup_AK4619VN(void){
+    
+    Serial.println("Enable Codec");
+    pinMode(CODEC_EN, OUTPUT);
+    digitalWrite(CODEC_EN, HIGH);
+    delay(1000);
+
+    Serial.println("Enable I2C");
+    Wire.begin(I2C_SDA, I2C_SCL); // SDA, SCL
+    // Wire.setClock(400000); // 400 kHz (Fast Mode)
+    Wire.setClock(100000); // 400 kHz (Fast Mode)
+    
+    Serial.println("Programming CODEC");
+    init_AK4619VN();
     return;
 }
 

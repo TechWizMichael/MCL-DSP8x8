@@ -1,7 +1,7 @@
 /*
  * File:           defines.h
  *
- * Created:        Tuesday, September 29, 2026 10:18:46 PM
+ * Created:        Saturday, October 31, 2026 5:31:02 PM
  * Description:    MCL-DSP8x8 IC default download data definitions.
  *
  * This software is distributed in the hope that it will be useful,
@@ -19,7 +19,7 @@
 #ifndef __DEFINES_H__
 #define __DEFINES_H__
 
-#define BufferSize_IC_1     	69726
+#define BufferSize_IC_1     	13926
 #define NumTransactions_IC_1	62
 
 
