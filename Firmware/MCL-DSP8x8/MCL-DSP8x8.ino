@@ -22,7 +22,7 @@ void setup() {
   setup_ADAU1452();
   setup_AK4619VN();
   setup_BLE();
-  // setup_param();
+  setup_param();
 }
 
 void loop() {

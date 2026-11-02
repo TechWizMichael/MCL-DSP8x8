@@ -29,7 +29,7 @@ String read_serial(void){
 
 void serial_respond(String response){
   if (!response.equals("NOCOMMAND")) {
-    Serial.println(response);
+    Serial.println("RESPONSE: " + response);
   }
   
   return;

@@ -57,6 +57,62 @@ void write_param(int address, float value) {
   return;
 }
 
+// Write EQ coefficients given channel, eq number, and 
+int write_ch_eq(int channel, int filt_num) {
+    
+    if ((channel < 0) | (channel > 7)) {
+        Serial.println("Invalid channel number");
+        return -1;
+    }
+
+    if ((filt_num < 0) | (filt_num > 13)) {
+        Serial.println("Invalid filter number");
+        return -2
+    }
+
+    peq_t param = dsp_settings.ch[channel].eq[filt_num];
+
+    int type = param.type;
+    float freq = param.frequency;
+    float q = param.q;
+    float boost = param.boost;
+
+    if ((type < 0) | (type > 5)) {
+        Serial.println("Invalid filter type.");
+        return -3;
+    }
+
+    float* coef;
+
+    switch (type) {
+        case 0: // All-Pass
+            coef = ap_coef(freq, q, boost);
+            continue;
+        case 1: // Low-Pass
+            coef = lp_coef(freq, q, boost);
+            continue;
+        case 2: // High-Pass
+            coef = hp_coef(freq, q, boost);
+            continue;
+        case 3: // PEQ
+            coef = peq_coef(freq, q, boost);
+            continue;
+        case 4: // Low-Shelf
+            coef = ls_coef(freq, q, boost);
+            continue;
+        case 5: // 
+            coef = hs_coef(freq, q, boost);
+            continue;
+    }
+
+    coef_addr = ch_eq_addr[channel][filt_num]; // TODO: Update when adding for multiple channels
+
+    for (int i = 0; i < 5; i++) {
+        //write each coefficient to each address
+        write_param(coef_addr + i, coef[i]);
+    }
+}
+
 String command_ADAU1452(String input) {
     // Skip if there is no command.
     if (input == ""){
@@ -164,6 +220,12 @@ String command_ADAU1452(String input) {
     Serial.println("Received invalid command.");
 
     return "ERROR";
+}
+
+
+void setup_param(void) {
+    //TODO: read settings from non-volatile memory, check if it's valid, initialize if it's not valid, then write those parameters
+    return;
 }
 
 #endif
