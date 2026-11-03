@@ -16,7 +16,7 @@ const uint16_t mix_addr[9] = {
     MOD_MIXER_ALG0_AUDIOSIGNALROUTER34S300ALG1CROSSGAIN08_ADDR
 };
 
-const uint16_t ch1_eq_addr[8][10] = {
+const uint16_t general_eq_addr[8][10] = {
     {MOD_CHANNEL_1_PEQ_ALG0_STAGE0_B2_ADDR, MOD_CHANNEL_1_PEQ_ALG0_STAGE1_B2_ADDR, MOD_CHANNEL_1_PEQ_ALG0_STAGE2_B2_ADDR, MOD_CHANNEL_1_PEQ_ALG0_STAGE3_B2_ADDR, MOD_CHANNEL_1_PEQ_ALG0_STAGE4_B2_ADDR, MOD_CHANNEL_1_PEQ_ALG0_STAGE5_B2_ADDR, MOD_CHANNEL_1_PEQ_ALG0_STAGE6_B2_ADDR, MOD_CHANNEL_1_PEQ_ALG0_STAGE7_B2_ADDR, MOD_CHANNEL_1_PEQ_ALG0_STAGE8_B2_ADDR, MOD_CHANNEL_1_PEQ_ALG0_STAGE9_B2_ADDR},
     {},
     {},
@@ -37,9 +37,9 @@ typedef struct {
 
 typedef struct {
     float gain;
+    float ref_voltage;
     float peak_thresh;
     float rms_thresh;
-    float ref_voltage;
 } gain_t;
 
 typedef struct {
@@ -75,7 +75,7 @@ dsp_settings_t dsp_settings;
 // Initialize all settings so that the device acts as pass-through
 void init_param_struct(void) {
 
-    version = STRUCT_VERSION;
+    dsp_settings.version = STRUCT_VERSION;
 
     // Each channel
     for (int i = 0; i < 8; i++) {
@@ -138,8 +138,8 @@ void init_param_struct(void) {
     // Setting miscellaneous settings
     dsp_settings.misc_settings.gen_freq = 1000.0;
     dsp_settings.misc_settings.gen_switch = 0;
-    dsp_settings.heartbeat_period = 1.0;
-    dsp_settings.heartbeat_switch = 0.0;
+    dsp_settings.misc_settings.heartbeat_period = 1.0;
+    dsp_settings.misc_settings.heartbeat_switch = 0.0;
 }
 
 // Enable or disable filter
@@ -154,14 +154,14 @@ int toggle_eq(int channel, int filt_num, bool en) {
 
     if ((filt_num < 0) | (filt_num > 13)) {
         Serial.println("Invalid filter number");
-        return -2
+        return -2;
     }
 
     if(filt_num > 11) {
-        dsp_settings.ch[channel].lopass[fil_num-11].en = en;
+        dsp_settings.ch[channel].lopass[filt_num-11].en = en;
         return 0;
     } else if(filt_num > 9) {
-        dsp_settings.ch[channel].hipass[fil_num-9].en = en;
+        dsp_settings.ch[channel].hipass[filt_num-9].en = en;
         return 0;
     }
     
@@ -179,7 +179,7 @@ int set_eq_type(int channel, int filt_num, int type) {
 
     if ((filt_num < 0) | (filt_num > 9)) {
         Serial.println("Invalid filter number");
-        return -2
+        return -2;
     }
 
     dsp_settings.ch[channel].eq[filt_num].type = type;
@@ -198,23 +198,23 @@ int set_eq_freq(int channel, int filt_num, float freq) {
 
     if ((filt_num < 0) | (filt_num > 13)) {
         Serial.println("Invalid filter number");
-        return -2
+        return -2;
     }
 
     if(filt_num > 11) {
-        dsp_settings.ch[channel].lopass[fil_num-11].freq = freq;
+        dsp_settings.ch[channel].lopass[filt_num-11].frequency = freq;
         return 0;
     } else if(filt_num > 9) {
-        dsp_settings.ch[channel].hipass[fil_num-9].freq = freq;
+        dsp_settings.ch[channel].hipass[filt_num-9].frequency = freq;
         return 0;
     }
     
-    dsp_settings.ch[channel].eq[filt_num].freq = freq;
+    dsp_settings.ch[channel].eq[filt_num].frequency = freq;
     return 0;
 }
 
 // set q for EQ filter
-int set_eq_q(int channel, int filt_num, float q) {
+int set_eq_q(int channel, int filt_num, float Q) {
     if ((channel < 0) | (channel > 7)) {
         Serial.println("Invalid channel number");
         return -1;
@@ -222,18 +222,18 @@ int set_eq_q(int channel, int filt_num, float q) {
 
     if ((filt_num < 0) | (filt_num > 13)) {
         Serial.println("Invalid filter number");
-        return -2
+        return -2;
     }
 
     if(filt_num > 11) {
-        dsp_settings.ch[channel].lopass[fil_num-11].q = q;
+        dsp_settings.ch[channel].lopass[filt_num-11].Q = Q;
         return 0;
     } else if(filt_num > 9) {
-        dsp_settings.ch[channel].hipass[fil_num-9].q = q;
+        dsp_settings.ch[channel].hipass[filt_num-9].Q = Q;
         return 0;
     }
     
-    dsp_settings.ch[channel].eq[filt_num].q = q;
+    dsp_settings.ch[channel].eq[filt_num].Q = Q;
     return 0;
 }
 
@@ -246,14 +246,14 @@ int set_eq_boost(int channel, int filt_num, float boost) {
 
     if ((filt_num < 0) | (filt_num > 13)) {
         Serial.println("Invalid filter number");
-        return -2
+        return -2;
     }
 
     if(filt_num > 11) {
-        dsp_settings.ch[channel].lopass[fil_num-11].boost = boost;
+        dsp_settings.ch[channel].lopass[filt_num-11].boost = boost;
         return 0;
     } else if(filt_num > 9) {
-        dsp_settings.ch[channel].hipass[fil_num-9].boost = boost;
+        dsp_settings.ch[channel].hipass[filt_num-9].boost = boost;
         return 0;
     }    
 
@@ -270,7 +270,7 @@ int set_fir_coef(int channel, int tap, float coef) {
 
     if ((coef < 0) | (coef > 512)) {
         Serial.println("Invalid coef number");
-        return -2
+        return -2;
     }
     
     dsp_settings.ch[channel].FIR[tap] = coef;
@@ -283,7 +283,7 @@ int set_fir_coef_array(int channel, float* taps) {
         return -1;
     }
 
-    num_taps = sizeof(taps)/sizeof(taps[0]);
+    int num_taps = sizeof(taps)/sizeof(taps[0]);
 
     if (num_taps > 512) {
         Serial.println("Too many coefficients in FIR coefficient array.");
@@ -308,6 +308,18 @@ int set_channel_gain(int channel, float gain) {
     return 0;
 }
 
+// Set reference voltage for more human-readable limiter values
+int set_channel_ref_voltage(int channel, float ref) {
+    if ((channel < 0) | (channel > 7)) {
+        Serial.println("Invalid channel number");
+        return -1;
+    }
+
+    dsp_settings.ch[channel].gain.ref_voltage = ref;
+
+    return 0;
+}
+
 // Set threshold of peak limiter in dBFS
 int set_channel_pk_thresh_db(int channel, float thresh) {
     if ((channel < 0) | (channel > 7)) {
@@ -328,18 +340,6 @@ int set_channel_rms_thresh_db(int channel, float thresh) {
     }
 
     dsp_settings.ch[channel].gain.rms_thresh = thresh;
-
-    return 0;
-}
-
-// Set reference voltage for more human-readable limiter values
-int set_channel_ref_voltage(int channel, float ref) {
-    if ((channel < 0) | (channel > 7)) {
-        Serial.println("Invalid channel number");
-        return -1;
-    }
-
-    dsp_settings.ch[channel].gain.ref_voltage = ref;
 
     return 0;
 }

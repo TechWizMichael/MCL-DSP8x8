@@ -1,8 +1,5 @@
 // Values and functions for using Serial/USB
 // Last updated October 26, 2026
-
-#include <Arduino.h>
-
 #ifdef CUSTOM_DSP
 
 void command_ADAU1452(String input){
@@ -11,8 +8,10 @@ void command_ADAU1452(String input){
 
 #else
 
+#include <Arduino.h>
 #include "MCL-DSP_HEARTBEAT.h"
 #include "MCL-DSP_Structs.h"
+#include "MCL-DSP_Coef.h"
 
 #define DELIM_CHAR '/'
 
@@ -67,14 +66,14 @@ int write_ch_eq(int channel, int filt_num) {
 
     if ((filt_num < 0) | (filt_num > 13)) {
         Serial.println("Invalid filter number");
-        return -2
+        return -2;
     }
 
     peq_t param = dsp_settings.ch[channel].eq[filt_num];
 
     int type = param.type;
     float freq = param.frequency;
-    float q = param.q;
+    float Q = param.Q;
     float boost = param.boost;
 
     if ((type < 0) | (type > 5)) {
@@ -86,26 +85,26 @@ int write_ch_eq(int channel, int filt_num) {
 
     switch (type) {
         case 0: // All-Pass
-            coef = ap_coef(freq, q, boost);
-            continue;
+            ap_coef(coef, freq, Q, boost);
+            break;
         case 1: // Low-Pass
-            coef = lp_coef(freq, q, boost);
-            continue;
+            lp_coef(coef, freq, Q, boost);
+            break;
         case 2: // High-Pass
-            coef = hp_coef(freq, q, boost);
-            continue;
+            hp_coef(coef, freq, Q, boost);
+            break;
         case 3: // PEQ
-            coef = peq_coef(freq, q, boost);
-            continue;
+            peq_coef(coef, freq, Q, boost);
+            break;
         case 4: // Low-Shelf
-            coef = ls_coef(freq, q, boost);
-            continue;
+            ls_coef(coef, freq, Q, boost);
+            break;
         case 5: // 
-            coef = hs_coef(freq, q, boost);
-            continue;
+            hs_coef(coef, freq, Q, boost);
+            break;
     }
 
-    coef_addr = ch_eq_addr[channel][filt_num]; // TODO: Update when adding for multiple channels
+    uint16_t coef_addr = general_eq_addr[channel][filt_num]; // TODO: Update when adding for multiple channels
 
     for (int i = 0; i < 5; i++) {
         //write each coefficient to each address
