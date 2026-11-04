@@ -1,17 +1,11 @@
 // Values and functions for using Serial/USB
 // Last updated October 26, 2026
-#ifdef CUSTOM_DSP
-
-void command_ADAU1452(String input){
-    Serial.println("Changing parameters with Custom DSP not supported");
-}
-
-#else
 
 #include <Arduino.h>
-#include "MCL-DSP_HEARTBEAT.h"
 #include "MCL-DSP_Structs.h"
+#include "MCL-DSP_HEARTBEAT.h"
 #include "MCL-DSP_Coef.h"
+#include "MCL-DSP_Param_Addr.h"
 
 #define DELIM_CHAR '/'
 
@@ -169,14 +163,14 @@ String command_ADAU1452(String input) {
 
         if (temp_string.equals("EN")){
             Serial.println("Heartbeat Enable Command.");
-            set_heartbeat_mode(HIGH);
+            set_heartbeat_mode(LOW);
 
             SIGMA_WRITE_REGISTER_INTEGER(MOD_LED_HEARTBEAT_HEARTBEAT_EN_MONOMUXSIGMA300NS1INDEX_ADDR, 0);
             
             return "READY";
         } else if(temp_string.equals("DIS")){
             Serial.println("DSP Heartbeat Disable Command");
-            set_heartbeat_mode(LOW);
+            set_heartbeat_mode(HIGH);
 
             SIGMA_WRITE_REGISTER_INTEGER(MOD_LED_HEARTBEAT_HEARTBEAT_EN_MONOMUXSIGMA300NS1INDEX_ADDR, 1);
 
@@ -226,5 +220,3 @@ void setup_param(void) {
     //TODO: read settings from non-volatile memory, check if it's valid, initialize if it's not valid, then write those parameters
     return;
 }
-
-#endif

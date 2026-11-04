@@ -10,14 +10,8 @@
 #include <SPI.h>
 #include "ADAU1452\SigmaStudioFW.h"
 #include "ADAU1452\USER_SETTINGS.h"
-
-#ifdef CUSTOM_DSP
-#include "ADAU1452\MCL-DSP8x8_CUSTOM_IC_1.h"
-#include "ADAU1452\MCL-DSP8x8_CUSTOM_IC_1_PARAM.h"
-#else
 #include "ADAU1452\MCL-DSP8x8_IC_1.h"
 #include "ADAU1452\MCL-DSP8x8_IC_1_PARAM.h"
-#endif
 
 // Reset ADAU1452 and prepare for programming
 void DSP_HARD_RESET() {

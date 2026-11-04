@@ -3,9 +3,6 @@
 // Created: March 20, 2026
 // Last modified: October 28, 2026
 
-// Note: uncomment below for simple ADAU1452 program
-// #define CUSTOM_DSP
-
 // Generate unique UUIDs here: https://www.uuidgenerator.net/
 #define SERVICE_UUID "13ddec86-d2ca-4c9f-b360-20804ca3f1b4"
 #define CHARACTERISTIC_UUID "13ddec86-d2ca-4c9f-b360-20804ca3f1b4"

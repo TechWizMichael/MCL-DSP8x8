@@ -1,32 +1,11 @@
 #include <Arduino.h>
-#include <Preferences.h>
 #include "MCL-DSP_ADAU1452.h"
+#include <Preferences.h>
 
 #define STRUCT_VERSION 1
 
-const uint16_t mix_addr[9] = {
-    MOD_MIXER_ALG0_AUDIOSIGNALROUTER34S300ALG1CROSSGAIN00_ADDR,
-    MOD_MIXER_ALG0_AUDIOSIGNALROUTER34S300ALG1CROSSGAIN01_ADDR,
-    MOD_MIXER_ALG0_AUDIOSIGNALROUTER34S300ALG1CROSSGAIN02_ADDR,
-    MOD_MIXER_ALG0_AUDIOSIGNALROUTER34S300ALG1CROSSGAIN03_ADDR,
-    MOD_MIXER_ALG0_AUDIOSIGNALROUTER34S300ALG1CROSSGAIN04_ADDR,
-    MOD_MIXER_ALG0_AUDIOSIGNALROUTER34S300ALG1CROSSGAIN05_ADDR,
-    MOD_MIXER_ALG0_AUDIOSIGNALROUTER34S300ALG1CROSSGAIN06_ADDR,
-    MOD_MIXER_ALG0_AUDIOSIGNALROUTER34S300ALG1CROSSGAIN07_ADDR,
-    MOD_MIXER_ALG0_AUDIOSIGNALROUTER34S300ALG1CROSSGAIN08_ADDR
-};
-
-const uint16_t general_eq_addr[8][10] = {
-    {MOD_CHANNEL_1_PEQ_ALG0_STAGE0_B2_ADDR, MOD_CHANNEL_1_PEQ_ALG0_STAGE1_B2_ADDR, MOD_CHANNEL_1_PEQ_ALG0_STAGE2_B2_ADDR, MOD_CHANNEL_1_PEQ_ALG0_STAGE3_B2_ADDR, MOD_CHANNEL_1_PEQ_ALG0_STAGE4_B2_ADDR, MOD_CHANNEL_1_PEQ_ALG0_STAGE5_B2_ADDR, MOD_CHANNEL_1_PEQ_ALG0_STAGE6_B2_ADDR, MOD_CHANNEL_1_PEQ_ALG0_STAGE7_B2_ADDR, MOD_CHANNEL_1_PEQ_ALG0_STAGE8_B2_ADDR, MOD_CHANNEL_1_PEQ_ALG0_STAGE9_B2_ADDR},
-    {},
-    {},
-    {},
-    {},
-    {},
-    {},
-    {}
-};
-
+// struct containing parameters for PEQ blocks
+// used for general PEQ and IIR crossover filters.
 typedef struct {
     uint8_t type; // 0 = All-Pass, 1 = Low-Pass, 2 = High-Pass, 3 = PEQ, 4 = Low-Shelf, 5 - High-Shelf
     float boost; // dB
@@ -43,17 +22,18 @@ typedef struct {
 } gain_t;
 
 typedef struct {
-    peq_t eq[10];
-    peq_t hipass[2];
-    peq_t lopass[2];
-    uint16_t delay;
-    float FIR[512];
-    gain_t gain;
+    peq_t eq[10]; // 10 biquads
+    peq_t hipass[2]; // up to 4th-order high-pass
+    peq_t lopass[2]; // up to 4th-order low-pass
+    uint16_t delay; // 1-960 samples of delay
+    float FIR[512]; // taps of FIR filter
+    gain_t gain; // dB gain
+    bool mute; // 0 when muted, 1 when unmuted
 } channel_t;
 
 typedef struct {
     float gain[9][8]; // gain of each input to each output as [input][output] with input 9 being the tone generator.
-    float output_gain[8];
+    float output_gain[8]; // optional gain to each channel
 } router_t;
 
 typedef struct {
@@ -89,7 +69,7 @@ void init_param_struct(void) {
             dsp_settings.ch[i].eq[i].en = 0;
         }
         
-        // Each Low-Pass filter
+        // Each Low-Pass filter will be set as PEQ with 0dB gain, aka THRU
         for (int j = 0; j < 2; j++){
             dsp_settings.ch[i].lopass[i].en = 0;
             dsp_settings.ch[i].lopass[i].type = 1;
@@ -98,7 +78,7 @@ void init_param_struct(void) {
             dsp_settings.ch[i].lopass[i].frequency = 1000;
         }
 
-        // Each High-Pass filter.
+        // Each High-Pass filter will be set as PEQ with 0dB gain, aka THRU
         for (int j = 0; j < 2; j++){
             dsp_settings.ch[i].hipass[i].en = 0;
             dsp_settings.ch[i].hipass[i].type = 2;
@@ -117,22 +97,26 @@ void init_param_struct(void) {
         }
 
         // All gains are 0dB
-        dsp_settings.ch[i].gain.gain = 0.0;
-        dsp_settings.ch[i].gain.peak_thresh = 0.0;
-        dsp_settings.ch[i].gain.rms_thresh = 0.0;
-        dsp_settings.ch[i].gain.ref_voltage = 1.0;
+        dsp_settings.ch[i].gain.gain = 0.0; // dB
+        dsp_settings.ch[i].gain.peak_thresh = 0.0; // dB
+        dsp_settings.ch[i].gain.rms_thresh = 0.0; // dB
+        dsp_settings.ch[i].gain.ref_voltage = 1.0; // dB
+
+        // mute channel
+        dsp_settings.ch[i].mute = 0; // unmute
     }
 
     // Setting all gains to -inf dB
     for (int i = 0; i < 9; i++) {
         for (int j = 0; j < 8; j++) {
-            dsp_settings.mixer.gain[i][j] = 0;
+            dsp_settings.mixer.gain[i][j] = -144.0; // dB
         }
     }
 
     // Setting mixer so that every input channel is mapped to each output channel with gain of 0dB.
     for (int i = 0; i < 8; i++) {
-        dsp_settings.mixer.gain[i][i] = 1.0;
+        dsp_settings.mixer.gain[i][i] = 0.0; // dB
+        dsp_settings.mixer.output_gain[i] = 0.0; // dB
     }
 
     // Setting miscellaneous settings

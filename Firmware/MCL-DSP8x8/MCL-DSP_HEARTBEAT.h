@@ -5,7 +5,7 @@
 #define HEARTBEAT_HALF_PERIOD_MS 1000
 #define HEARTBEAT_LED 1
 bool heartbeat_state = HIGH;
-int heartbeat_time = 0;
+int heartbeat_time = 1;
 bool heartbeat_mode = LOW;
 
 void setup_heartbeat(void){
@@ -19,7 +19,7 @@ void setup_heartbeat(void){
 void process_heartbeat(void){
   if (millis() > (heartbeat_time + HEARTBEAT_HALF_PERIOD_MS)) {
     heartbeat_time = millis();
-    digitalWrite(HEARTBEAT_LED, (heartbeat_mode & heartbeat_state));
+    digitalWrite(HEARTBEAT_LED, (heartbeat_mode | heartbeat_state));
 
     heartbeat_state = !heartbeat_state;
   }
