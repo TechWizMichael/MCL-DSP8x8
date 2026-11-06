@@ -24,6 +24,6 @@ void setup() {
 
 void loop() {
   process_heartbeat();
-  serial_respond(command_ADAU1452(read_serial()));
-  ble_respond(command_ADAU1452(read_BLE()));
+  serial_respond(parse_command(read_serial()));
+  ble_respond(parse_command(read_BLE()));
 }

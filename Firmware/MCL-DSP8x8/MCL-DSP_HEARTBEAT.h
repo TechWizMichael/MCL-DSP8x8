@@ -4,9 +4,9 @@
 // Heartbeat Constants and variables
 #define HEARTBEAT_HALF_PERIOD_MS 1000
 #define HEARTBEAT_LED 1
-bool heartbeat_state = HIGH;
+bool heartbeat_state = LOW;
 int heartbeat_time = 1;
-bool heartbeat_mode = LOW;
+bool heartbeat_mode = HIGH;
 
 void setup_heartbeat(void){
   // Initialize Heartbeat LED
@@ -28,6 +28,6 @@ void process_heartbeat(void){
 }
 
 void set_heartbeat_mode(bool mode){
-  heartbeat_mode = mode;
+  heartbeat_mode = !mode;
   return;
 }

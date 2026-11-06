@@ -18,8 +18,8 @@ void ap_coef(float coef[], float freq, float Q, float boost) {
   coef[0] = b2;
   coef[1] = b1;
   coef[2] = b0;
-  coef[3] = a2;
-  coef[4] = a1;
+  coef[3] = -a2;
+  coef[4] = -a1;
 
   return;
 }
@@ -35,15 +35,15 @@ void lp_coef(float coef[], float freq, float Q, float boost) {
   float a0 = 1 + alpha;
   float a1 = -2*cs;
   float a2 = 1 - alpha;
-  float b0 = (1-cs)/2;
+  float b0 = (1 - cs)/2;
   float b1 = 1 - cs;
-  float b2 = (1-cs)/2;
+  float b2 = (1 - cs)/2;
 
-  coef[0] = b2;
-  coef[1] = b1;
-  coef[2] = b0;
-  coef[3] = a2;
-  coef[4] = a1;
+  coef[0] = b2/a0;
+  coef[1] = b1/a0;
+  coef[2] = b0/a0;
+  coef[3] = -a2/a0;
+  coef[4] = -a1/a0;
 
   return;
 }
@@ -58,15 +58,15 @@ void hp_coef(float coef[], float freq, float Q, float boost) {
   float a0 = 1 + alpha;
   float a1 = -2*cs;
   float a2 = 1 - alpha;
-  float b0 = (1+cs)/2;
+  float b0 = (1 + cs)/2;
   float b1 = -1*(1 + cs);
-  float b2 = (1+cs)/2;
+  float b2 = (1 + cs)/2;
 
-  coef[0] = b2;
-  coef[1] = b1;
-  coef[2] = b0;
-  coef[3] = a2;
-  coef[4] = a1;
+  coef[0] = b2/a0;
+  coef[1] = b1/a0;
+  coef[2] = b0/a0;
+  coef[3] = -a2/a0;
+  coef[4] = -a1/a0;
 
   return;
 }
@@ -99,8 +99,8 @@ void peq_coef(float coef[], float freq, float Q, float boost) {
   coef[0] = b2;
   coef[1] = b1;
   coef[2] = b0;
-  coef[3] = a2;
-  coef[4] = a1;
+  coef[3] = -a2;
+  coef[4] = -a1;
 
   return;
 }
@@ -129,18 +129,11 @@ void ls_coef(float coef[], float freq, float Q, float boost) {
   float b1 = 2*Ax*((Ax - 1) - (Ax + 1)*cs);
   float b2 = Ax*((Ax + 1) - (Ax - 1)*cs - 2*sqrt(Ax)*alpha);
 
-  // normalize to a0
-  a1 = a1/a0;
-  a2 = a2/a0;
-  b0 = b0/a0;
-  b1 = b1/a0;
-  b2 = b2/a0;
-
-  coef[0] = b2;
-  coef[1] = b1;
-  coef[2] = b0;
-  coef[3] = a2;
-  coef[4] = a1;
+  coef[0] = b2/a0;
+  coef[1] = b1/a0;
+  coef[2] = b0/a0;
+  coef[3] = -a2/a0;
+  coef[4] = -a1/a0;
 
   return;
 }
@@ -169,18 +162,11 @@ void hs_coef(float coef[], float freq, float Q, float boost) {
   float b1 = -2*Ax*((Ax - 1) + (Ax + 1)*cs);
   float b2 = Ax*((Ax + 1) + (Ax - 1)*cs - 2*sqrt(Ax)*alpha);
 
-  // normalize to a0
-  a1 = a1/a0;
-  a2 = a2/a0;
-  b0 = b0/a0;
-  b1 = b1/a0;
-  b2 = b2/a0;
-
-  coef[0] = b2;
-  coef[1] = b1;
-  coef[2] = b0;
-  coef[3] = a2;
-  coef[4] = a1;
+  coef[0] = b2/a0;
+  coef[1] = b1/a0;
+  coef[2] = b0/a0;
+  coef[3] = -a2/a0;
+  coef[4] = -a1/a0;
 
   return;
 }
