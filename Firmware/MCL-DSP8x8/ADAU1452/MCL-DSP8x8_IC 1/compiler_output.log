@@ -1,34 +1,38 @@
 ADAU145X Assembler, Analog Devices Inc.
 Version: 4.7.0,1827  (built 4/5/2022)
 
-##### Compile Started: Tuesday, September 29, 2026 10:18:40 PM #####
+##### Compile Started: Thursday, November 5, 2026 11:10:22 PM #####
 ADAU145X Assembler, Analog Devices Inc.
 Version: 4.7.0,1827  (built 4/5/2022)
 
-##### Compile Started: Tuesday, September 29, 2026 10:18:40 PM #####
+##### Compile Started: Thursday, November 5, 2026 11:10:22 PM #####
 ##### Compile succeeded:  0 errors, 0 warnings #####
 
 ##### Summary #####
-DM0 RAM used:       07835    (of 20480)
-DM1 RAM used:       06915    (of 20480)
-PM  RAM used(Data): 03844    (of 8192)
-PM  RAM used(Inst): 02614    (of 8192) 1838 instructions (32bit: 1062  64bit: 776)
-Total PM used:      06458    (of 8192)
+DM0 RAM used:       17452    (of 20480)
+DM1 RAM used:       17003    (of 20480)
+PM  RAM used(Data): 04802    (of 8192)
+PM  RAM used(Inst): 03248    (of 8192) 2203 instructions (32bit: 1158  64bit: 1045)
+Total PM used:      08050    (of 8192)
 
 --------------------------------------------------------------------------------------
 STREAM                        Inst      Inst      DM0     DM1     PM
 Instance                      (cycles)  (size)    
 --------------------------------------------------------------------------------------
 STACK                          -         -        16      0       0       
-RMS_LIM                       376       424       488     8       0
-PK_LIM                        336       392       552     8       0
-Mixer                         243       376       100     98      0
-LowPass                       248       328       88      190     0
-HighPass                      248       328       88      184     0
-PEQ                           224       232       400     360     0
-FIR                           1072      128       4096    4096    0
-Gain                          64        104       24      8       0
-Delay                         70        92        1930    1930    3844
+RMS_LIM                       376       432       488     8       0
+PEQ                           896       400       408     760     0
+PEAK_LIM                      336       392       552     8       0
+LOW_PASS                      408       392       168     333     0
+HIGH_PASS                     408       392       168     328     0
+Mixer                         224       347       91      89      0
+FIR_TABLE                     2096      128       8192    8200    0
+RMS_LIM_GAIN                  64        104       24      8       0
+PEAK_LIM_GAIN                 64        104       24      8       0
+CH_GAIN                       64        104       24      8       0
+MUTE                          64        104       24      8       0
+DELAY                         65        86        7211    7211    4802
+INV                           32        48        8       0       0
 FRAMEWORK                     61        42        16      7       0
 Noise_Pink_Filter             19        30        16      8       0
 Tone_Gen                      18        18        10      1       0
@@ -36,12 +40,13 @@ Heartbeat_Pulse               17        17        4       2       0
 I2S_OUT_0                     13        17        0       4       0
 I2S_OUT_1                     5         9         0       0       0
 I2S_IN_1                      8         8         0       4       0
-Heartbeat_Switch              5         5         1       1       0
+noise__tone                   5         5         1       1       0
+heartbeat_en                  5         5         1       1       0
 Noise_Gen                     4         4         1       1       0
 Heartbeat_DC                  2         2         1       1       0
 Heartbeat_OUT                 2         2         0       0       0
 --------------------------------------------------------------------------------------
-Total                         3035      2558      7831    6911    3844
+Total                         5256      3192      17448   16999   4802
 --------------------------------------------------------------------------------------
-(% Fs=48.0kHz)                50%       32%       39%     34%     47%
+(% Fs=48.0kHz)                86%       39%       86%     84%     59%
 
