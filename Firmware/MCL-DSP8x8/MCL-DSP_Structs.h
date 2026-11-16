@@ -132,6 +132,21 @@ void init_param_struct(void) {
     dsp_settings.misc_settings.heartbeat_switch = 0.0;
 }
 
+int set_mix(int ch_in, int ch_out, float gain) {
+    if ((ch_out < 0) || (ch_out > 7)) {
+        Serial.println("Invalid output channel number");
+        return -1;
+    }
+    
+    if ((ch_in < 0) || (ch_in > 7)) {
+        Serial.println("Invalid input channel number");
+        return -1;
+    }
+    
+    dsp_settings.mixer.gain[ch_in][ch_out] = gain;
+    return 0;
+}
+
 int toggle_mute(int channel, bool en) {
     if ((channel < 0) || (channel > 7)) {
         Serial.println("Invalid channel number");
@@ -200,11 +215,11 @@ int set_eq_freq(int channel, int filt_num, float freq) {
         return -2;
     }
 
-    if(filt_num > 11) {
-        dsp_settings.ch[channel].lopass[filt_num-11].frequency = freq;
+    if(filt_num > 13) {
+        dsp_settings.ch[channel].lopass[filt_num-14].frequency = freq;
         return 0;
     } else if(filt_num > 9) {
-        dsp_settings.ch[channel].hipass[filt_num-9].frequency = freq;
+        dsp_settings.ch[channel].hipass[filt_num-10].frequency = freq;
         return 0;
     }
     
@@ -246,7 +261,7 @@ int set_eq_boost(int channel, int filt_num, float boost) {
         return -1;
     }
 
-    if ((filt_num < 0) || (filt_num > 17)) {
+    if ((filt_num < 0) || (filt_num > 9)) {
         Serial.println("Invalid filter number");
         return -2;
     }

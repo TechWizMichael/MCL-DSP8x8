@@ -12,18 +12,20 @@
 #include "MCL-DSP_BLE.h"
 #include "MCL-DSP_AK4619VN.h"
 #include "MCL-DSP_Programming.h"
+#include "MCL-DSP_Example_Commands.h"
 
 void setup() {
   setup_serial();
   setup_heartbeat();
   setup_ADAU1452();
   setup_AK4619VN();
-  setup_BLE();
+  // setup_BLE();
   setup_param();
+  setup_custom_dsp();
 }
 
 void loop() {
   process_heartbeat();
   serial_respond(parse_command(read_serial()));
-  ble_respond(parse_command(read_BLE()));
+  // ble_respond(parse_command(read_BLE()));
 }

@@ -73,7 +73,7 @@ int write_mixer(int input, int output) {
     float gain = dsp_settings.mixer.gain[input][output];
     gain = pow(10.0, (gain/20.0));
 
-    uint16_t address = mix_addr[input] + output;
+    uint16_t address = mix_addr[output] + input;
 
     write_param(address, gain);
     return 0;
@@ -323,13 +323,74 @@ int toggle_heartbeat(void) {
     return 0;
 }
 
-// pase mix parameters
+// parse mix parameters
+String parse_mix_gain(int ch_in, int ch_out, String input) {
+    int index = next_delimiter(input, DELIM_CHAR);
+    String temp_string = former(input, index);
+    String residual_input = latter(input, index);
+    double gain = temp_string.toDouble();
+
+    set_mix(ch_in, ch_out, gain);
+
+    write_mixer(ch_in, ch_out);
+
+    Serial.println(String(ch_in) + "->" + String(ch_out) + ": " + String(gain, 8));
+
+    return "READY";
+}
+
+// parse mix parameters
+String parse_mix_2(int ch_in, String input) {
+    int index = next_delimiter(input, DELIM_CHAR);
+    String temp_string = former(input, index);
+    String residual_input = latter(input, index);
+    
+    if(temp_string.equals("CH1")){
+        return parse_mix_gain(ch_in, 0, residual_input);
+    } else if(temp_string.equals("CH2")){
+        return parse_mix_gain(ch_in, 1, residual_input);
+    } else if(temp_string.equals("CH3")){
+        return parse_mix_gain(ch_in, 2, residual_input);
+    } else if(temp_string.equals("CH4")){
+        return parse_mix_gain(ch_in, 3, residual_input);
+    } else if(temp_string.equals("CH5")){
+        return parse_mix_gain(ch_in, 4, residual_input);
+    } else if(temp_string.equals("CH6")){
+        return parse_mix_gain(ch_in, 5, residual_input);
+    } else if(temp_string.equals("CH7")){
+        return parse_mix_gain(ch_in, 6, residual_input);
+    } else if(temp_string.equals("CH8")){
+        return parse_mix_gain(ch_in, 7, residual_input);
+    }
+
+    return "ERROR_2";
+}
+
+// parse mix parameters
 String parse_mix(String input) {
     int index = next_delimiter(input, DELIM_CHAR);
     String temp_string = former(input, index);
     String residual_input = latter(input, index);
+    
+    if(temp_string.equals("CH1")){
+        return parse_mix_2(0, residual_input);
+    } else if(temp_string.equals("CH2")){
+        return parse_mix_2(1, residual_input);
+    } else if(temp_string.equals("CH3")){
+        return parse_mix_2(2, residual_input);
+    } else if(temp_string.equals("CH4")){
+        return parse_mix_2(3, residual_input);
+    } else if(temp_string.equals("CH5")){
+        return parse_mix_2(4, residual_input);
+    } else if(temp_string.equals("CH6")){
+        return parse_mix_2(5, residual_input);
+    } else if(temp_string.equals("CH7")){
+        return parse_mix_2(6, residual_input);
+    } else if(temp_string.equals("CH8")){
+        return parse_mix_2(7, residual_input);
+    }
 
-    return "INACTIVE";
+    return "ERROR_1";
 }
 
 // Parse heartbeat parameters
@@ -353,7 +414,7 @@ String parse_HB(String input) {
         return "READY";
     }
 
-    return "INVALID";
+    return "ERROR";
 }
 
 // Parse generator parameters
@@ -426,7 +487,7 @@ String parse_eq(int channel, int eq, String input) {
         return "READY";
     }
 
-    return "INVALID";
+    return "ERROR";
 }
 
 // Parse FIR parameters
