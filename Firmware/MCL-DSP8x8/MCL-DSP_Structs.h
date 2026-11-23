@@ -132,6 +132,7 @@ void init_param_struct(void) {
     dsp_settings.misc_settings.heartbeat_switch = 0.0;
 }
 
+// Set gain of a specific input-output mapping
 int set_mix(int ch_in, int ch_out, float gain) {
     if ((ch_out < 0) || (ch_out > 7)) {
         Serial.println("Invalid output channel number");
@@ -147,6 +148,7 @@ int set_mix(int ch_in, int ch_out, float gain) {
     return 0;
 }
 
+// Set if the channel is muted or not
 int toggle_mute(int channel, bool en) {
     if ((channel < 0) || (channel > 7)) {
         Serial.println("Invalid channel number");
@@ -409,3 +411,43 @@ int setup_param(void) {
     //TODO: read settings from non-volatile memory, check if it's valid, initialize if it's not valid, then write those parameters
     return 0;
 }
+
+// Read DSP version
+void read_dsp_version();
+
+// Read non-audio settings
+void read_dsp_misc();
+
+// Read mixer Settings
+void read_dsp_mixer();
+
+// Read settings from given EQ
+void read_dsp_eq(int channel, int filt_num);
+
+// Read low-pass settings
+void read_dsp_lp(int channel, int filt_num);
+
+// Reading the parameters of the DSP settings to serial terminal
+// Note: formatted as commands that can be run back into the system
+// void read_dsp_settings() {
+//     Serial.println("IN PROGRESS");
+
+//     // string container to hold conversions of values
+//     String temp_string = "";
+
+//     //Printing non-audio settings
+//     temp_string = String(dsp_settings.misc_settings.gen_freq);
+//     Serial.println("GEN/FREQ/" + temp_string);
+
+//     if(dsp_settings.misc_settings.gen_switch) {
+//         temp_string = "TONE";
+//     } else {
+//         temp_string = "NOISE";
+//     }
+//     Serial.println("GEN/TYPE/" + temp_string);
+
+
+//     Serial.println("HB/PER/" + String(dsp_settings.misc_settings.heartbeat_period));
+//     Serial.
+//     return 0;
+// }
