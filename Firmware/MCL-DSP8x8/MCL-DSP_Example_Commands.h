@@ -1,6 +1,6 @@
-
-void setup_custom_dsp() {
-  String custom_commands[] = {
+// Michael's Personal Biamp Tower speakers + subwoofer
+void setup_example_commands() {
+  String example_commands[] = {
     // Muting mixer for custom routing
     "MIX/CH1/CH1/-144",
     "MIX/CH2/CH2/-144",
@@ -104,11 +104,11 @@ void setup_custom_dsp() {
   };
 
   int i = 0;
-  String temp_command = custom_commands[i];
+  String temp_command = example_commands[i];
 
   while(!(temp_command.equals("STOP"))) {
     parse_command(temp_command);
     i = i + 1;
-    temp_command = custom_commands[i];
+    temp_command = example_commands[i];
   }
 }

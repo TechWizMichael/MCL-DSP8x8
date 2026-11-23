@@ -9,7 +9,7 @@
 
 #include <Arduino.h>
 #include "MCL-DSP_SERIAL.h"
-#include "MCL-DSP_BLE.h"
+// #include "MCL-DSP_BLE.h"
 #include "MCL-DSP_AK4619VN.h"
 #include "MCL-DSP_Programming.h"
 #include "MCL-DSP_Example_Commands.h"
@@ -21,7 +21,7 @@ void setup() {
   setup_AK4619VN();
   // setup_BLE();
   setup_param();
-  setup_custom_dsp();
+  // setup_example_commands();
 }
 
 void loop() {

@@ -2,6 +2,7 @@
 // Largely copied from https://randomnerdtutorials.com/esp32-web-bluetooth/
 // Last updated October 28, 2026
 
+#include <Arduino.h>
 #include <BLEDevice.h>
 #include <BLEUtils.h>
 #include <BLEServer.h>

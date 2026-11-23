@@ -305,6 +305,34 @@ int write_mute(int channel) {
         write_param(address, 1.0);
     }
 
+    address = mixer_output_addr[channel];
+
+    if(mute) {
+        write_param(address, 0.0);
+    } else {
+        write_param(address, 1.0);
+    }
+
+    return 0;
+}
+
+// write all coefficients to FIR channel
+int write_fir_coef(int channel, int tap) {
+    if((channel < 0) || (channel > 7)) {
+        Serial.println("Invalid channel.");
+        return -1;
+    }
+
+    if((tap < 0) || (tap > 1023)){
+        Serial.println("Invalid FIR tap");
+        return -2;
+    }
+
+    float coef = dsp_settings.ch[channel].FIR[tap];
+    uint16_t address = fir_addr[channel] + tap;
+
+    write_param(address, coef);
+
     return 0;
 }
 
@@ -490,10 +518,14 @@ String parse_eq(int channel, int eq, String input) {
     return "ERROR";
 }
 
-// Parse FIR parameters
-String parse_fir(int channel, String input){
+String parse_fir_tap(int channel, int tap, String input) {
     if((channel < 0) || (channel > 7)) {
         Serial.println("Invalid channel.");
+        return "ERROR";
+    }
+
+    if((tap < 0) || (tap > 1023)){
+        Serial.println("Invalid FIR tap");
         return "ERROR";
     }
 
@@ -501,7 +533,41 @@ String parse_fir(int channel, String input){
     String temp_string = former(input, index);
     String residual_input = latter(input, index);
 
-    return "INVALID";
+    float coef = temp_string.toDouble();
+
+    set_fir_coef(channel, tap, coef);
+    write_fir_coef(channel, tap);
+
+    return "READY";
+
+}
+
+// Parse FIR parameters
+String parse_fir(int channel, String input){
+    if((channel < 0) || (channel > 7)) {
+        Serial.println("Invalid channel.");
+        return "ERROR";
+    }
+
+    if(dsp_settings.ch[channel].mute) {
+        Serial.println("Warning: Channel " + String(channel) + " is not muted for FIR write");
+        Serial.println("Info: Muting channel. Unmute when all taps have been muted.");
+        toggle_mute(channel, 0);
+        write_mute(channel);
+    }
+
+    int index = next_delimiter(input, DELIM_CHAR);
+    String temp_string = former(input, index);
+    String residual_input = latter(input, index);
+
+    int tap = temp_string.toInt();
+
+    if((tap < 0) || (tap > 1023)){
+        Serial.println("Invalid FIR tap");
+        return "ERROR";
+    }
+
+    return parse_fir_tap(channel, tap, residual_input);
 }
 
 
@@ -550,7 +616,7 @@ String parse_channel(int channel, String input){
     } else if(temp_string.equals("EN")) {
         toggle_mute(channel, 1);
         write_mute(channel);
-        Serial.println("ENABLE CHANNEL 1");
+        Serial.println("ENABLE CHANNEL " + String(channel));
 
         return "READY";
     } else if(temp_string.equals("DIS")) {
